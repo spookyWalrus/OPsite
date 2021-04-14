@@ -1,0 +1,575 @@
+/*payRoll.css*/
+
+/*edit User*/
+
+
+#payRollTitle{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+#findPayPeriod{
+   background-color: #d7d7d7;
+   padding: 10px;
+}
+
+.searchBox{
+	position: relative;
+	display: inline-block;
+	/*float: left;*/
+    padding: 0px 10px 0px 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+}
+.searchTitle{
+	/*width: fit-content;*/
+	margin-bottom: 3px;
+}
+.searchUmenu{
+	width: fit-content;
+	/*margin: 10px;*/
+}
+
+#searchUserButton{
+    position: relative;
+    display: inline-block;
+    margin: 5px 5px 10px 25px;
+    /*width: 100%;*/
+}
+
+/*--------------- table stylings ----*/
+.payRollContainer{
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2px;
+    /*float: left;*/
+    position: inline;
+    width: 90%;
+    overflow: auto;
+}
+.payRollContainer2{
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2px;
+    /*float: left;*/
+    position: inline;
+    width: 90%;
+    overflow: auto;
+}
+
+/*.tableDiv{*/
+    /*overflow-x: scroll;*/
+    /*margin-left:50px;
+}
+*/
+/*
+table{
+    
+}
+*/
+.payrollTable {
+    text-align: center;
+    font-size: 13px;
+    padding-bottom:12px;
+    border: collapse;
+    display: inline-block;
+    width: 100%;
+    overflow-x: scroll;
+    table-layout: fixed;
+}
+
+#table2payroll{
+    margin-bottom: 2px;
+}
+
+
+
+
+
+table>tbody>tr>td{
+    padding: 2px !important;
+    border: 1px solid #ffffeb;
+    vertical-align: middle !important;
+    white-space: nowrap;
+
+}
+
+tr.week-days{
+    border-top:0.5px solid #000000;
+}
+td.weekdayDay{
+    border-right: 0.5px solid red;
+    border-top: 0.5px solid #fff !important;
+}
+/* #weekRange {
+    border-bottom: 0.5px solid #000000 !important;
+}*/
+.weekNo{
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+tr.dateRow{
+    background-color: white;
+    /*padding: 4px !important;*/
+}
+
+
+th.itemColumn{
+    width: 9%;
+    background-color: white;
+    padding: 2px !important; 
+    text-align: left;
+    white-space: nowrap;
+    /*position: sticky;*/
+}
+
+th.noTopBorder{
+    border-top: 1px solid #ffffff !important;
+
+}
+td.dateColumn{
+    /*width: 12%;*/
+    /*background-color: #fafbfa;*/
+    border: 0.5px solid red;
+    /*border-top:0.5px solid red;*/
+    /*padding: 4px ;*/
+}
+
+/*td.dateColumnBlank{
+    background-color: none;
+    border: 0.5px solid white;
+    width:3%;
+
+}*/
+
+
+/*td.totalsColumn{
+}
+.totalsColumn{
+    border: 0.5px solid blue;
+    background-color: white;
+}*/
+/*.grTotals{*/
+    /*background-color: #6699ff;*/
+/*}*/
+/*.grTotCol{
+    padding: 4px ;
+    background-color: #000000;
+    color: #ffffff;
+    vertical-align: middle !important;
+}*/
+th.grTotsColumn{
+  white-space: nowrap;   
+}
+/*.weekGrTot{
+    background-color:  #000000;
+    color: #ffffff;
+    font-size: 14px;
+    vertical-align: middle !important;
+}*/
+/*td.totalsColumn{
+    width:4%;
+}*/
+/*tbody>tr>td.totalsColumn{
+    padding:4px;
+}*/
+
+/*table td.eventCol {*/
+    /*height:100%;*/
+    /*position: relative;*/
+    /*white-space: nowrap !important;*/
+    /*display: block;*/
+    /*color: black;
+     width: 100%;
+    background-color: #ffffff;
+    border: 0px solid transparent;
+    text-align: center;*/
+    /*overflow-x:hidden;*/
+/*}*/
+.evNameIn{
+    color: black;
+     width: 100%;
+    /*background-color: #ffffff;*/
+    background-color: #fff;
+    border: 0px solid transparent;
+    text-align: center;
+}
+.eventLoc{
+    color: black;
+     width: 100%;
+    /*background-color: #ffffff;*/
+    background-color: #fff1e1;
+    border: 4px solid #fff;
+    text-align: center;
+}
+.codeRow{
+    background-color:#f0f3f2;
+}
+
+.codeColumn{
+    /*color: black;*/
+     /*width: 100%;*/
+    background-color: #ffffff;
+    border: 0px solid transparent;
+    /*text-align: center;*/
+}
+.codeInput{
+    color: black;
+     width: 100%;
+    background-color:#f2f0f2;
+    border: 0px solid transparent;
+    text-align: center;
+}
+
+
+/*td.codeColumn{
+    width:4%;
+}*/
+.accntRow{
+    background-color:#ffffff;
+}
+.accntInput{
+    width: 100%;
+    background-color:#d8d9d9;
+    border: 0px solid transparent;
+    text-align: center;
+}
+.roleDiv{
+     position: relative;
+    /*display: inline-block;*/
+}
+ .roleDiv .myarrow {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    display: inline-block;
+    top: 1px;
+    right: 1px;
+    /*background: url("https://www.transparentpng.com/thumb/arrow/vector-down-arrow-link-png-6.png") right / 90% no-repeat #ffc100;*/
+    background: url("../img/vector-down-arrow.png") right / 90% no-repeat #ffc100;
+    pointer-events: none;
+  }
+.role{
+    background-color:  #ffc100; 
+    /*color: #ffffff;*/
+    border-radius: 2px;
+    /*width: 90%;*/
+    border: 0.5px solid transparent;
+    text-align: left;
+}
+
+.roleSelect2{
+    /*width: 100%;*/
+    /*font-size: 11px;*/
+    background-color:  #ffc100; 
+    border: 5px solid #ffffff;
+    outline: 0;
+    /*border-radius: 2px;*/
+}
+.st1Row{
+    padding:0px;
+}
+.totalRow1{
+    background-color: #d0edf5;
+}
+.totalRow2{
+    background-color: #a2dbec;
+}
+.totalRow3{
+    background-color:#74c9e2;
+} 
+.weekTotCol{
+    /*background-color: #FFCC00;*/
+} 
+.rateH{
+    padding:2px !important;
+}
+.weekRateCol{
+    background-color: #FF9900;
+}
+.weekRtTot{
+    color: #dd0000;
+}
+ .weekEarnCol {
+    background-color: #FF6600
+}
+.hourSubTotalRow{
+    background-color: #dedff8;
+}
+/*td.subTotHr{
+    vertical-align: middle !important;
+}*/
+.OTRow{
+    background-color: #bebff1;
+}
+.OTrateCol{
+    color:red;
+}
+.OT2rateCol{
+    color:red;
+}
+.OT2Row{
+    /*background-color: #8b8de7;*/
+    background-color:#a6a7dd;
+}
+.adjHr{
+    background-color:#181bd0;
+    padding: 2px;
+    /*text-align: center;*/
+}
+.adjHrCol{
+    background-color: #ffffff;
+     /*width: 72px;*/
+     width: 91px;
+    border: 0px solid transparent;
+    text-align: center;
+    color: #000000;
+    padding: 2px;
+}
+
+.wageAdjCol{
+    color: red;
+     width: 62px;
+    border: 0px solid transparent;
+    text-align: center;
+    padding: 2px;
+    background-color: #101291;
+}
+.rateCol{
+    color: #dd0000;
+}
+.adjRateGo{
+    border-radius: 4px;
+    border-style:solid;
+    background-color: #ffffff;
+    border-color: #ddd4d4;
+    border-radius: 6px;
+    margin-left: 0px;
+    padding: 0px 3px 0px 3px;
+    /*border: ;*/
+}
+
+.adjRateGo:hover {
+    background-color: #cfd2d2;
+}
+
+.adjRateGo:active {
+  background-color: #ffffff;
+  box-shadow: 0 3px #aaa;
+  transform: translateX(2px);
+}
+/*.grTotCol{
+    font-size: 15.5px;
+    font-weight: bold;
+}*/
+.inCol{
+    background-color: #70bf45;
+        /*font-weight: bold;*/
+        font-size: 15px;
+        color: #000000;
+}
+
+td.totalsCel{
+    border-right: 0px solid #ffffff;
+
+}
+.totalsColumn{
+    border: 2.5px solid #adaeb5;
+    border-right: 2.5px solid transparent;
+    border-bottom: 1.5px solid #adaeb5;
+    border-left: 2.5px solid #adaeb5;
+    /*font-weight: bold;*/
+    /*background-color: white;*/
+}
+.weekTotalFont{
+    font-weight: bold;
+}
+
+.grTotals{
+    /*background-color: #6699ff;*/
+}
+.grTotCol{
+    padding: 4px ;
+    background-color: #000000;
+    color: #ffffff;
+     font-size: 15px;
+    /*font-weight: bold;*/
+    vertical-align: middle !important;
+}
+th.grTotsColumn{
+    padding:2px !important;    
+}
+.weekGrTot{
+    background-color:  #000000;
+    color: #ffffff;
+    font-size: 14px;
+    vertical-align: middle !important;
+}
+.weekInTot{
+    background-color: #70bf45;
+    font-size: 15px;
+    /*font-weight: bold;*/
+    color: #000000;
+}
+.inH{
+    padding: 2px !important;
+    vertical-align: middle !important;
+}
+#grandTotalIncome{
+    margin-top:0px;
+}
+th.revH{
+    padding: 2px !important;
+    font-size: 12px;
+}
+td.revCol{
+    padding: 2px !important;
+}
+.revertGo{
+    border-radius: 4px;
+    /*background: linear-gradient(to top, #ababab 0%, #ffffff 50%);*/
+    border-style:solid;
+    background-color: #ffffff;
+    border-color: #ddd4d4;
+}
+.revertGo:hover {
+    background-color: #cfd2d2;
+}
+
+.revertGo:active {
+  background-color: #ffffff;
+  box-shadow: 0 3px #aaa;
+  transform: translateX(2px);
+}
+
+
+ /*......................  non table ..............*/
+
+.payRollComments{
+    display:inline-block;
+    position: relative;
+    bottom: 21px;
+    width: 99%;
+    /*height:50px;*/
+    margin-top: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.commentTextArea{
+    height: 100px;
+    margin-top: 5px;
+}
+.payPeriodTotals{
+    text-align: center;
+}
+
+.hideButton{
+    /*display: none;*/
+    border-radius: 4px;
+    /*background: linear-gradient(to top, #ababab 0%, #ffffff 50%);*/
+    border-style:solid;
+    background-color: #ffffff;
+    border-color: #ddd4d4;
+}
+.hideButton:hover {
+    background-color: #cfd2d2;
+}
+
+.hideButton:active {
+  background-color: #ffffff;
+  box-shadow: 0 3px #aaa;
+  transform: translateX(2px);
+}
+
+.showButton{
+    display: none;
+    border-radius: 4px;
+    /*background: linear-gradient(to top, #ababab 0%, #ffffff 50%);*/
+    border-style:solid;
+    background-color: #ffffff;
+    border-color: #ddd4d4;
+}
+.showButton:hover {
+    background-color: #cfd2d2;
+}
+
+.showButton:active {
+  background-color: #ffffff;
+  box-shadow: 0 3px #aaa;
+  transform: translateX(2px);
+}
+
+
+.blink{
+    animation: blink 0.5s infinite;
+    /*font-size: 16px;*/
+}
+@keyframes blink{
+    0%{     color: #ff00ef;    }
+    49%{    color: #ff00ef; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #ff00ef;    }
+}
+
+.submitPayroll{
+    /*width: 100%;*/
+    padding:5px;
+    margin-bottom:15px;
+    display: inline-block;
+}
+#submitPayRollButton{
+    background-color: #18c125;
+    width: 100%;
+    color:#fff;
+    border: 2px solid #000;
+    font-size:19px;
+}
+#submitPayRollButton:active{
+    background-color: #15731c;
+    border-color: #88e853;
+}
+
+
+
+
+/*------------  oler stuff, possibly delete bc unused for this page???  */
+
+.viewTheUser{
+    margin:15px;
+    /*visibility: 'hidden';*/
+    display: none;
+}
+
+.editUserForm {
+    margin: 30px 0px 30px 0px;
+}
+
+#viewingThisUser {
+    margin-bottom: 20px;
+    display: block;
+}
+
+#resetPasswordField{
+    padding-top: 40px;
+}
+
+.errorMessages {
+color: #B43232;
+visibility: hidden;
+}
+
+.phoneBox, .emailBox, .idBox, .sinBox, .pwBox{
+    border: 1px solid #cec7c7;
+    /*visibility: hidden;*/
+}

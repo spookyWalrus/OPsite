@@ -1,0 +1,412 @@
+/*payRoll.css*/
+
+/*edit User*/
+.payRollContainer{
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2px;
+    /*float: left;*/
+    position: inline;
+    width: 90%;
+    overflow: auto;
+}
+.payRollContainer2{
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2px;
+    /*float: left;*/
+    position: inline;
+    width: 90%;
+    overflow: auto;
+}
+/*.payRollContainer2{
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 75px;
+    padding:2px;
+    float: right;
+    position: inline;
+    width: 45%;
+    overflow: hidden;
+}*/
+
+#payRollTitle{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+#findPayPeriod{
+   background-color: #d7d7d7;
+   padding: 10px;
+}
+
+.searchBox{
+	position: relative;
+	display: inline-block;
+	/*float: left;*/
+    padding: 0px 10px 0px 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+}
+.searchTitle{
+	/*width: fit-content;*/
+	margin-bottom: 3px;
+}
+.searchUmenu{
+	width: fit-content;
+	/*margin: 10px;*/
+}
+
+#searchUserButton{
+    position: relative;
+    display: inline-block;
+    margin: 5px 5px 10px 25px;
+    /*width: 100%;*/
+}
+
+/*--------------- table stylings ----*/
+table{
+    /*border-top: 1px solid black !important;*/
+    table-layout: fixed;
+}
+
+table.payrollTable {
+    /*border: 0.5px solid black;*/
+    /*border-top: 1px solid black !important;*/
+    text-align: center;
+    padding: 4px;
+    font-size: 13px;
+    border: collapse;
+    display: inline-block;
+    width: 77%;
+    overflow-x: scroll;
+    table-layout: fixed;
+}
+#table2payroll{
+    margin-bottom: 2px;
+}
+td {
+    /*white-space:nowrap;*/
+    /*overflow: ;*/
+    overflow-x: scroll;
+}
+
+tr.week-days{
+    border-top:0.5px solid #000000;
+}
+/* #weekRange {
+    border-bottom: 0.5px solid #000000 !important;
+}*/
+.weekNo{
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+tr.dateRow{
+    background-color: white;
+    padding: 4px !important;
+}
+table>tbody>tr>td{
+     padding: 4px !important;
+     /*border-top: none;*/
+
+}
+
+th.itemColumn{
+    width: 15%;
+    background-color: white;
+    padding: 4px !important;
+    text-align: left;
+    /*position: absolute;*/
+
+}
+
+td.dateColumn{
+    width: 12%;
+    background-color: #fafbfa;
+    border: 0.5px solid red;
+    border-top:0.5px solid red;
+    padding: 4px ;
+}
+.dateColumn tr td {
+    border-top:0.5px solid red;
+}
+
+td.dateColumnBlank{
+    background-color: none;
+    border: 0.5px solid white;
+    width:3%;
+
+}
+
+
+/*td.totalsColumn{
+}
+.totalsColumn{
+    border: 0.5px solid blue;
+    background-color: white;
+}*/
+/*.grTotals{*/
+    /*background-color: #6699ff;*/
+/*}*/
+/*.grTotCol{
+    padding: 4px ;
+    background-color: #000000;
+    color: #ffffff;
+    vertical-align: middle !important;
+}
+th.grTotsColumn{*/
+    /*width: ;*/
+    /*padding:2px;    */
+/*}
+.weekGrTot{
+    background-color:  #000000;
+    color: #ffffff;
+    font-size: 14px;
+    vertical-align: middle !important;
+}*/
+/*td.totalsColumn{
+    width:4%;
+}*/
+/*tbody>tr>td.totalsColumn{
+    padding:4px;
+}*/
+table td.eventCol {
+    color: black;
+     width: 100%;
+    background-color: #ffffff;
+    border: 0px solid transparent;
+    text-align: center;
+    overflow-x:auto;
+    /*white-space: nowrap;*/
+}
+
+.eventLoc{
+    color: black;
+     width: 100%;
+    background-color: #ffffff;
+    border: 0px solid transparent;
+    text-align: center;
+}
+.codeRow{
+    background-color:#f0f3f2;
+}
+
+.codeColumn{
+    color: black;
+     width: 100%;
+    background-color: #dad9da;
+    border: 0px solid transparent;
+    text-align: center;
+}
+
+td.codeColumn{
+    width:4%;
+}
+.accntRow{
+    background-color: #e6ebea;
+}
+.accntInput{
+    width: 100%;
+    background-color: #b5b4b5;
+    border: 0px solid transparent;
+    text-align: center;
+}
+.role{
+    background-color:  #ffc100; 
+    /*color: #ffffff;*/
+    border-radius: 2px;
+    width: 100%;
+    border: 0.5px solid #969494;
+    text-align: left;
+}
+.roleSelect{
+    /*width: 100%;*/
+    /*font-size: 11px;*/
+    background-color:  #ffc100; 
+    border: 0px solid black;
+    /*border-radius: 2px;*/
+}
+.st1Row{
+    padding:0px;
+}
+.totalRow{
+    background-color: #d0edf5;
+}
+.totalRow2{
+    background-color: #a2dbec;
+}
+.totalRow3{
+    background-color:#74c9e2;
+} 
+.weekTotCol{
+    /*background-color: #FFCC00;*/
+} 
+.rateH{
+    padding:2px !important;
+}
+.weekRateCol{
+    background-color: #FF9900;
+}
+.weekRtTot{
+    color: #dd0000;
+}
+ .weekEarnCol {
+    background-color: #FF6600
+}
+.hourSubTotalRow{
+    background-color: #dedff8;
+}
+td.subTotHr{
+    vertical-align: middle !important;
+}
+.OTRow{
+    background-color: #bebff1;
+}
+.OTrateCol{
+    color:red;
+}
+.OT2rateCol{
+    color:red;
+}
+.OT2Row{
+    background-color: #8b8de7;
+}
+.adjHr{
+    background-color:#181bd0;
+    padding: 2px;
+    text-align: center;
+}
+.adjHrCol{
+    background-color: #ffffff;
+     width: 72px;
+    border: 0px solid transparent;
+    text-align: center;
+    color: #000000;
+    padding: 2px;
+}
+
+.wageAdjCol{
+    color: red;
+     width: 62px;
+    border: 0px solid transparent;
+    text-align: center;
+    padding: 2px;
+    background-color: #101291;
+}
+.rateCol{
+    color: #dd0000;
+}
+.adjRateGo{
+    border-radius: 6px;
+    margin-left: 0px;
+    padding: 0px 3px 0px 3px;
+    /*border: ;*/
+}
+/*.grTotCol{
+    font-size: 15.5px;
+    font-weight: bold;
+}*/
+.inCol{
+    background-color: #70bf45;
+        /*font-weight: bold;*/
+        font-size: 15px;
+        color: #000000;
+}
+td.totalsColumn{
+    /*width: 5%;*/
+}
+.totalsColumn{
+    border: 0.5px solid blue;
+    background-color: white;
+}
+.grTotals{
+    /*background-color: #6699ff;*/
+}
+.grTotCol{
+    padding: 4px ;
+    background-color: #000000;
+    color: #ffffff;
+     font-size: 15px;
+    /*font-weight: bold;*/
+    vertical-align: middle !important;
+}
+th.grTotsColumn{
+    padding:2px !important;    
+}
+.weekGrTot{
+    background-color:  #000000;
+    color: #ffffff;
+    font-size: 14px;
+    vertical-align: middle !important;
+}
+.weekInTot{
+    background-color: #70bf45;
+    font-size: 15px;
+    /*font-weight: bold;*/
+    color: #000000;
+}
+.inH{
+    padding: 2px !important;
+}
+#grandTotalIncome{
+    margin-top:0px;
+}
+ /*......................  non table ..............*/
+
+.payRollComments{
+    display:inline-block;
+    position: relative;
+    bottom: 25px;
+    width: 20%;
+    /*height:50px;*/
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.commentTextArea{
+    height:674px;
+    margin-top: 5px;
+}
+.payPeriodTotals{
+    text-align: center;
+}
+
+/*------------  oler stuff */
+
+.viewTheUser{
+    margin:15px;
+    /*visibility: 'hidden';*/
+    display: none;
+}
+
+.editUserForm {
+    margin: 30px 0px 30px 0px;
+}
+
+#viewingThisUser {
+    margin-bottom: 20px;
+    display: block;
+}
+
+#resetPasswordField{
+    padding-top: 40px;
+}
+
+.errorMessages {
+color: #B43232;
+visibility: hidden;
+}
+
+.phoneBox, .emailBox, .idBox, .sinBox, .pwBox{
+    border: 1px solid #cec7c7;
+    /*visibility: hidden;*/
+}

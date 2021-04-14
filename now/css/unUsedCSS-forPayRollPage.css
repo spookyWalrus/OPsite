@@ -1,0 +1,50 @@
+
+... css not used....
+
+
+table>tbody>tr>td{
+    padding: 2px;
+     /*border-top: none;*/
+    border: 1px solid #ffffeb;
+    vertical-align: middle;
+}
+
+td {
+    /*white-space:nowrap;*/
+    /*overflow: ;*/
+    overflow-x: scroll;
+}
+td.dateColumn{
+    width: 12%;
+    background-color: #fafbfa;
+    border: 0.5px solid red;
+    border-top:0.5px solid red;
+    padding: 4px ;
+}
+.dateColumn tr td {
+    border-top:0.5px solid red;
+}
+td.totalsColumn{
+    /*width: 5%;*/
+}
+td.dateColumnBlank{
+    background-color: none;
+    border: 0.5px solid white;
+    width:3%;
+
+}
+table td.eventCol {
+    color: black;
+     width: 100%;
+    background-color: #ffffff;
+    border: 0px solid transparent;
+    text-align: center;
+    overflow-x:auto;
+    /*white-space: nowrap;*/
+}
+td.codeColumn{
+    width:4%;
+}
+td.subTotHr{
+    vertical-align: middle !important;
+}

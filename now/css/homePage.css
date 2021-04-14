@@ -1,0 +1,133 @@
+ /*homePage.css*/
+
+
+@media (min-width: 312px) and (max-width: 767px) {
+
+	  #homePage{
+      /*margin-top: 70px;*/
+        background-image: url("/OPsite/img/landscape2.jpg");
+          /*
+    Image by <a href="https://pixabay.com/users/torstensimon-5039407/
+    ?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;
+    utm_content=2211587">torstensimon</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;
+    utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2211587">Pixabay</a> */      
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      color: #fff;
+
+    }
+
+    #procrastinate{
+    	font-size: 26px;
+	 	margin-top:70px;
+
+        animation: blinkingText 1s infinite;
+        font-family: futura;
+        width: 100%;
+        text-align: center;
+        
+    }
+            
+    @keyframes blinkingText {
+        from {
+            opacity: 1;
+            color : black;
+            }
+        to {
+            opacity: 0;
+            color : black;
+            }
+        0% {
+            opacity: 1;
+        }
+      /*  50% {
+            opacity: 0;
+        }*/
+        100% {
+            opacity: 0;
+        }
+    }
+
+    #trexGame{
+      margin-top: 50px;
+      width: 80%;
+      height: 500px;
+      /*margin: 10px;*/
+
+    }
+}
+
+
+@media (min-width: 768px)  {
+
+	
+	  #homePage{
+        background-image: url("/OPsite/img/landscape2.jpg");
+          /*
+    Image by <a href="https://pixabay.com/users/torstensimon-5039407/
+    ?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;
+    utm_content=2211587">torstensimon</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;
+    utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2211587">Pixabay</a> */      
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      /*width: 100%;*/
+      color: #fff;
+
+    }
+
+    #procrastinate{
+    		font-size: 36px;
+        margin-top:170px;
+        width: 90%;
+
+    /*  color: black;
+    }
+
+    {*/
+        animation: blinkingText 1s infinite;
+        font-family: futura;
+        /*font-style: italic;*/
+        /*width: 100%;*/
+        /*margin: 0 auto;*/
+        text-align: center;
+        /*color: #fff;*/
+        font-size: 45px;
+        /*background-color: #fc030b;*/
+    }
+            
+    @keyframes blinkingText {
+        from {
+            opacity: 1;
+            color : black;
+            }
+        to {
+            opacity: 0;
+            color : black;
+            }
+        0% {
+            opacity: 1;
+        }
+      /*  50% {
+            opacity: 0;
+        }*/
+        100% {
+            opacity: 0;
+        }
+    }
+
+    #trexGame{
+      margin-top: 50px;
+      width: 80%;
+      height: 500px;
+      /*margin: 10px;*/
+
+    }
+
+    
+}
+
+

@@ -1,0 +1,317 @@
+body {
+  padding-top: 0px;
+  padding-bottom:50px;
+  height: 100%;
+  font-size: 1.5em;
+}
+.starter-template {
+  padding: 40px 15px;
+  /*text-align: center;*/
+}
+
+@font-face {
+
+}
+/*............................... min-width: 312px .................................................*/
+/*............................... min-width: 312px .................................................*/
+/*............................... min-width: 312px .................................................*/
+@media (min-width: 312px) and (max-width: 374px) {
+
+ /*<<<<<<<<<<<<<<<<<<  top header bar >>>>>>>>>>>>>>>>>>>>>>>>>*/
+ /*<<<<<<<<<<<<<<<<<<  top header bar >>>>>>>>>>>>>>>>>>>>>>>>>*/
+ /*<<<<<<<<<<<<<<<<<<  top header bar >>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+    #customNavbar {
+        background-color: rgba(128, 0, 32, 0.8);
+        /*rgba(0, 176, 224, 0.58);*/
+        /*rgba(17, 194, 182, 1);*/
+        /*margin-bottom: 20px;*/
+        height: 50px;
+        width: 100%;
+        border-color: #fff;
+        /*position: relative;*/
+        position: fixed;
+        display: none;
+    }
+
+    #customNavbar-brand {
+        color: #fff;
+        /*width: 270px;*/
+        display: inline-block;
+        position: static;
+        /*position: fixed;*/
+
+    }
+    #OPheader{
+      height: 85px;
+    }
+    #logoText{
+        position: relative;
+        height: 56px;
+        margin: 0 auto 10 auto !important;
+        top: 0px;
+        padding-top: 8px;
+        padding-left: 20px;
+        color:#fff;
+        background-color: green;
+        font-size: 22px;
+
+    }
+
+    #logo {
+      position: fixed;
+      float: right;
+      height: 55px;
+      width: 65px;
+      margin-top: 10px;
+    }
+}
+
+
+ /* ..................................  min-width: 1024px  ........................... */
+ /* ..................................  min-width: 1024px  ........................... */
+ /* ..................................  min-width: 1024px  ........................... */
+@media (min-width: 1024px)   {
+
+ /*<<<<<<<<<<<<<<<<<<  top header bar >>>>>>>>>>>>>>>>>>>>>>>>>*/
+ /*<<<<<<<<<<<<<<<<<<  top header bar >>>>>>>>>>>>>>>>>>>>>>>>>*/
+ /*<<<<<<<<<<<<<<<<<<  top header bar >>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+#customNavbar {
+    background-color: rgba(128, 0, 32, 0.8);
+    /*rgba(0, 176, 224, 0.58);*/
+    /*rgba(17, 194, 182, 1);*/
+    /*margin-bottom: 20px;*/
+    height: 50px;
+    width: 100%;
+    border-color: #fff;
+    /*position: relative;*/
+    position: fixed;
+    display: none;
+}
+
+#customNavbar-brand {
+    color: #fff;
+    /*width: 270px;*/
+    display: inline-block;
+    position: static;
+    /*position: fixed;*/
+
+}
+#logoText{
+    position: relative;
+    height: 56px;
+    margin: 0 auto 10 auto !important;
+    top: 0px;
+    padding-top: 8px;
+    padding-left: 20px;
+    color:#fff;
+    background-color: green;
+    font-size: 24px;
+
+}
+
+#logo {
+  position: fixed;
+  float: right;
+  height: 55px;
+  width: 65px;
+  margin-top: 10px;
+}
+
+/*<<<<<<<<<<<<<<<<<<   entry fields >>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<   entry fields >>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<   entry fields >>>>>>>>>>>>>>>>>>>>>>*/
+
+
+/*
+@media (min-width: 760px) {*/
+#mainContentRow {
+  /*margin:10%;*/
+  padding-top: 55px;
+}
+
+.loginBox {
+  float: center;
+}
+
+#enterBox {
+  margin: 0px 3px 0px 3px;
+  float: left;
+}
+/*
+#enterBox {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#enterBox td, #enterBox th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#enterBox tr:nth-child(even){background-color: #f2f2f2;}
+
+
+#enterBox th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reportWell {
+  overflow: auto;
+  padding-right: 25px;
+  margin-top:1%;
+}*/
+
+
+
+.report-table > tbody > tr >td {
+  /*border:none;*/
+  border-collapse: collapse;
+  padding: 0px 0px 5px 8px;
+  border-top: 0px;
+  overflow: auto;
+}
+
+.report-table-head {
+    margin: 5px 0px 0px 0px;
+}
+
+.report-table-head > tbody > tr >td {
+  /*border:none;*/
+  border-collapse: collapse;
+  padding: 0px 0px 5px 15px;
+  border-top: 0px;
+}
+ 
+.redX {
+  color: #FA030B;
+  visibility: hidden;
+}
+
+.errors {
+  color: #FA030B;
+  
+}
+.errors2 {
+  color: #FA030B;
+  clear: left;
+}
+
+.extraShiftCells {
+}
+
+#extraShiftCells2 {
+} 
+
+.reportHeading {
+  /*margin: 0px 0px 0px 10px;*/
+  /*float: left;*/
+  clear: left;
+  /*width: 10%;*/
+  font-weight: bolder;
+}
+
+.reportHeading-headTable {
+  /*margin: 0px 0px 0px 10px;*/
+  /*float: left;*/
+  /*clear: left;*/
+  width: 22%;
+  font-weight: bolder;
+}
+
+.reportHeadingInput-s {
+  width: 25%;
+  display: inline-block;
+  /*margin-left: 15px;*/
+  float: left;
+  text-align: left;
+}
+.reportHeadingInput-m {
+  width: 65%;
+  display: inline-block;
+  /*margin-left: 15px;*/
+  float: left;
+  text-align: left;
+}
+.reportlabel {
+  display: inline-block;
+  float: left;
+  clear: left;
+  text-align: right;
+}
+
+.reportInput-s {
+  width: 45%;
+  display: inline-block;
+  /*margin-left: 15px;*/
+  float: left;
+  text-align: left;
+}
+
+.reportInput-m {
+  width: 65%;
+  display: inline-block;
+  /*margin-left: 15px;*/
+  float: left;
+  text-align: left;
+}
+
+.reportInput{
+  width: 100%;
+ display: inline-block;
+  /*margin-left: 15px;*/
+  float: left;
+  text-align: left;
+  color: #000;
+}
+
+
+.moreBreaksButtons {
+  clear: left;
+  float: left;
+  /*margin-right: 15px;*/
+  box-shadow: none;
+  /*background-color: #7f0019;*/
+  /*background-color: none;*/
+  border-radius: 9px;
+}
+
+.addBreaks{
+  color: green;
+  /*background-color: green;*/
+}
+
+.lessBreaks{
+  color: red;
+  /*background-color: red;*/
+}
+
+.addTechs {
+  clear: left;
+  float: left;
+  /*margin-left: 110px;*/
+  /*background-color: #7f0019;*/
+  color: #0c49cc;
+  border-radius: 9px;
+}
+
+.submitShowReport {
+  clear: right;
+  float: right;
+  margin-right: 15px;
+  background-color: #7f0019;
+  color: #ffffff;
+  border-radius: 9px;
+}
+
+
+
+} /*end of viewport categories.... */
