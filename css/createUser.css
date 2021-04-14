@@ -1,0 +1,65 @@
+/*create User*/
+
+
+#createUserBox{
+    margin: 30px;
+}
+
+#createUserButton{
+    /*background-color: #048c14;*/
+
+}
+
+.newUserWell{
+    margin:5px;
+    padding:0px;
+}
+
+.newUserField{
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.errorBox {
+    margin-top:0px;
+    margin-bottom: 13px;
+    color: #B43232;
+    /*border: 1px solid #B43232;*/
+}
+    .errorMessages {
+    color: #B43232;
+    visibility: hidden;
+}
+
+.phoneBox, .emailBox, .idBox, .sinBox, .pwBox{
+    border: 1px solid #cec7c7;
+    /*visibility: hidden;*/
+}
+
+.top25{
+    margin-top: 15px;
+}
+.bottom50{
+    margin-bottom: 50px;
+}
+
+/*
+#nameErrorMsg, #addressErrorMsg, #pwErrorMsg, #adminErrorMsg*/
+   /* .errorMessages */
+/*#nameErrorMsg, #addressErrorMsg, #phoneErrorMsg, #pwErrorMsg, #adminErrorMsg
+   {
+    color: #B43232;
+    visibility: hidden;
+}*/
+/*
+#pwErrorMsg{
+
+}*/
+
+/*
+
+#adminErrorMsg{
+     color: #B43232;
+    visibility: hidden;
+}
+*/
