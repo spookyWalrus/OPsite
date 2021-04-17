@@ -30,7 +30,7 @@ function process_form(){
 
 	 	if (isset($_SESSION['logged_user'])){
 		 	session_regenerate_id(true);
-			header("Location: /OPsite/now/homePage.php");
+			header("Location: /homePage.php");
 			exit();
 		}	else {
 			echo "Session wasn't set so not redirecting";
@@ -73,7 +73,7 @@ function checkDB(){
 
 	try {
 	 	// Connect to our MySQL database using the PDO extension.
-		$db = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		$db = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 	    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 		
