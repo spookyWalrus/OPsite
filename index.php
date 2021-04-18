@@ -32,6 +32,7 @@
     </div>
 
     <?php include("indexTools.php"); ?> 
+    <script type="text/javascript" src="js/footerJS.js"></script>
 
     </body>
 </html>
