@@ -18,6 +18,7 @@ function errMsg(){
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
 function sessionName(){
+        console.log('executing sessionName()');
         $.ajax({
             type: 'post', 
             url: 'checkSession.php',
