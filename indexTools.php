@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 function process_form(){
 
 	 	$_SESSION['logged_user'] = htmlentities($_POST['user_name']); // user-icon name set here
-	 	echo "session is: ". $_SESSION['logged_user'];
+	 	// echo "session is: ". $_SESSION['logged_user'];
 
 	 	if (isset($_SESSION['logged_user'])){
 		 	session_regenerate_id(true);
