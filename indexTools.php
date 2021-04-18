@@ -119,8 +119,9 @@ function checkDB(){
 				// if yes, set pw to variable
 				$returnedPw = ($credentialsPw[0]['user_password']); 
 				// compare passwords
-				if (password_verify($userPw, $returnedPw)){
-		
+				// if (password_verify($userPw, $returnedPw)){
+				if($userPw === $returnedPw){
+
 					process_form();  // if matched, load to new page
 
 				} else { // if not, throw error
