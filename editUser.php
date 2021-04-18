@@ -153,6 +153,7 @@
 		</div>
 	 
 	</div>
+<script type="text/javascript" src="js/editUserJax.js"></script>
 
 <?php include("footer.php"); ?> 
 
