@@ -1,16 +1,11 @@
 <?php
-// echo '<script type="text/javascript" src="testFooterJS.js"> sessionName(); </script>';
-echo "checkSession.php loaded";
-
-if(!isset($_SESSION)) 
-    { 
+if(!isset($_SESSION)){
         session_start(); 
     }; 
 
 // AJAX call to set name from HomePage
 if (isset($_POST['sessName'])){
-	echo $_POST['sessName'];
-	echo $_SESSION['logged_user'];
+	
 	// $_SESSION['logged_user'] = htmlentities($_POST['user_name']); // user-icon name set here
 	if (isset($_SESSION['logged_user'])){
 		$userName = $_SESSION['logged_user'];
