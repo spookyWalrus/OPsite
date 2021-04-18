@@ -54,7 +54,7 @@ function sessionName(){
               
               // console.log(data);
             	alert("Bye bye");
- 				     window.location = "http://localhost/OPsite/now/index.php";
+ 				     window.location = "/index.php";
  
             }, 
             error: function(data){
