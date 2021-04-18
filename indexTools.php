@@ -32,8 +32,6 @@ function process_form(){
 			header("Location: /homePage.php");
 			exit();
 		}	else {
-		 	echo "session is: ". $_SESSION['logged_user'];
-
 			echo "Session wasn't set so not redirecting";
 			exit();
 		}	
