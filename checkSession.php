@@ -26,6 +26,7 @@ if (isset($_POST['sessName'])){
 	}
 }
 
+echo "checkSession.php loaded";
 
 ?>
 
