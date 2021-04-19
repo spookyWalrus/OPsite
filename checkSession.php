@@ -24,5 +24,5 @@ if (isset($_POST['user_name'])){
 	}
 }
 
-
+echo "checkSession.php page loaded";
 ?>

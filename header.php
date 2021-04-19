@@ -37,6 +37,10 @@
 	    <link href="css/showReport.css" rel="stylesheet">
 	    <link href="css/payRoll.css" rel="stylesheet">
 	    
+	<!-- load footer.JS file	 -->
+		<script type="text/javascript" src="js/footerJS.js"></script>
+
+
 <!-- =============  CDN for bootstrap ================ -->	    
 	    <!-- vvvvvvvvv   Bootstrap 3.3.7 CDN vvvvvvvvvvv -->
 	    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
