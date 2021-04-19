@@ -4,7 +4,11 @@ body, html {
   height: 100%;
 }
 
-.menuButton, #userNavMenu {
+.menuButton  {
+  visibilty: hidden;
+}
+
+#userNavMenu  {
   visibilty: hidden;
 }
 
