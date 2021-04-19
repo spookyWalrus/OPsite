@@ -7,7 +7,7 @@ if (session_status() === PHP_SESSION_NONE){
 
 // AJAX call to set name from HomePage
 if (isset($_POST['user_name'])){
-	
+	echo "ajax "
 	// $_SESSION['logged_user'] = htmlentities($_POST['user_name']); // user-icon name set here
 	if (isset($_SESSION['logged_user'])){
 		$userName = $_SESSION['logged_user'];

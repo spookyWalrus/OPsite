@@ -23,6 +23,23 @@
    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 -->
 
+<?php include("checkSession.php"); ?>
+<?php
+  // <!-- === log out behavoiur ============== -->
+
+// AJAX call to kill session
+if (isset($_POST['killSess'])){
+
+    unset($_SESSION['logged_user']);
+
+    // session_destroy();
+    $_SESSION = array(); 
+    if (!isset($_SESSION['logged_user'])){
+      // echo "session unset";
+    }
+    exit();
+}
+?>
             <!-- ======================  my own JS here ========= -->
          <!--  <script type="text/javascript" src="jQuery.js"></script> -->
 <script type="text/javascript" src="js/footerJS.js"></script>
@@ -39,26 +56,6 @@
 <!-- <script src="cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.umd.min.js" ></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>  -->
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> -->
-
-<?php
-
-
-
-  // <!-- === log out behavoiur ============== -->
-
-// AJAX call to kill session
-if (isset($_POST['killSess'])){
-
-    unset($_SESSION['logged_user']);
-
-    // session_destroy();
-    $_SESSION = array(); 
-    if (!isset($_SESSION['logged_user'])){
-      // echo "session unset";
-    }
-    exit();
-}
-?>
 
 	</body>
 </html> 
