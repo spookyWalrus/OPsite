@@ -31,7 +31,7 @@ function sessionName(){
 			 	    var icon = document.getElementById('user-name-icon');
    				  icon.innerHTML = "You are:<br>" + userName;
             // alert("You are logged in as: " + userName);
-            
+            showMenus();
             }, 
             error: function(data){
               alert("something's gone wrong on entry");
