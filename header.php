@@ -61,8 +61,6 @@
 	    <!-- font awesome CDN -->
 	      <!-- // <script src="https://use.fontawesome.com/5a9923c611.js"></script> -->
 	</head>
-<!-- <?php if(!isset($_SESSION)) {    session_start();  };  ?> -->
-
 <body>
 
 	<!-- <body onload="setDate();"> -->
@@ -77,4 +75,4 @@
  	
 
 		
-	<?php include("menu-bar.php"); ?>
+	<?php include("menu-Bar.php"); ?>

@@ -16,21 +16,7 @@
 	    <li><a href="payRoll.php">Do Payroll</a></li>
 	</ul>
 </div>
-<!-- 
-<div class="btn-group userMenuButton ">
-  <button type="button" class="btn btn-default btn-sm dropdown-toggle" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  	 <label id="user-name-icon" >Your name</label> -->
-   <!--  Insert user name from database here -->
-    <!--  <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" id="daUserMenu">
-    <li><a href="editOwnAccount.php">Account settings</a></li>
-    <li><a href="https://mojopizza.in/">Order another pizza</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a onclick="javascript: killSession();" >Log Out</a></li>
-  </ul>
-</div>
- -->
+
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="userNavMenu">
   <div class="container">
     <div class="navbar-header">
