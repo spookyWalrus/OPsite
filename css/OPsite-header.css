@@ -4,6 +4,10 @@ body, html {
   height: 100%;
 }
 
+.menuButton, #userNavMenu {
+  visibilty: hidden;
+}
+
 
 /*.............  keep nav menu as hamburger until 1900px wide........*/
 /*.............  keep nav menu as hamburger until 1900px wide........*/
