@@ -1,5 +1,4 @@
 <?php include("indexTools.php"); ?>
-<?php include("header.php"); ?>
 
       </div>
     </div>
@@ -26,14 +25,9 @@
               
 
           </div>
-          <div><h4>Text here for email tester</h4>
-          </div>
+          <!-- <div><h4>Text here for email tester</h4> -->
+          <!-- </div> -->
         </div>
       </div>
     </div>
-
-    <?php include("indexTools.php"); ?> 
-    <script type="text/javascript" src="js/footerJS.js"></script>
-
-    </body>
-</html>
+    <!-- <?php include("footer.php") ?> -->
