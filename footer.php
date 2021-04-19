@@ -1,4 +1,5 @@
-<?php
+<?php include("checkSession.php"); 
+
   // <!-- === log out behavoiur ============== -->
 
 // AJAX call to kill session
