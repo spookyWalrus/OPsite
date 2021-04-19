@@ -1,5 +1,4 @@
 <?php include("header.php"); ?>
-<?php include("checkSession.php"); ?>
 
 
 
@@ -21,6 +20,6 @@
 
 
 </div>
-
+<?php include("checkSession.php"); ?>
 <?php include("footer.php") ?>
 
