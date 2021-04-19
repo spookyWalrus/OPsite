@@ -21,23 +21,23 @@ function sessionName(){
         $.ajax({
             type: 'post', 
             url: 'checkSession.php',
-            data:'sessName', // variable set in bottom of indexTools.php, not really needed...
+            data:{sessName: "goDo"}, // variable set in bottom of indexTools.php, not really needed...
             dataType: 'text',
             success: function (data) {  
               var userName = data;
               // console.log(userName);
               // alert(data);
            		// var userName = data;
-			 	    var icon = document.getElementById('user-name-icon');
-   				  icon.innerHTML = "You are:<br>" + userName;
-            // alert("You are logged in as: " + userName);
-            showMenus();
+			 	      var icon = document.getElementById('user-name-icon');
+   				   icon.innerHTML = "You are:<br>" + userName;
+              alert("You are logged in as: " + userName);
+              showMenus();
             }, 
             error: function(data){
               alert("something's gone wrong on entry");
               console.log(data);
               // alert(data);
-          }
+            }
         });
 };  
 
