@@ -22,7 +22,7 @@ function sessionName(){
         $.ajax({
             type: 'post', 
             url: 'checkSession.php',
-            data:'sessName', // in PHP page, this will correspond with: $_POST['action'] == 'fillMenu' 
+            data:'sessName', // variable set in bottom of indexTools.php, not really needed...
             dataType: 'text',
             success: function (data) {  
               var userName = data;

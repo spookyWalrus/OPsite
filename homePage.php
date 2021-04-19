@@ -20,6 +20,6 @@
 
 
 </div>
-<?php include("checkSession.php"); ?>
+
 <?php include("footer.php") ?>
 

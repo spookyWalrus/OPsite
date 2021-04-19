@@ -13,7 +13,7 @@ if (isset($_POST['user_name'])){
 		$userName = $_SESSION['logged_user'];
 		// echo "Session data exists<br>";
 
-		echo $userName;
+		echo $userName; // Where doees this go? Where do you see this?
 
 	}
 	// print_r($_SESSION); // when homePage loads, this is to check array

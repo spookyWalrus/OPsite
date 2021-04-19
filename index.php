@@ -1,3 +1,4 @@
+<?php include("indexTools.php"); ?>
 <?php include("header.php"); ?>
 
       </div>

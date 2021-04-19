@@ -164,10 +164,7 @@ function checkDB(){
 	}
 	// $errors[] = "You fail";
 }	
-
-
-
-
-
-
 ?>
+	 <script> const sessName = "<?php echo $_SESSION['logged_user']; ?>";
+	</script>
+
