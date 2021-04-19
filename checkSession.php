@@ -10,7 +10,7 @@ if(!isset($_SESSION)){
 
 // AJAX call to set name from HomePage
 $sessName = $_POST['sessName'];
-if ($_POST['user_name'] == 'goDo')){
+if ($sessName == 'goDo')){
 	// $_SESSION['logged_user'] = htmlentities($_POST['user_name']); // user-icon name set here
 	if (isset($_SESSION['logged_user'])){
 		$userName = $_SESSION['logged_user'];
