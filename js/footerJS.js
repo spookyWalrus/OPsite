@@ -20,7 +20,7 @@ function errMsg(){
 function sessionName(){
         $.ajax({
             type: 'post', 
-            url: 'checkSession.php',
+            url: '/checkSession.php',
             data:{sessName: "goDo"}, // variable set in bottom of indexTools.php, not really needed...
             dataType: 'text',
             success: function (data) {  
