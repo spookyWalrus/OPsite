@@ -1,4 +1,5 @@
-<?php include("indexTools.php"); ?>
+<?php include "header.php"); ?>
+<!-- <?php include("indexTools.php"); ?> -->
 
       </div>
     </div>
