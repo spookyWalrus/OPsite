@@ -55,10 +55,9 @@ function sessionName(){
               
               // console.log(data);
             	alert("Bye bye");
-              var mainMenu = document.getElementByClassName('menuButton');
-              var userMenu = document.getElementById('userNavMenu');
-              mainMenu.style.visibility = "hidden";
-              userMenu.style.visibility = "hidden";
+              
+               document.getElementsByClassName('menuButton').style.visibility = "hidden";
+                document.getElementById('userNavMenu').style.visibility = "hidden";
 
 				      window.location = "/index.php";
  
@@ -73,11 +72,9 @@ function sessionName(){
 
 // makes menubars visible
 function showMenus(){
-    var mainMenu = document.getElementByClassName('menuButton');
-      var userMenu = document.getElementById('userNavMenu');
-        mainMenu.style.visibility = "visible";
-        userMenu.style.visibility = "visible";
-    };
+    document.getElementsByClassName('menuButton').style.visibility = "visible";
+    document.getElementById('userNavMenu').style.visibility = "visible";
+};
 
 // this closes navbar menu when clicked outside of the menu
 $(document).ready(function () {
