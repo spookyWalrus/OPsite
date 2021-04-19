@@ -1,4 +1,4 @@
-<?php include_once("includes/header.php");
+<?php include("header.php");
 
 if(!isset($_SESSION)) 
 	{ 
@@ -166,6 +166,5 @@ function checkDB(){
 	// $errors[] = "You fail";
 }	
 ?>
-	 <script> const sessName = "<?php echo $_SESSION['logged_user']; ?>";
-	</script>
+	
 
