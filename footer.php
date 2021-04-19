@@ -1,4 +1,3 @@
-<?php include("checkSession.php"); ?>
 <?php
   // <!-- === log out behavoiur ============== -->
 

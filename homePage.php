@@ -20,6 +20,13 @@
 
 
 </div>
-
+<?php include("checkSession.php"); ?>
 <?php include("footer.php") ?>
+
+<script type="text/javascript">
+		var mainMenu = document.getElementByClassName('menuButton');
+	    var userMenu = document.getElementById('userNavMenu');
+        mainMenu.style.visibility = "visible";
+        userMenu.style.visibility = "visible";
+</script>
 

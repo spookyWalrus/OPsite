@@ -18,7 +18,6 @@ function errMsg(){
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
 function sessionName(){
-        console.log('executing sessionName()');
         $.ajax({
             type: 'post', 
             url: 'checkSession.php',
@@ -32,11 +31,7 @@ function sessionName(){
 			 	    var icon = document.getElementById('user-name-icon');
    				  icon.innerHTML = "You are:<br>" + userName;
             // alert("You are logged in as: " + userName);
-            var mainMenu = document.getElementByClassName('menuButton');
-            var userMenu = document.getElementById('userNavMenu');
-            mainMenu.style.visibility = "visible";
-            userMenu.style.visibility = "visible";
-
+            
             }, 
             error: function(data){
               alert("something's gone wrong on entry");
@@ -60,7 +55,12 @@ function sessionName(){
               
               // console.log(data);
             	alert("Bye bye");
- 				     window.location = "/index.php";
+              var mainMenu = document.getElementByClassName('menuButton');
+              var userMenu = document.getElementById('userNavMenu');
+              mainMenu.style.visibility = "visible";
+              userMenu.style.visibility = "visible";
+
+				      window.location = "/index.php";
  
             }, 
             error: function(data){
