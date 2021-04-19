@@ -1,13 +1,15 @@
 <?php
-if (session_status() == PHP_SESSION_NONE){
-// if(!isset($_SESSION)){
+// if (session_status() == PHP_SESSION_NONE){
+// // if(!isset($_SESSION)){
     
-        session_start(); 
-    }; 
+//         session_start(); 
+//     }; 
+if(!isset($_SESSION)){
+		session_start(); 
+}; 
 
 // AJAX call to set name from HomePage
 if (isset($_POST['user_name'])){
-	echo "ajax "
 	// $_SESSION['logged_user'] = htmlentities($_POST['user_name']); // user-icon name set here
 	if (isset($_SESSION['logged_user'])){
 		$userName = $_SESSION['logged_user'];
