@@ -38,7 +38,7 @@
 	    <link href="css/payRoll.css" rel="stylesheet">
 	    
 	<!-- load footer.JS file	 -->
-		<script type="text/javascript" src="js/footerJS.js"></script>
+		<!-- <script type="text/javascript" src="js/footerJS.js"></script> -->
 
 
 <!-- =============  CDN for bootstrap ================ -->	    
