@@ -22,14 +22,6 @@
 </div>
 
 
-<script type="text/javascript">
-	function showMenus(){
-		var mainMenu = document.getElementByClassName('menuButton');
-	    var userMenu = document.getElementById('userNavMenu');
-        mainMenu.style.visibility = "visible";
-        userMenu.style.visibility = "visible";
-    };
-</script>
 <?php include("checkSession.php"); ?>
 <?php include("footer.php") ?>
 

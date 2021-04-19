@@ -57,8 +57,8 @@ function sessionName(){
             	alert("Bye bye");
               var mainMenu = document.getElementByClassName('menuButton');
               var userMenu = document.getElementById('userNavMenu');
-              mainMenu.style.visibility = "visible";
-              userMenu.style.visibility = "visible";
+              mainMenu.style.visibility = "hidden";
+              userMenu.style.visibility = "hidden";
 
 				      window.location = "/index.php";
  
@@ -70,6 +70,14 @@ function sessionName(){
           }
         });
 };  
+
+// makes menubars visible
+function showMenus(){
+    var mainMenu = document.getElementByClassName('menuButton');
+      var userMenu = document.getElementById('userNavMenu');
+        mainMenu.style.visibility = "visible";
+        userMenu.style.visibility = "visible";
+    };
 
 // this closes navbar menu when clicked outside of the menu
 $(document).ready(function () {
