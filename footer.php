@@ -19,6 +19,7 @@ if (isset($_POST['killSess'])){
          <!--  <script type="text/javascript" src="jQuery.js"></script> -->
 <script type="text/javascript" src="js/footerJS.js"></script>
  <script type="text/javascript" src="js/OPsite-insertRow.js"></script>
+<script type="text/javascript">alert('footer loaded');</script>
 <script type="text/javascript"  src="js/footerJS.js">sessionName();</script>
 
 

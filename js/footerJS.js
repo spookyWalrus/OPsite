@@ -72,9 +72,9 @@ function sessionName(){
 
 // makes menubars visible
 function showMenus(){
+      alert('showMenus executed');
     document.getElementsByClassName('menuButton').style.visibility = "visible";
     document.getElementById('userNavMenu').style.visibility = "visible";
-    alert('showMenus executed');
 };
 
 // this closes navbar menu when clicked outside of the menu
