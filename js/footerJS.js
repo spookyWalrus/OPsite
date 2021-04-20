@@ -15,7 +15,7 @@ function errMsg(){
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
 function sessionName(){
-    alert('sessionName function running');
+  alert('sessionName function called');
         $.ajax({
             type: 'post', 
             url: 'checkSession.php',

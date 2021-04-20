@@ -16,9 +16,7 @@ console.log("logged name: ",'(<?php echo $_SESSION['logged_user']?>)' );
 if (isset($_POST['sessName'])){
 	// $sessName = $_POST['sessName'];
 	// if ($sessName == 'goDo'){
-		?><script type="text/javascript">console.log( "sessName received from footerJS");
-		</script>
-		<?php
+		
 		// $_SESSION['logged_user'] = htmlentities($_POST['user_name']); // user-icon name set here
 		if (isset($_SESSION['logged_user'])){
 			$userName = $_SESSION['logged_user'];
@@ -38,5 +36,4 @@ if (isset($_POST['sessName'])){
 		}
 	// }
 }
-echo "checkSession loaded";
 ?>
