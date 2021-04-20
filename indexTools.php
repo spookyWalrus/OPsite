@@ -49,13 +49,12 @@ function show_errors($errors){
 	// echo $errors[0]; // used to check if login works properly
 
 // this function is defined in index.php...
-	?>
-	<script type="text/javascript" > 
+	echo "<script type='text/javascript' > 
         	var theDiv = document.getElementById('loginErrorMsg');
-        	var error = "Login unsuccessful. Please re-enter credentials.";
+        	var error = 'Login unsuccessful. Please re-enter credentials.';
         	theDiv.innerHTML = error;
-	</script>';
-    <php
+		</script>;"
+   
 
 }
 
