@@ -21,7 +21,7 @@ if (isset($_POST['killSess'])){
  <script type="text/javascript" src="js/OPsite-insertRow.js"></script>
 <script type="text/javascript"  src="js/footerJS.js">
 alert('calling sessionName()');
-sessionName();
+// sessionName();
 </script>
 
 
