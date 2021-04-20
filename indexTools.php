@@ -99,7 +99,9 @@ function checkDB(){
 				$errors[] = "name not in DB"; // if empty, then show error
 			// echo $errors;	
 				show_errors($errors);
-				echo '<script type="text/javascript src="index.php"> errorMsg(); </script>;';
+				echo '<script type="text/javascript src="index.php">',
+				'errorMsg()',
+				'</script>';
 
 				return $errors;
 
