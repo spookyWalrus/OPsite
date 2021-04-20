@@ -15,7 +15,6 @@
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
 function sessionName(){
-  alert('sessionName function called');
         $.ajax({
             type: 'post', 
             url: 'checkSession.php',
@@ -69,7 +68,6 @@ function sessionName(){
 
 // makes menubars visible
 function showMenus(){
-      // alert('showMenus executed');
     document.querySelector('.menuButton').style.visibility = "visible";
     document.getElementById('userNavMenu').style.visibility = "visible";
 };

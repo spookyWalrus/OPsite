@@ -42,7 +42,17 @@ function process_form(){
 		}	
 		
 } 
-
+?>
+<script type="text/javascript">
+      function errMsg(){
+      // alert("error");
+      // console.log("errors");
+        var theDiv = document.getElementById('loginErrorMsg');
+        var error = "Login unsuccessful. Please re-enter credentials.";
+        theDiv.innerHTML = error;
+    }
+  </script>
+ <?php
 function show_errors($errors){
 	// print_r($errors);
 
