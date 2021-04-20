@@ -17,13 +17,12 @@ if (isset($_POST['killSess'])){
 ?>
             <!-- ======================  my own JS here ========= -->
          <!--  <script type="text/javascript" src="jQuery.js"></script> -->
-<!-- <script type="text/javascript" src="js/footerJS.js"></script> -->
+<script type="text/javascript" src="js/footerJS.js"></script>
  <script type="text/javascript" src="js/OPsite-insertRow.js"></script>
 <!-- <script type="text/javascript"  src="js/footerJS.js"> -->
 <script type="text/javascript">
 alert('calling sessionName()');
-// sessionName();
-console.log('this would call sess function');
+sessionName();
 </script>
 
 
