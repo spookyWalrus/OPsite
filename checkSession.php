@@ -11,6 +11,8 @@ if(!isset($_SESSION)){
 // AJAX call to set name from HomePage
 $sessName = $_POST['sessName'];
 if ($sessName == 'goDo'){
+	echo "sessName received from footerJS<br>";
+	echo "logged name: " . $_SESSION['logged_user'];
 	// $_SESSION['logged_user'] = htmlentities($_POST['user_name']); // user-icon name set here
 	if (isset($_SESSION['logged_user'])){
 		$userName = $_SESSION['logged_user'];
@@ -23,11 +25,10 @@ if ($sessName == 'goDo'){
 	// echo "sessName";
 
 	else {
+		echo "didn't receive sessName from footerJS";
 	$noSession = "No session data<br>";
 	echo $noSession;
 	print_r($_SESSION);
 	}
 }
-
-echo "checkSession.php page loaded";
 ?>
