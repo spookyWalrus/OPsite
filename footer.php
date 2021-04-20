@@ -22,6 +22,7 @@ if (isset($_POST['killSess'])){
 <script type="text/javascript"  src="js/footerJS.js">
 alert('calling sessionName()');
 // sessionName();
+console.log('this would call sess function');
 </script>
 
 

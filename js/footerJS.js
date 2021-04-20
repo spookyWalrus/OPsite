@@ -14,7 +14,6 @@ function errMsg(){
 
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
-alert('footerJS loaded');
 function sessionName(){
   alert('sessionName function called');
         $.ajax({
