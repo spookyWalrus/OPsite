@@ -30,7 +30,7 @@ function process_form(){
 	 	// echo "session is: ". $_SESSION['logged_user'];
 
 	 	if (isset($_SESSION['logged_user'])){
-		 	session_regenerate_id(true);
+		 	// session_regenerate_id(true);
 			header("Location: /homePage.php");
 			exit();
 		}	else {
