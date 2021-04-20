@@ -99,9 +99,11 @@ function checkDB(){
 				$errors[] = "name not in DB"; // if empty, then show error
 			// echo $errors;	
 				show_errors($errors);
-				echo '<script type="text/javascript src="index.php">',
-				'errorMsg()',
-				'</script>';
+				?>
+				<script type="text/javascript src="index.php">
+				errorMsg();
+				</script>
+				<?php
 
 				return $errors;
 
@@ -135,7 +137,9 @@ function checkDB(){
 
 				} else { // if not, throw error
 					$errors[] = "Password does not match";
-					echo '<script type="text/javascript" src="index.php"> errorMsg(); </script>;';
+					echo '<script type="text/javascript src="index.php">',
+						'errorMsg()',
+						'</script>';
 
 					show_errors($errors);
 					return $errors;
