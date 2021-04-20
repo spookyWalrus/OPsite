@@ -19,7 +19,7 @@ function sessionName(){
         $.ajax({
             type: 'post', 
             url: 'checkSession.php',
-            data:{sessName: "goDo"}, // variable set in bottom of indexTools.php, not really needed...
+            data:'sessName', 
             dataType: 'text',
             success: function (data) {  
               var userName = data;
