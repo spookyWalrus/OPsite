@@ -4,13 +4,13 @@
 //    icon.innerHTML = "You are logged in as: " + sessionName;
 // }
 // login error message
-function errMsg(){
-    // alert("error");
-    // console.log("errors");
-      var theDiv = document.getElementById('loginErrorMsg');
-      var error = "Login unsuccessful. Please re-enter credentials.";
-      theDiv.innerHTML = error;
-  }
+// function errMsg(){
+//     // alert("error");
+//     // console.log("errors");
+//       var theDiv = document.getElementById('loginErrorMsg');
+//       var error = "Login unsuccessful. Please re-enter credentials.";
+//       theDiv.innerHTML = error;
+//   }
 
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
