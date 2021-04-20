@@ -7,14 +7,15 @@
 if(!isset($_SESSION)){
 		session_start(); 
 }; 
-
+?>
+<script type="text/javascript">alert("logged name: " <?php echo  $_SESSION['logged_user']; ?> );
+</script>
+<?php
 // AJAX call to set name from HomePage
 if (isset($_POST['sessName'])){
 	// $sessName = $_POST['sessName'];
 	// if ($sessName == 'goDo'){
 		?><script type="text/javascript">alert( "sessName received from footerJS");
-		alert("logged name: " <?php echo  $_SESSION['logged_user']; ?> );
-		</script>
 		<?php
 		// $_SESSION['logged_user'] = htmlentities($_POST['user_name']); // user-icon name set here
 		if (isset($_SESSION['logged_user'])){
@@ -35,4 +36,5 @@ if (isset($_POST['sessName'])){
 		}
 	// }
 }
+echo "checkSession loaded";
 ?>

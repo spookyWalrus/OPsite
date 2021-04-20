@@ -1,4 +1,3 @@
-
 // <script type="text/javascript">
 // function setName(){
 //    var icon = document.getElementById('user-name-icon');
