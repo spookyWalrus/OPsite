@@ -19,10 +19,7 @@
 	  
 	     <!-- Latest compiled and minified JavaScript/ jquery -->
     	  <!--   <script type="text/javascript" src="/OPsite/jquery/jquery-3.5.1.js" ></script> -->
-    	    <script
-			  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-			  crossorigin="anonymous"></script>
+			  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     	    <script type="text/javascript" src="bootstrap/js/bootstrap.js" ></script>
 	 <!-- Custom or localized styles! -->
 	  
