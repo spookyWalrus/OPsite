@@ -9,7 +9,7 @@ if(!isset($_SESSION)){
 }; 
 ?>
 <script type="text/javascript">console.log("logged name is: ");
-console.log( <?php echo $_SESSION['logged_user'] ?> );
+console.log(<?php echo $_SESSION['logged_user']?>);
 </script>
 <?php
 // AJAX call to set name from HomePage
