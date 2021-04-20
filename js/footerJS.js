@@ -69,8 +69,8 @@ function sessionName(){
 
 // makes menubars visible
 function showMenus(){
-      alert('showMenus executed');
-    document.getElementsByClassName('menuButton')[0].style.visibility = "visible";
+      // alert('showMenus executed');
+    document.querySelector('.menuButton').style.visibility = "visible";
     document.getElementById('userNavMenu').style.visibility = "visible";
 };
 
