@@ -4,7 +4,7 @@
 //    var icon = document.getElementById('user-name-icon');
 //    icon.innerHTML = "You are logged in as: " + sessionName;
 // }
-
+alert('footerJS loaded');
 // login error message
 function errMsg(){
     // alert("error");
