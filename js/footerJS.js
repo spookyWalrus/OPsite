@@ -53,10 +53,10 @@ function sessionName(){
               // console.log(data);
             	alert("Bye bye");
               
-               document.getElementsByClassName('menuButton').style.visibility = "hidden";
+               document.querySelector('.menuButton').style.visibility = "hidden";
                 document.getElementById('userNavMenu').style.visibility = "hidden";
 
-				      window.location = "/index.php";
+				      window.location = "index.php";
  
             }, 
             error: function(data){
