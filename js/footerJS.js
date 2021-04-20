@@ -4,7 +4,6 @@
 //    var icon = document.getElementById('user-name-icon');
 //    icon.innerHTML = "You are logged in as: " + sessionName;
 // }
-alert('footerJS loaded');
 // login error message
 function errMsg(){
     // alert("error");
@@ -18,6 +17,7 @@ function errMsg(){
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
 function sessionName(){
+    alert('sessionName function running');
         $.ajax({
             type: 'post', 
             url: 'checkSession.php',
