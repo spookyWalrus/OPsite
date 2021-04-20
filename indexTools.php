@@ -44,10 +44,6 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	print_r($errors);
-
-	// echo $errors[0]; // used to check if login works properly
-
 // this function is defined in index.php...
 	echo "<script type='text/javascript' > 
         	var theDiv = document.getElementById('loginErrorMsg');
