@@ -16,7 +16,6 @@ if (isset($_POST['killSess'])){
 }
 ?>
             <!-- ======================  my own JS here ========= -->
-         <!--  <script type="text/javascript" src="jQuery.js"></script> -->
     <script type='text/javascript' > 
       function errorMsg(){
               var theDiv = document.getElementById('loginErrorMsg');
