@@ -13,7 +13,6 @@ function errMsg(){
       theDiv.innerHTML = error;
   }
 
-
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
 function sessionName(){
