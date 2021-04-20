@@ -44,7 +44,7 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	// print_r($errors);
+	print_r($errors);
 
 	// echo $errors[0]; // used to check if login works properly
 
@@ -53,7 +53,7 @@ function show_errors($errors){
         	var theDiv = document.getElementById('loginErrorMsg');
         	var error = 'Login unsuccessful. Please re-enter credentials.';
         	theDiv.innerHTML = error;
-		</script>;"
+		</script>;";
    
 
 }
