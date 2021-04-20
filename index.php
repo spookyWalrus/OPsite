@@ -40,6 +40,5 @@
     }
   </script> -->
   
-
-  </body> 
-</html>
+  <?php include("footer-index.php") ?> 
+ 

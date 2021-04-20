@@ -44,12 +44,12 @@ function process_form(){
 } 
 
 function show_errors($errors){
+	// print_r $errors;
+	
 // this function is defined in index.php...
-	echo "<script type='text/javascript' > 
-        	var theDiv = document.getElementById('loginErrorMsg');
-        	var error = 'Login unsuccessful. Please re-enter credentials.';
-        	theDiv.innerHTML = error;
-		</script>;";
+	// echo "<script type='text/javascript' > 
+ //        	errorMsg();
+	// 	</script>;";
    
 
 }
@@ -99,6 +99,8 @@ function checkDB(){
 				$errors[] = "name not in DB"; // if empty, then show error
 			// echo $errors;	
 				show_errors($errors);
+				echo '<script type="text/javascript"> errorMsg(); </script>;';
+
 				return $errors;
 
 			} else { // if query has a match, then set variable value
@@ -131,6 +133,7 @@ function checkDB(){
 
 				} else { // if not, throw error
 					$errors[] = "Password does not match";
+					echo '<script type="text/javascript"> errorMsg(); </script>;';
 
 					show_errors($errors);
 					return $errors;
