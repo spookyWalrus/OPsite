@@ -42,24 +42,20 @@ function process_form(){
 		}	
 		
 } 
-?>
-<script type="text/javascript">
-      function errMsg(){
-      // alert("error");
-      // console.log("errors");
-        var theDiv = document.getElementById('loginErrorMsg');
-        var error = "Login unsuccessful. Please re-enter credentials.";
-        theDiv.innerHTML = error;
-    }
-  </script>
- <?php
+
 function show_errors($errors){
 	// print_r($errors);
 
 	// echo $errors[0]; // used to check if login works properly
 
 // this function is defined in index.php...
-	echo '<script type="text/javascript" > errMsg(); </script>';
+	?>
+	<script type="text/javascript" > 
+        	var theDiv = document.getElementById('loginErrorMsg');
+        	var error = "Login unsuccessful. Please re-enter credentials.";
+        	theDiv.innerHTML = error;
+	</script>';
+    <php
 
 }
 

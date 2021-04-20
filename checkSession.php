@@ -7,11 +7,8 @@
 if(!isset($_SESSION)){
 		session_start(); 
 }; 
-?>
-<script type="text/javascript">
-console.log("logged name: ",'<?php echo $_SESSION['logged_user']?>' );
-</script>
-<?php
+
+
 // AJAX call to set name from HomePage
 if (isset($_POST['sessName'])){
 	// $sessName = $_POST['sessName'];

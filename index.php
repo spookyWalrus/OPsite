@@ -30,7 +30,15 @@
         </div>
       </div>
     </div>
-  
+<!--   <script type="text/javascript">
+      function errMsg(){
+      // alert("error");
+      // console.log("errors");
+        var theDiv = document.getElementById('loginErrorMsg');
+        var error = "Login unsuccessful. Please re-enter credentials.";
+        theDiv.innerHTML = error;
+    }
+  </script> -->
   
 
   </body> 
