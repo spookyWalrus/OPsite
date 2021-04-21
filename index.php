@@ -28,9 +28,5 @@
             </div>
         </div>
     </div>
-
-
-    
-    <script type="text/javascript" src="js/footerJS.js"></script>
     </body>
 </html> 
