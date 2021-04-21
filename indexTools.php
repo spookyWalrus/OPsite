@@ -65,11 +65,11 @@ function validate_form(){
 
 		if (strlen($userCu) == 0){
 			$errors[] = "Please enter name";
-			show_errors($errors);
+			// show_errors($errors);
 			return $errors;
 		} else if (strlen($userPw) == 0) {
 			$errors[] = "Please enter password";
-			show_errors($errors);
+			// show_errors($errors);
 			return $errors;
 		} 
 }
