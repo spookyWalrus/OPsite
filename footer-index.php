@@ -11,9 +11,8 @@
       };
     </script>;
 
-// <!-- === log out behavoiur ============== -->
+<!-- === log out behavoiur ============== -->
 
-// AJAX call to kill session
 <?php
 if (isset($_POST['killSess'])){
 

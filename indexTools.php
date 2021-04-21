@@ -47,7 +47,7 @@ function show_errors($errors){
 	// print_r $errors;
 
 // this function is defined in index.php...
-	echo "<script type='text/javascript' src='footer-index.php'> 
+	echo "<script type='text/javascript'> 
         	errorMsg();
 		</script>;";
    
@@ -100,7 +100,7 @@ function checkDB(){
 			// echo $errors;	
 				show_errors($errors);
 				?>
-				<script type="text/javascript src="footer-index.php">
+				<script type="text/javascript">
 				alert('bad name');
 				errorMsg();
 				</script>
@@ -138,7 +138,7 @@ function checkDB(){
 
 				} else { // if not, throw error
 					$errors[] = "Password does not match";
-					echo '<script type="text/javascript src="footer-index.php">',
+					echo '<script type="text/javascript>',
 						'alert("pw no good")',
 						'errorMsg()',
 						'</script>';
