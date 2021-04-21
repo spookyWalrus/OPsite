@@ -101,7 +101,6 @@ function checkDB(){
 				show_errors($errors);
 				?>
 				<script type="text/javascript" src='index.php'>
-				alert('bad name');
 				errorMsg();
 				</script>
 				<?php
@@ -139,7 +138,6 @@ function checkDB(){
 				} else { // if not, throw error
 					$errors[] = "Password does not match";
 					echo '<script type="text/javascript src="index.php">',
-						'alert("pw no good")',
 						'errorMsg()',
 						'</script>';
 
