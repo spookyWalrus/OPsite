@@ -23,9 +23,9 @@
                         <input class="btn btn-primary submitText" type="submit" name="login_submit" value="Submit your soul">
                         </div>
                     </form>
-                    <!-- <div id="loginErrorMsg"><?php echo $errors[0]; ?>-->
+                     <div id="loginErrorMsg"><?php echo $errors[0]; ?>
                     <!-- </div> -->
-                    <div id="loginErrorMsg"></div>
+                    <!-- <div id="loginErrorMsg"></div> -->
                 </div>
             </div>
         </div>
