@@ -6,7 +6,7 @@ if(!isset($_SESSION))
 	}; 
 
 $errors ='';
-$erroMess;
+$errorMess;
 // $errMsg = '';
 // echo $errMsg;
 

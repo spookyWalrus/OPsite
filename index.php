@@ -23,7 +23,7 @@
                         <input class="btn btn-primary submitText" type="submit" name="login_submit" value="Submit your soul">
                         </div>
                     </form>
-                    <div id="loginErrorMsg"><?php echo $erroMess; ?></div>
+                    <div id="loginErrorMsg"><?php echo $errorMess; ?></div>
                 </div>
             </div>
         </div>
