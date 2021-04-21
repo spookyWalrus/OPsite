@@ -15,8 +15,8 @@ if (isset($_POST['killSess'])){
     exit();
 }
 ?>
-            <!-- ======================  my own JS here ========= -->
-    <script type='text/javascript' > 
+
+    <script type='text/javascript'> 
       function errorMsg(){
         var theDiv = document.getElementById('loginErrorMsg');
         var error = 'Login unsuccessful. Please re-enter credentials.';
