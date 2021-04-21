@@ -47,7 +47,9 @@ function show_errors($errors){
 	// print_r $errors;
 
 // this function is defined in footerJS.js
-		echo '<script type="text/javascript" src="footerJS.js">errMsg(); </script>';
+		?> 
+		<script type="text/javascript" src="footerJS.js">errMsg(); </script>
+		<?php
 }
 
 
@@ -89,11 +91,11 @@ function checkDB(){
 		// //Retrieve the rows using fetchAll.
 		$credentials = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-		// if SQL query succesful, check results 
+		// if SQL query succesful, check results and compare login name
 		if ($stmt){
 			if (empty($credentials)){ // is returned array empty? ie, query has a match?
 				$errors[] = "name not in DB"; // if empty, then show error
-			// echo $errors;	
+				// echo $errors;	
 				show_errors($errors);
 				return $errors;
 
