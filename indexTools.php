@@ -50,7 +50,7 @@ function show_errors($errors){
 		?> 
 		<script type="text/javascript" src="js/footerJS.js">errMsg(); </script>
 		<?php
-		echo '<script>errorMsg();</script>'
+		echo '<script>errorMsg();</script>';
 }
 
 
