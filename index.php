@@ -29,8 +29,8 @@
     </div>
 
 
-    </body>
+    
     <script type="text/javascript" src="js/footerJS.js"></script>
     <?php include "indexTools.php"; ?>
-
+    </body>
 </html> 
