@@ -28,17 +28,6 @@
         </div>
     </div>
 
-    <script type='text/javascript'> 
-      function errorMsg(){
-        alert('errorMsg called');
-        var theDiv = document.getElementById('loginErrorMsg');
-        var error = 'Login unsuccessful. Please re-enter credentials.';
-        console.log(error);
-        
-        theDiv.innerHTML = error;
-      };
-    </script>
-
 
     </body>
 </html> 
