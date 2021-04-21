@@ -46,8 +46,8 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	// print_r $errors;
-	print_r "show_errors() called";
+	print_r $errors;
+	print_r "show_errors function called";
 // this function is defined in footerJS.js
 		?> 
 		<script type="text/javascript" src="js/footerJS.js">
