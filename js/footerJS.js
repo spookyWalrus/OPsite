@@ -3,7 +3,9 @@
 function errMsg(){
       var theDiv = document.getElementById('loginErrorMsg');
       var error = "Login unsuccessful. Please re-enter credentials.";
-      theDiv.innerHTML = error;
+      setTimeout(function() {
+        theDiv.innerHTML = error;
+      },5000);
 };
 
 //====== AJAX log in behaviour ========== 
