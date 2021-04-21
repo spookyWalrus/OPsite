@@ -1,8 +1,20 @@
-<?php include("checkSession.php"); 
+<?php include("checkSession.php"); ?>
 
-  // <!-- === log out behavoiur ============== -->
+
+
+    <script type='text/javascript'> 
+      function errorMsg(){
+        var theDiv = document.getElementById('loginErrorMsg');
+        var error = 'Login unsuccessful. Please re-enter credentials.';
+        theDiv.innerHTML = error;
+        alert(error);
+      };
+    </script>;
+
+// <!-- === log out behavoiur ============== -->
 
 // AJAX call to kill session
+<?php
 if (isset($_POST['killSess'])){
 
     unset($_SESSION['logged_user']);
@@ -15,15 +27,6 @@ if (isset($_POST['killSess'])){
     exit();
 }
 ?>
-
-    <script type='text/javascript'> 
-      function errorMsg(){
-        var theDiv = document.getElementById('loginErrorMsg');
-        var error = 'Login unsuccessful. Please re-enter credentials.';
-        theDiv.innerHTML = error;
-        alert(error);
-      };
-    </script>;
 
 
 	</body>
