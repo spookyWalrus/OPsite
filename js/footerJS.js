@@ -1,7 +1,6 @@
 
 // ======== login error message ==========
 function errMsg(){
-      alert("login no good");
       var theDiv = document.getElementById('loginErrorMsg');
       var error = "Login unsuccessful. Please re-enter credentials.";
       theDiv.innerHTML = error;
