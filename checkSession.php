@@ -9,7 +9,7 @@ if(!isset($_SESSION)){
 }; 
 
 
-// AJAX call to set name from HomePage
+//  ========= AJAX call to set name from HomePage  ===============
 if (isset($_POST['sessName'])){
 	// $sessName = $_POST['sessName'];
 	// if ($sessName == 'goDo'){

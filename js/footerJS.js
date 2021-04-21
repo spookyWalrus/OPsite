@@ -1,12 +1,6 @@
-// <script type="text/javascript">
-// function setName(){
-//    var icon = document.getElementById('user-name-icon');
-//    icon.innerHTML = "You are logged in as: " + sessionName;
-// }
-// login error message
+
+// ======== login error message ==========
 function errMsg(){
-    // alert("error");
-    // console.log("errors");
       var theDiv = document.getElementById('loginErrorMsg');
       var error = "Login unsuccessful. Please re-enter credentials.";
       theDiv.innerHTML = error;
