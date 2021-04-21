@@ -100,7 +100,7 @@ function checkDB(){
 			// echo $errors;	
 				show_errors($errors);
 				?>
-				<script type="text/javascript src="index.php">
+				<script type="text/javascript src="footer-index.php">
 				errorMsg();
 				</script>
 				<?php
@@ -137,38 +137,13 @@ function checkDB(){
 
 				} else { // if not, throw error
 					$errors[] = "Password does not match";
-					echo '<script type="text/javascript src="index.php">',
+					echo '<script type="text/javascript src="footer-index.php">',
 						'errorMsg()',
 						'</script>';
 
 					show_errors($errors);
 					return $errors;
 				}
-			// }
-			// } else { // if no, throw error
-			// 	$errors[] = "password no exist";
-			// 	echo $errors;
-			// 	show_errors($errors);
-			// 	return $errors;
-			// }
-
-			// // compare input password with database password
-			// if (password_verify($userPw, $returnedPw)){
-		
-			// 	process_form();   
-
-			// } else {
-			// 	$errors[] = "Password does not match";
-
-			// 	show_errors($errors);
-			// 	return $errors;
-			// }
-
-			// } else {
-			// $errors = "Password doesn't exist in db";
-
-			// show_errors($errors);
-			// return $errors;
 			}
 		}
 
