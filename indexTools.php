@@ -47,9 +47,9 @@ function show_errors($errors){
 	// print_r $errors;
 
 // this function is defined in index.php...
-	// echo "<script type='text/javascript' > 
- //        	errorMsg();
-	// 	</script>;";
+	echo "<script type='text/javascript' src='footer-index.php'> 
+        	errorMsg();
+		</script>;";
    
 
 }
