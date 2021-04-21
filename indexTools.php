@@ -6,6 +6,7 @@ if(!isset($_SESSION))
 	}; 
 
 $errors ='';
+$erroMess;
 // $errMsg = '';
 // echo $errMsg;
 
@@ -43,7 +44,8 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	echo $errors[0];
+	// echo $errors[0];
+	$erroMess = $errors[0];
 	// print_r("show_errors function called: ". $errors);
 // this function is defined in footerJS.js
 		// echo '
