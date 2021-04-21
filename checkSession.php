@@ -33,4 +33,17 @@ if (isset($_POST['sessName'])){
 		}
 	// }
 }
+
+// ===========  AJAX log out call, kills the session ===============
+if (isset($_POST['killSess'])){
+
+        unset($_SESSION['logged_user']);
+
+        // session_destroy();
+        $_SESSION = array(); 
+        if (!isset($_SESSION['logged_user'])){
+          // echo "session unset";
+        }
+        exit();
+    }
 ?>

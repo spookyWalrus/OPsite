@@ -1,4 +1,5 @@
 <?php include "indexTools.php"; ?>
+<?php include("checkSession.php"); ?>
 
         </div>
     </div>
@@ -10,7 +11,6 @@
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="well" id="loginBox">
-                <div id="loginErrorMsg"></div>
                     <form method="POST" action="">
                         <div class="enterBox">User: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="user_name" placeholder="uh... who?" >
                         </div>
@@ -22,15 +22,11 @@
                         <input class="btn btn-primary submitText" type="submit" name="login_submit" value="Submit your soul">
                         </div>
                     </form>
+                    <div id="loginErrorMsg"></div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- <?php include("footer-index.php") ?>  -->
-    <?php include("checkSession.php"); ?>
-
-
 
     <script type='text/javascript'> 
       function errorMsg(){
@@ -42,7 +38,7 @@
     </script>;
 
     <!-- === log out behavoiur ============== -->
-
+<!-- 
     <?php
     if (isset($_POST['killSess'])){
 
@@ -55,7 +51,7 @@
         }
         exit();
     }
-    ?>
+    ?> -->
 
 
     </body>

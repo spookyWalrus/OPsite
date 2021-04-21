@@ -44,7 +44,7 @@ function sessionName(){
   function killSession(){
         $.ajax({
             type: 'post', 
-            url: 'footer.php',
+            url: 'checkSession.php',
             data:'killSess', // in PHP page, this will correspond with: $_POST['action'] == 'fillMenu' 
             dataType: 'text',
             success: function (data) {  
