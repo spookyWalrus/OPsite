@@ -139,7 +139,7 @@ function checkDB(){
 				} else { // if not, throw error
 					$errors[] = "Password does not match";
 					echo '<script type="text/javascript src="footer-index.php">',
-						'alert('bad pw');',
+						'alert("bad pw");',
 						'errorMsg()',
 						'</script>';
 
