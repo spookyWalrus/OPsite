@@ -60,11 +60,11 @@ function validate_form(){
 		$userPw = trim($_POST['user_pw'] ?? '');
 
 		if (strlen($userCu) == 0){
-			$errors[] = "Please enter name";
+			$errors[] = "Please re-enter login";
 			// show_errors($errors);
 			return $errors;
 		} else if (strlen($userPw) == 0) {
-			$errors[] = "Please enter password";
+			$errors[] = "Please re-enter login";
 			// show_errors($errors);
 			return $errors;
 		} 
