@@ -1,4 +1,4 @@
-<?php include "indexTools.php"; ?>
+<?php include "header.php";?>
 <?php include("checkSession.php"); ?>
 
         </div>
@@ -30,4 +30,7 @@
 
 
     </body>
+    <script type="text/javascript" src="js/footerJS.js"></script>
+    <?php include "indexTools.php"; ?>
+
 </html> 
