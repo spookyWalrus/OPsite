@@ -46,8 +46,8 @@ function process_form(){
 function show_errors($errors){
 	// print_r $errors;
 
-// this function is defined in index.php...
-		echo '<script type="text/javascript" > errMsg(); </script>';
+// this function is defined in footerJS.js
+		echo '<script type="text/javascript" src="footerJS.js">errMsg(); </script>';
 }
 
 
