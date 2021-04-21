@@ -5,7 +5,7 @@ if(!isset($_SESSION))
 		session_start(); 
 	}; 
 
-$errors = array();
+$errors = array('');
 $errorMess='';
 // $errMsg = '';
 // echo $errMsg;
@@ -44,17 +44,17 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	// echo $errors[0];
+	echo $errors[0];
 	// $erroMess = $errors[0];
 	// echo $errorMess;
 	// echo $errors[0];
 	// print_r("show_errors function called: ". $errors);
 // this function is defined in footerJS.js
-		$em = "
-		<script type='text/javascript' src='js/footerJS.js'>
-			errMsg();
-		</script>";
-		echo "".$em;
+		// $em = "
+		// <script type='text/javascript' src='js/footerJS.js'>
+		// 	errMsg();
+		// </script>";
+		// echo "".$em;
 		
 }
 
