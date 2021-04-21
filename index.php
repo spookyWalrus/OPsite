@@ -1,6 +1,6 @@
 <?php include "indexTools.php"; ?>
 <?php include("checkSession.php"); ?>
-<script type="text/javascript" src="js/footerJS.js"></script>
+<!-- <script type="text/javascript" src="js/footerJS.js"></script> -->
 
         </div>
     </div>

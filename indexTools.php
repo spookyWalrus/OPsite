@@ -48,7 +48,7 @@ function show_errors($errors){
 
 // this function is defined in footerJS.js
 		?> 
-		<script type="text/javascript" src="footerJS.js">errMsg(); </script>
+		<script type="text/javascript" src="js/footerJS.js">errMsg(); </script>
 		<?php
 }
 
