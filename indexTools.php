@@ -102,7 +102,7 @@ function checkDB(){
 				$errors[] = "name not in DB"; // if empty, then show error
 				// echo $errors;	
 				show_errors($errors);
-				return $errors;
+				// return $errors;
 
 			} else { // if query has a match, then set variable value
 				$returnedName = $credentials[0]['user_name'];
@@ -135,7 +135,7 @@ function checkDB(){
 				} else { // if not, throw error
 					$errors[] = "Password does not match";
 					show_errors($errors);
-					return $errors;
+					// return $errors;
 				}
 			}
 		}
