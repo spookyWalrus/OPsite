@@ -32,13 +32,13 @@
     </div>
     <script type="text/javascript">
          var em = "<?php echo $errorMess; ?>";
-        // var em = '<?php show_errors(); ?>';
         var idem = document.querySelector("#loginErrorMsg");
         if (em !== 'nil'){
             idem.innerHTML = em;
         }else{
             idem.innerHTML = 'waiting for login'
         };
+        console.log(em);
         
     </script>
 
