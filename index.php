@@ -1,6 +1,6 @@
 <?php include "header.php";?>
 <?php include "indexTools.php"; ?>
-<?php include("checkSession.php"); ?>
+<!-- <?php include("checkSession.php"); ?> -->
 
         </div>
     </div>
@@ -25,7 +25,6 @@
                     </form>
                     <div id="loginErrorMsg">
                     </div>
-                    <!-- <div id="loginErrorMsg"></div> -->
                 </div>
             </div>
         </div>
@@ -33,12 +32,14 @@
     <script type="text/javascript">
          var em = "<?php echo $errorMess; ?>";
         var idem = document.querySelector("#loginErrorMsg");
-        if (em !== 'nil'){
-            idem.innerHTML = em;
-        }else{
-            idem.innerHTML = 'waiting for login'
-        };
-        console.log(em);
+        function showError(){
+            if (em !== 'nil'){
+                idem.innerHTML = em;
+            }else{
+                idem.innerHTML = 'waiting for login'
+            };
+            console.log(em);
+        }
         
     </script>
 
