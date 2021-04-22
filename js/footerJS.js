@@ -9,19 +9,21 @@ function errMsg(errorMessage){
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
 function login(){
+  alert('login clicked');
         $.ajax({
             type: 'post', 
             url: 'indexTools.php',
             data:'logAttempt', 
-            dataType: 'text',
+            dataType: 'json',
             success: function (data) {  
               var loginYN = data;
               // console.log();
             
             }, 
             error: function(data){
-              // var mess = JSON.parse(data);
-              var mess = data;
+              var mess = JSON.parse(data);
+              // var mess = data;
+
               console.log(mess);
               errMsg(mess);
               // alert(data);
