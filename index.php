@@ -32,7 +32,7 @@
     <?php include "indexTools.php"; ?>
 
     <script type="text/javascript">
-        var em = "<?php $errorMess; ?>";
+        var em = "<?php echo $errorMess; ?>";
          // var em = "<?php $show_errors(); ?>";
         var idem = document.querySelector("#loginErrorMsg");
         // function showError(){
