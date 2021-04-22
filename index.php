@@ -33,7 +33,8 @@
 
    <script type="text/javascript">
         // var em = ' <?php echo json_encode($errorMess, JSON_HEX_TAG); ?> ';
-        var em = <?php echo json_encode($errorMess); ?>;
+        // var em = <?php echo json_encode($errorMess); ?>;
+        var em = <?php echo $errorMess; ?>;
             var idem = document.querySelector("#loginErrorMsg");
         function showError(){
             if (em !== ''){
