@@ -1,6 +1,5 @@
 <?php include("header.php"); ?>
 <?php include("indexTools.php"); ?>
-<script type="text/javascript" src="js/footerJS.js"></script>
 
 
 
@@ -35,7 +34,7 @@
     </div>
 
    
-    <!-- <script type="text/javascript" src="js/footerJS.js"></script> -->
+    <script type="text/javascript" src="js/footerJS.js"></script>
 
     </body>
 </html> 
