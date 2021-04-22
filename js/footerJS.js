@@ -1,6 +1,6 @@
 
 // ======== login error message ==========
-function errMsg(errorMessage){
+function showError(errorMessage){
       var theDiv = document.getElementById('loginErrorMsg');
       // var error = "Login unsuccessful. Please re-enter credentials.";
         console.log(errorMessage);
@@ -22,7 +22,7 @@ function login(){
             }, 
             error: function(data){
               // alert(data);
-              // var mess = JSON.parse(data);
+              var mess = JSON.parse(data);
               var mess = data;
 
               console.log(mess);

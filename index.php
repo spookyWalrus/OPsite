@@ -22,8 +22,8 @@
                         </div>
                         <br>
                         <div >
-                           <!--  <input class="btn btn-primary submitText" type="submit" name="login_submit" value="Submit your soul" > -->
-                            <button class="btn btn-primary submitText"  name="login_submit" type="submit" onclick="return login()">Submit your soul</button>
+                            <input class="btn btn-primary submitText" type="submit" name="login_submit" value="Submit your soul" >
+                            <!-- <button class="btn btn-primary submitText"  name="login_submit" type="submit" onclick="return login()">Submit your soul</button> -->
                         </div>
                     </form>
                     <div id="loginErrorMsg">

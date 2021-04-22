@@ -46,10 +46,10 @@ function process_form(){
 function show_errors($errors){
 	// $errorMess = $errors;
 	// echo $errors . '<br>' . $errorMess;
-	// echo "<script type='text'> showError();</script>";
+	echo "<script type='text/javascript'> showError();</script>";
 	// echo $errors;
 
-	echo json_encode($errors);
+	// echo json_encode($errors);
 
 	// echo $errorMess;
 	// echo $errors[0];
