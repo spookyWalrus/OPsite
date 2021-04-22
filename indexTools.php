@@ -57,7 +57,7 @@ function show_errors($errors){
 		<script type='text/javascript'>
 			showError();
 		</script>";
-		// echo "".$em;
+		echo "".$em;
 	// echo htmlspecialchars($errorMess);
 
 		
@@ -156,8 +156,7 @@ function checkDB(){
 ?>
  <script type="text/javascript">
         var em = "<?php echo $errorMess; ?>";
-         // var em = "<?php $show_errors(); ?>";
-        var idem = document.querySelector("#loginErrorMsg");
+	        var idem = document.querySelector("#loginErrorMsg");
         function showError(){
             if (em !== 'nil'){
                 idem.innerHTML = em;
