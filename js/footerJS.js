@@ -21,10 +21,11 @@ function login(){
             
             }, 
             error: function(data){
+              alert(data);
               // var mess = JSON.parse(data);
               var mess = data;
 
-              console.log(mess);
+              // console.log(mess);
               errMsg(mess);
               // alert(data);
             }

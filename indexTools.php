@@ -47,9 +47,9 @@ function show_errors($errors){
 	// $errorMess = $errors;
 	// echo $errors . '<br>' . $errorMess;
 	// echo "<script type='text'> showError();</script>";
-	// return $errorMess;
+
 	echo json_encode($errors);
-	// echo $errors;
+	echo $errors;
 
 	// echo $errorMess;
 	// echo $errors[0];
