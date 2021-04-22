@@ -3,19 +3,7 @@
 
         </div>
     </div>
-<script type="text/javascript">
-         var em = "<?php echo $errorMess; ?>";
-        var idem = document.querySelector("#loginErrorMsg");
-        function showError(){
-            if (em !== 'nil'){
-                idem.innerHTML = em;
-            }else{
-                idem.innerHTML = 'waiting for login'
-            };
-            console.log(em);
-        }
-        
-</script>
+
 <!-- 
 ======================    Login  Fields ======================================
 -->
@@ -34,13 +22,25 @@
                         <input class="btn btn-primary submitText" type="submit" name="login_submit" value="Submit your soul">
                         </div>
                     </form>
-                    <div id="loginErrorMsg" onload="showError()">
+                    <div id="loginErrorMsg">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+<script type="text/javascript">
+         var em = "<?php echo $errorMess; ?>";
+        var idem = document.querySelector("#loginErrorMsg");
+        // function showError(){
+            if (em !== 'nil'){
+                idem.innerHTML = em;
+            }else{
+                idem.innerHTML = 'waiting for login'
+            };
+            console.log(em);
+        // }
+        
+</script>
   
 
 
