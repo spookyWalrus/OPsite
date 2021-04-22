@@ -23,12 +23,19 @@
                         <input class="btn btn-primary submitText" type="submit" name="login_submit" value="Submit your soul">
                         </div>
                     </form>
-                     <div id="loginErrorMsg"><?php echo $errorMess; ?>
-                    <!-- </div> -->
+                    <div id="loginErrorMsg">
+                    </div>
                     <!-- <div id="loginErrorMsg"></div> -->
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        var em = <?php echo $errorMess; ?>;
+        if (em){
+            document.querySelector("#loginErrorMsg").innerHTML = em;
+        };
+    </script>
+
     </body>
 </html> 
