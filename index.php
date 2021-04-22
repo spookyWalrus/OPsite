@@ -31,7 +31,7 @@
         </div>
     </div>
     <script type="text/javascript">
-        // var em = '<?php echo $errorMess; ?>';
+        <!-- // var em = '<?php echo $errorMess; ?>'; -->
         var em = '<?php show_errors(); ?>';
         var idem = document.querySelector("#loginErrorMsg");
         if (em !== 'nil'){

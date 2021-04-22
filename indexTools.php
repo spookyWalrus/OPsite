@@ -43,7 +43,7 @@ function process_form(){
 		
 } 
 
-function show_errors($errors){
+function show_errors(){
 	// echo $errors[0];
 	$erroMess = $errors[0];
 	return $errorMess;
