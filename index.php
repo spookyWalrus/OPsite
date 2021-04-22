@@ -33,7 +33,7 @@
         var em = "<?php echo $errorMess; ?>";
             var idem = document.querySelector("#loginErrorMsg");
         function showError(){
-            if (em !== 'nil'){
+            if (em !== ''){
                 idem.innerHTML = em;
             }else{
                 idem.innerHTML = 'waiting for login'
