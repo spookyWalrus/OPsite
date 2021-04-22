@@ -41,8 +41,9 @@
             }else{
                 idem.innerHTML = 'waiting for login'
             };
-            console.log(em);
         }
+        console.log(em);
+        
         showError();
     </script>
 
