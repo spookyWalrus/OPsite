@@ -32,7 +32,7 @@
     </div>
     <script type="text/javascript">
         var em = <?php echo $errorMess; ?>;
-        if (em){
+        if (em !== 'nil'){
             document.querySelector("#loginErrorMsg").innerHTML = em;
         };
     </script>
