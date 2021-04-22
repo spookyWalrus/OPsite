@@ -13,7 +13,7 @@ function login(){
         $.ajax({
             type: 'post', 
             url: 'indexTools.php',
-            data:'logAttempt', 
+            data: {logAttempt: 'dude}, 
             dataType: 'text',
             success: function (data) {  
               var loginYN = data;
