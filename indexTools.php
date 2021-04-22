@@ -43,9 +43,10 @@ function process_form(){
 		
 } 
 
-function show_errors(){
+function show_errors($errors){
 	// echo $errors[0];
 	$erroMess = $errors[0];
+	echo $errorMess;
 	return $errorMess;
 	// echo $errorMess;
 	// echo $errors[0];
