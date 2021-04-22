@@ -43,7 +43,7 @@ function process_form(){
 		
 } 
 
-function show_errors(){
+function show_errors($errors){
 	// echo $errors[0];
 	$errorMess = $errors[0];
 	// echo $errorMess;
@@ -70,11 +70,11 @@ function validate_form(){
 
 		if (strlen($userCu) == 0){
 			$errors[0] = "Please re-enter login";
-			// show_errors($errors);
+			show_errors($errors);
 			return $errors;
 		} else if (strlen($userPw) == 0) {
 			$errors[0] = "Please re-enter login";
-			// show_errors($errors);
+			show_errors($errors);
 			return $errors;
 		} 
 }

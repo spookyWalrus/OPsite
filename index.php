@@ -29,8 +29,8 @@
         </div>
     </div>
 <script type="text/javascript">
-         <!-- var em = "<?php echo $errorMess; ?>"; -->
-         var em = "<?php $show_errors(); ?>";
+        var em = "<?php echo $errorMess; ?>";
+         // var em = "<?php $show_errors(); ?>";
         var idem = document.querySelector("#loginErrorMsg");
         // function showError(){
             if (em !== 'nil'){
