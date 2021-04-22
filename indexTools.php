@@ -1,4 +1,4 @@
-<script type="text/javascript" src="js/footerJS.js"></script>
+<!-- <script type="text/javascript" src="js/footerJS.js"></script> -->
 <?php
 
 if(!isset($_SESSION)) 
