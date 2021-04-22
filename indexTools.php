@@ -54,10 +54,10 @@ function show_errors($errors){
 	// echo $errors[0];
 	// print_r("show_errors function called: ". $errors);
 // this function is defined in footerJS.js
-		// $em = "
-		// <script type='text/javascript' src='js/footerJS.js'>
-		// 	errMsg();
-		// </script>";
+		$em = "
+		<script type='text/javascript>
+			showError();
+		</script>";
 		// echo "".$em;
 		
 }
