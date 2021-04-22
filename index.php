@@ -1,4 +1,5 @@
 <?php include("header.php"); ?>
+    <?php include "indexTools.php"; ?>
 
 
 
@@ -29,7 +30,6 @@
             </div>
         </div>
     </div>
-    <?php include "indexTools.php"; ?>
 
    <script type="text/javascript">
         var em = "<?php echo $errorMess; ?>";
