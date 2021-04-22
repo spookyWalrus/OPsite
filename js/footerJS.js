@@ -13,15 +13,16 @@ function login(){
             type: 'post', 
             url: 'indexTools.php',
             data:'logAttempt', 
-            dataType: 'text',
+            dataType: 'json',
             success: function (data) {  
               var loginYN = data;
               // console.log();
             
             }, 
             error: function(data){
-              console.log(data);
-              errMsg(data);
+              var mess = JSON.parse(data);
+              console.log(mess);
+              errMsg(mess);
               // alert(data);
             }
         });
