@@ -46,7 +46,9 @@ function process_form(){
 function show_errors($errors){
 	// $errorMess = $errors;
 	// echo $errors . '<br>' . $errorMess;
-	echo "<script type='text/javascript'> showError();</script>";
+	echo '<script type="text/javascript"> showError('
+		.$errors
+		.');</script>';
 	// echo $errors;
 
 	// echo json_encode($errors);
