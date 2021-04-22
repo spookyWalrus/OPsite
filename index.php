@@ -13,7 +13,8 @@
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="well" id="loginBox">
-                    <form method="POST" action="">
+                    <!-- <form method="POST" action=""> -->
+                    <form method="" action="">
                         <div class="enterBox">User: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="user_name" placeholder="uh... who?" >
                         </div>
                         <br>
@@ -21,7 +22,7 @@
                         </div>
                         <br>
                         <div >
-                        <input class="btn btn-primary submitText" type="submit" name="login_submit" value="Submit your soul">
+                        <input class="btn btn-primary submitText" type="submit" name="login_submit" value="Submit your soul" onclick="login()">
                         </div>
                     </form>
                     <div id="loginErrorMsg">
@@ -31,21 +32,23 @@
         </div>
     </div>
 
-   <script type="text/javascript">
+   <!-- <script type="text/javascript"> -->
         <!-- let em = "<?php echo json_encode($errorMess); ?> "; -->
-        let em = "<?php echo $errorMess; ?> ";
-        let idem = document.querySelector("#loginErrorMsg");
-        // function showError(){
-            if (em !== ''){
+        <!-- let em = "<?php echo $errorMess; ?> "; -->
+        <!-- let idem = document.querySelector("#loginErrorMsg"); -->
+        <!-- // function showError(){ -->
+           <!--  if (em !== ''){
                 idem.innerHTML = em;
             }else{
                 idem.innerHTML = 'waiting for login'
             };
-            console.log(em);
-        // }
+            console.log(em); -->
+        <!-- // } -->
 
-        // showError();
-    </script>
+        <!-- // showError(); -->
+    <!-- </script> -->
+
+   <script type="text/javascript" src="js/footerJS.js"></script>
 
     </body>
 </html> 

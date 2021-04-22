@@ -1,13 +1,33 @@
 
 // ======== login error message ==========
-function errMsg(){
+function errMsg(errorMessage){
       var theDiv = document.getElementById('loginErrorMsg');
-      var error = "Login unsuccessful. Please re-enter credentials.";
-        console.log(error);
-        theDiv.innerHTML = error;
+      // var error = "Login unsuccessful. Please re-enter credentials.";
+        console.log(errorMessage);
+        theDiv.innerHTML = errorMessage;
 };
-
 //====== AJAX log in behaviour ========== 
+// $(document).ready(function(){
+function login(){
+        $.ajax({
+            type: 'post', 
+            url: 'indexTools.php',
+            data:'logAttempt', 
+            dataType: 'text',
+            success: function (data) {  
+              var loginYN = data;
+              // console.log();
+            
+            }, 
+            error: function(data){
+              console.log(data);
+              errMsg(data);
+              // alert(data);
+            }
+        });
+};  
+
+//====== AJAX set name in user menu once logged in  ========== 
 // $(document).ready(function(){
 function sessionName(){
         $.ajax({

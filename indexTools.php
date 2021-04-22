@@ -1,4 +1,4 @@
-	<?php
+<?php
 
 if(!isset($_SESSION)) 
 	{ 
@@ -10,7 +10,8 @@ $errorMess = '';
 // $errMsg = '';
 // echo $errMsg;
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+// if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+if (isset($_POST['logAttempt'])){
 	list($errors) = validate_form(); // check for blank input fields
 	if ($errors) { // If validate_form() returns errors,
 		show_errors($errors);			// show error messages			
@@ -25,7 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 //  on succesful login, this function is called to redirect page
 function process_form(){
-
 	 	$_SESSION['logged_user'] = htmlentities($_POST['user_name']); // user-icon name set here
 	 	// echo "session is: ". $_SESSION['logged_user'];
 
@@ -44,10 +44,11 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	$errorMess = $errors;
-	echo $errors . '<br>' . $errorMess;
+	// $errorMess = $errors;
+	// echo $errors . '<br>' . $errorMess;
 	// echo "<script type='text'> showError();</script>";
 	// return $errorMess;
+	return $errors;
 
 	// echo $errorMess;
 	// echo $errors[0];
