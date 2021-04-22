@@ -44,10 +44,10 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	echo $errors;
-	$errorMess = $errors[0];
+	// echo $errors;
+	$errorMess = $errors;
 	// echo $errorMess;
-	// echo "<script type='text' src='index.php'> showError();</script>";
+	echo "<script type='text'> showError();</script>";
 	return $errorMess;
 
 	// echo $errorMess;
