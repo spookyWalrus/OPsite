@@ -12,7 +12,7 @@ function showError(){
 }
 
 // ======== login error message ==========
-function showError(errorMessage){
+function showTheOtherError(errorMessage){
       var theDiv = document.getElementById('loginErrorMsg');
       // var error = "Login unsuccessful. Please re-enter credentials.";
         console.log(errorMessage);
