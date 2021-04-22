@@ -46,9 +46,9 @@ function process_form(){
 function show_errors($errors){
 	// echo $errors;
 	$errorMess = $errors[0];
-	// echo htmlspecialchars($errorMess);
+	echo htmlspecialchars($errorMess);
 	// echo "<script type='text'> showError();</script>";
-	// return $errorMess;
+	return $errorMess;
 
 	// echo $errorMess;
 	// echo $errors[0];
