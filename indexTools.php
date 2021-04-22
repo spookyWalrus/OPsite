@@ -5,8 +5,8 @@ if(!isset($_SESSION))
 		session_start(); 
 	}; 
 
-$errors = array('');
-$errorMess='nil';
+$errors;
+$errorMess;
 // $errMsg = '';
 // echo $errMsg;
 
