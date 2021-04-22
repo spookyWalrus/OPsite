@@ -1,21 +1,6 @@
 <?php include "header.php";?>
 
-<script type="text/javascript">
-        var em = "<?php echo json_encode($errors); ?>";
-         // var em = "<?php $show_errors(); ?>";
-        var idem = document.querySelector("#loginErrorMsg");
-        function showError(){
-            if (em !== 'nil'){
-                idem.innerHTML = em;
-            }else{
-                idem.innerHTML = 'waiting for login'
-            };
-            console.log(em);
-        }
-        
-</script>
 
-<?php include "indexTools.php"; ?>
 
         </div>
     </div>
@@ -44,6 +29,22 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        var em = "<?php echo json_encode($errors); ?>";
+         // var em = "<?php $show_errors(); ?>";
+        var idem = document.querySelector("#loginErrorMsg");
+        function showError(){
+            if (em !== 'nil'){
+                idem.innerHTML = em;
+            }else{
+                idem.innerHTML = 'waiting for login'
+            };
+            console.log(em);
+        }
+        
+    </script>
+
+    <?php include "indexTools.php"; ?>
 
   
 

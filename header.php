@@ -59,8 +59,6 @@
 	      <!-- // <script src="https://use.fontawesome.com/5a9923c611.js"></script> -->
 	</head>
 <body>
-
-	<!-- <body onload="setDate();"> -->
 	<div class="row">
 	    <div class="container col-xs-12" id="OPheader">
 	        <div id="logoText">
