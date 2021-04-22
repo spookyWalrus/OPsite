@@ -27,6 +27,8 @@
             </div>
         </div>
     </div>
+    <?php include "indexTools.php"; ?>
+
     <script type="text/javascript">
          var em = "<?php echo $errorMess; ?>";
         var idem = document.querySelector("#loginErrorMsg");
@@ -41,7 +43,5 @@
         
     </script>
     
-    <?php include "indexTools.php"; ?>
-
     </body>
 </html> 
