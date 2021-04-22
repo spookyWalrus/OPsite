@@ -33,19 +33,7 @@
         </div>
     </div>
 
-   <script type="text/javascript">
-        <!-- let em = <?php echo json_encode($errorMess); ?>;  -->
-         let em = "<?php echo $errorMess; ?> "; 
-         let idem = document.querySelector("#loginErrorMsg");
-         function showError(){ 
-             if (em !== ''){
-                idem.innerHTML = em;
-            }else{
-                idem.innerHTML = 'waiting for login'
-            };
-            console.log(em); 
-        }
-    </script>
+   
     <!-- <script type="text/javascript" src="js/footerJS.js"></script> -->
 
     </body>

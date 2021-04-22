@@ -1,3 +1,15 @@
+// =========== function for login messages ============
+        // <!-- let em = <?php echo json_encode($errorMess); ?>;  -->
+let em = "<?php echo $errorMess; ?> "; 
+let idem = document.querySelector("#loginErrorMsg");
+function showError(){ 
+   if (em !== ''){
+      idem.innerHTML = em;
+  }else{
+      idem.innerHTML = 'waiting for login'
+  };
+  console.log(em); 
+}
 
 // ======== login error message ==========
 function showError(errorMessage){
