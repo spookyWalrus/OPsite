@@ -47,7 +47,7 @@ function show_errors($errors){
 	// echo $errors[0];
 	$errorMess = $errors[0];
 	// echo $errorMess;
-	echo "<script> showError();</script>"
+	echo "<script> showError();</script>";
 	// return $errorMess;
 
 	// echo $errorMess;

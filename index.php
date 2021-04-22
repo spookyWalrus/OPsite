@@ -1,5 +1,5 @@
 <?php include "header.php";?>
-<?php include "indexTools.php"; ?>
+<!-- <?php include "indexTools.php"; ?> -->
 <!-- <?php include("checkSession.php"); ?> -->
 
         </div>
@@ -42,6 +42,8 @@
         }
         
     </script>
+    
+    <?php include "indexTools.php"; ?>
 
     </body>
 </html> 
