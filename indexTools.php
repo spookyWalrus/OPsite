@@ -45,7 +45,8 @@ function process_form(){
 
 function show_errors($errors){
 	echo $errors[0];
-	// $erroMess = $errors[0];
+	$erroMess = $errors[0];
+	return $errorMess;
 	// echo $errorMess;
 	// echo $errors[0];
 	// print_r("show_errors function called: ". $errors);
