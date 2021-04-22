@@ -35,15 +35,15 @@
         var em = "<?php echo $errorMess; ?>";
          // var em = "<?php $show_errors(); ?>";
         var idem = document.querySelector("#loginErrorMsg");
-        // function showError(){
+        function showError(){
             if (em !== 'nil'){
                 idem.innerHTML = em;
             }else{
                 idem.innerHTML = 'waiting for login'
             };
             console.log(em);
-        // }
-        
+        }
+        showError();
     </script>
 
 
