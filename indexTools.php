@@ -45,7 +45,7 @@ function process_form(){
 
 function show_errors($errors){
 	// echo $errors;
-	$errorMess = htmlspecialchars($errors[0]);
+	$errorMess = htmlspecialchars($errors);
 	// echo "<script type='text'> showError();</script>";
 	// return $errorMess;
 
@@ -70,11 +70,11 @@ function validate_form(){
 		$userPw = trim($_POST['user_pw'] ?? '');
 
 		if (strlen($userCu) == 0){
-			$errors[0] = "Please re-enter login";
+			$errors = "Please re-enter login";
 			show_errors($errors);
 			return $errors;
 		} else if (strlen($userPw) == 0) {
-			$errors[0] = "Please re-enter login";
+			$errors = "Please re-enter login";
 			show_errors($errors);
 			return $errors;
 		} 
@@ -105,7 +105,7 @@ function checkDB(){
 		// if SQL query succesful, check results and compare login name
 		if ($stmt){
 			if (empty($credentials)){ // is returned array empty? ie, query has a match?
-				$errors[0] = "name not in DB"; // if empty, then show error
+				$errors = "name not in DB"; // if empty, then show error
 				// echo $errors;	
 				show_errors($errors);
 				// return $errors;
@@ -139,7 +139,7 @@ function checkDB(){
 					process_form();  // if matched, load to new page
 
 				} else { // if not, throw error
-					$errors[0] = "Password does not match";
+					$errors = "Password does not match";
 					show_errors($errors);
 					// return $errors;
 				}
