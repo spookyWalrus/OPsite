@@ -44,7 +44,7 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	// echo $errors[0];
+	echo $errors;
 	$errorMess = $errors[0];
 	// echo $errorMess;
 	// echo "<script type='text' src='index.php'> showError();</script>";
