@@ -10,8 +10,8 @@ $errorMess = '';
 // $errMsg = '';
 // echo $errMsg;
 
-// if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-if (isset($_POST['logAttempt'])){
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+// if (isset($_POST['logAttempt'])){
 	list($errors) = validate_form(); // check for blank input fields
 	if ($errors) { // If validate_form() returns errors,
 		show_errors($errors);			// show error messages			
