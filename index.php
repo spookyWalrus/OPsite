@@ -32,7 +32,8 @@
     </div>
 
    <script type="text/javascript">
-        let em = "<?php echo json_encode($errorMess); ?> ";
+        <!-- let em = "<?php echo json_encode($errorMess); ?> "; -->
+        let em = "<?php echo $errorMess; ?> ";
         let idem = document.querySelector("#loginErrorMsg");
         // function showError(){
             if (em !== ''){
