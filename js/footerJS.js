@@ -14,7 +14,7 @@ function login(){
             type: 'post', 
             url: 'indexTools.php',
             data: {logAttempt: 'dude'}, 
-            dataType: 'text',
+            dataType: 'JSON',
             success: function (data) {  
               var loginYN = data;
               // console.log();
