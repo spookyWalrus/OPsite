@@ -1,4 +1,3 @@
-<?php include "header.php";?>
 
 
 
@@ -24,7 +23,6 @@
                         </div>
                     </form>
                     <div id="loginErrorMsg">
-                        <?php echo $errorMess; ?>
                     </div>
                 </div>
             </div>
@@ -32,7 +30,7 @@
     </div>
     <?php include "indexTools.php"; ?>
 
-    <script type="text/javascript">
+   <!--  <script type="text/javascript">
         var em = "<?php echo $errorMess; ?>";
          // var em = "<?php $show_errors(); ?>";
         var idem = document.querySelector("#loginErrorMsg");
@@ -46,7 +44,7 @@
         console.log(em);
 
         showError();
-    </script>
+    </script> -->
 
 
   
