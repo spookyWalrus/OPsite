@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-    <?php include "indexTools.php"; ?>
+<?php include("indexTools.php"); ?>
 
 
 
@@ -32,8 +32,8 @@
     </div>
 
    <script type="text/javascript">
-        var em = <?php echo json_encode($errorMess); ?>;
-        var idem = document.querySelector("#loginErrorMsg");
+        let em = "<?php echo json_encode($errorMess); ?> ";
+        let idem = document.querySelector("#loginErrorMsg");
         // function showError(){
             if (em !== ''){
                 idem.innerHTML = em;
