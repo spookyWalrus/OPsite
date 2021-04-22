@@ -166,5 +166,6 @@ function checkDB(){
             };
         }
 
+        showError();
 </script>	
 
