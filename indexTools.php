@@ -58,7 +58,7 @@ function show_errors($errors){
 			showError();
 		</script>";
 		// echo "".$em;
-	echo htmlspecialchars($errorMess);
+	// echo htmlspecialchars($errorMess);
 
 		
 }
@@ -154,5 +154,7 @@ function checkDB(){
 	// $errors[] = "You fail";
 }	
 ?>
-	
+<script>
+	alert('tester');
+</script>	
 

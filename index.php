@@ -24,6 +24,7 @@
                         </div>
                     </form>
                     <div id="loginErrorMsg">
+                        <?php echo $errorMess; ?>
                     </div>
                 </div>
             </div>
@@ -43,7 +44,7 @@
             };
         }
         console.log(em);
-        
+
         showError();
     </script>
 
