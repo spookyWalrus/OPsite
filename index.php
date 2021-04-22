@@ -25,7 +25,6 @@
                         </div>
                     </form>
                     <div id="loginErrorMsg">
-                        <?php echo json_encode($errorMess); ?>
                     </div>
                 </div>
             </div>
@@ -35,14 +34,14 @@
    <script type="text/javascript">
         var em = <?php echo json_encode($errorMess); ?>;
         var idem = document.querySelector("#loginErrorMsg");
-        function showError(){
+        // function showError(){
             if (em !== ''){
                 idem.innerHTML = em;
             }else{
                 idem.innerHTML = 'waiting for login'
             };
             console.log(em);
-        }
+        // }
 
         // showError();
     </script>
