@@ -31,10 +31,14 @@
         </div>
     </div>
     <script type="text/javascript">
-        var em = <?php echo $errorMess; ?>;
+        var em = '<?php echo $errorMess; ?>';
+        var idem = document.querySelector("#loginErrorMsg");
         if (em !== 'nil'){
-            document.querySelector("#loginErrorMsg").innerHTML = em;
+            idem.innerHTML = em;
+        }else{
+            idem.innerHTML = 'waiting for login'
         };
+        
     </script>
 
     </body>

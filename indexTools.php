@@ -44,7 +44,7 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	echo $errors[0];
+	// echo $errors[0];
 	$erroMess = $errors[0];
 	return $errorMess;
 	// echo $errorMess;
