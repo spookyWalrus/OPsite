@@ -46,19 +46,20 @@ function process_form(){
 function show_errors($errors){
 	// echo $errors;
 	$errorMess = $errors[0];
-	echo htmlspecialchars($errorMess);
 	// echo "<script type='text'> showError();</script>";
-	return $errorMess;
+	// return $errorMess;
 
 	// echo $errorMess;
 	// echo $errors[0];
 	// print_r("show_errors function called: ". $errors);
 // this function is defined in footerJS.js
 		$em = "
-		<script type='text/javascript>
+		<script type='text/javascript'>
 			showError();
 		</script>";
 		// echo "".$em;
+	echo htmlspecialchars($errorMess);
+
 		
 }
 
