@@ -1,3 +1,15 @@
+ <script type="text/javascript">
+        var em = "<?php echo $errorMess; ?>";
+	        var idem = document.querySelector("#loginErrorMsg");
+        function showError(){
+            if (em !== 'nil'){
+                idem.innerHTML = em;
+            }else{
+                idem.innerHTML = 'waiting for login'
+            };
+        }
+
+</script>	
 <?php
 
 if(!isset($_SESSION)) 
@@ -154,17 +166,5 @@ function checkDB(){
 	// $errors[] = "You fail";
 }	
 ?>
- <script type="text/javascript">
-        var em = "<?php echo $errorMess; ?>";
-	        var idem = document.querySelector("#loginErrorMsg");
-        function showError(){
-            if (em !== 'nil'){
-                idem.innerHTML = em;
-            }else{
-                idem.innerHTML = 'waiting for login'
-            };
-        }
-
-        showError();
-</script>	
+ 
 
