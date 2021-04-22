@@ -30,7 +30,7 @@
         </div>
     </div>
     <?php include "indexTools.php"; ?>
-    
+
    <script type="text/javascript">
         var em = "<?php echo $errorMess; ?>";
             var idem = document.querySelector("#loginErrorMsg");
@@ -42,8 +42,7 @@
             };
             console.log(em);
         }
-    </script>
-    <script>
+
         showError();
     </script>
 
