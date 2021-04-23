@@ -8,9 +8,6 @@ if(!isset($_SESSION))
 	}; 
 
 $errors = '';
-$errorMess = '';
-// $errMsg = '';
-// echo $errMsg;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 // if (isset($_POST['logAttempt'])){
@@ -46,27 +43,9 @@ function process_form(){
 } 
 
 function show_errors($errors){
-	// $errorMess = $errors;
-	// echo $errors . '<br>' . $errorMess;
-	// echo $errorMess;
-	// echo '<script type="text/javascript" src="js/footerJS.js"> showError();</script>';
-	// echo $errors;
+	
 	echo '<script type="text/javascript" > errMsg(); </script>';
 
-	// echo json_encode($errors);
-
-	// echo $errorMess;
-	// echo $errors[0];
-	// print_r("show_errors function called: ". $errors);
-// this function is defined in footerJS.js
-		// $em = "
-		// <script type='text/javascript'>
-		// 	showError();
-		// </script>";
-		// echo "".$em;
-	// echo htmlspecialchars($errorMess);
-
-		
 }
 
 
