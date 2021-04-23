@@ -48,8 +48,8 @@ function process_form(){
 function show_errors($errors){
 	// $errorMess = $errors;
 	// echo $errors . '<br>' . $errorMess;
-	echo $errorMess;
-	echo '<script type="text/javascript" src="js/footerJS.js"> showError();</script>';
+	// echo $errorMess;
+	// echo '<script type="text/javascript" src="js/footerJS.js"> showError();</script>';
 	// echo $errors;
 	echo '<script type="text/javascript" > errMsg(); </script>';
 
