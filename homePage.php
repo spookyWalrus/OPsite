@@ -14,8 +14,7 @@
 
 	<div class="col-xs-12 col-xs-offset-1">
 		<embed id="trexGame" >
-
-		<!-- <embed id="trexGame" src="https://apps.thecodepost.org/trex/trex.html"> -->
+		<embed id="trexGame" src="https://apps.thecodepost.org/trex/trex.html">
 	</div>
 
 

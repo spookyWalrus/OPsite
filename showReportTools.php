@@ -41,7 +41,8 @@
 		// >> currently having issues with fetching existing or non existing name (jan 08)
 
 // establish PDO for database communication
-$pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+// $pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+$pdo = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
