@@ -1,48 +1,41 @@
-// =========== function for login messages ============
-        // <!-- let em = <?php echo json_encode($errorMess); ?>;  -->
-let em = '<?php echo $errorMess; ?>' ; 
-let idem = document.querySelector("#loginErrorMsg");
-function showError(){ 
-   if (em !== ''){
-      idem.innerHTML = em;
-  }else{
-      idem.innerHTML = 'waiting for login'
-  };
-  console.log(em); 
+// ======== login error message ==========
+function errMsg(){ 
+  var theDiv = document.getElementById('loginErrorMsg');
+      var error = "Login unsuccessful. Please re-enter credentials.";
+      theDiv.innerHTML = error;
+  //  if (em !== ''){
+  //     idem.innerHTML = em;
+  // }else{
+  //     idem.innerHTML = 'waiting for login'
+  // };
+  // console.log(em); 
 }
 
-// ======== login error message ==========
-function showTheOtherError(errorMessage){
-      var theDiv = document.getElementById('loginErrorMsg');
-      // var error = "Login unsuccessful. Please re-enter credentials.";
-        console.log(errorMessage);
-        theDiv.innerHTML = errorMessage;
-};
 //====== AJAX log in behaviour ========== 
 // $(document).ready(function(){
-function login(){
-  alert('login clicked');
-        $.ajax({
-            type: 'post', 
-            url: 'indexTools.php',
-            data: {logAttempt: 'dude'}, 
-            dataType: 'JSON',
-            success: function (data) {  
-              var loginYN = data;
-              // console.log();
+// function login(){
+//   alert('login clicked');
+//         $.ajax({
+//             type: 'post', 
+//             url: 'indexTools.php',
+//             data: {logAttempt: 'dude'}, 
+//             dataType: 'JSON',
+//             success: function (data) {  
+//               var loginYN = data;
+//               // console.log();
             
-            }, 
-            error: function(data){
-              // alert(data);
-              var mess = JSON.parse(data);
-              var mess = data;
+//             }, 
+//             error: function(data){
+//               // alert(data);
+//               var mess = JSON.parse(data);
+//               var mess = data;
 
-              console.log(mess);
-              errMsg(mess);
-              // alert(data);
-            }
-        });
-};  
+//               console.log(mess);
+//               errMsg(mess);
+//               // alert(data);
+//             }
+//         });
+// };  
 
 //====== AJAX set name in user menu once logged in  ========== 
 // $(document).ready(function(){

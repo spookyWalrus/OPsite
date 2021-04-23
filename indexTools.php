@@ -1,3 +1,5 @@
+<script type="text/javascript" src="js/footerJS.js"></script>
+
 <?php
 
 if(!isset($_SESSION)) 
@@ -49,6 +51,7 @@ function show_errors($errors){
 	echo $errorMess;
 	echo '<script type="text/javascript" src="js/footerJS.js"> showError();</script>';
 	// echo $errors;
+	echo '<script type="text/javascript" > errMsg(); </script>';
 
 	// echo json_encode($errors);
 
@@ -73,11 +76,11 @@ function validate_form(){
 		$userPw = trim($_POST['user_pw'] ?? '');
 
 		if (strlen($userCu) == 0){
-			$errors = "Please re-enter login";
+			$errors[] = "Please re-enter login";
 			show_errors($errors);
 			return $errors;
 		} else if (strlen($userPw) == 0) {
-			$errors = "Please re-enter login";
+			$errors[] = "Please re-enter login";
 			show_errors($errors);
 			return $errors;
 		} 
@@ -108,7 +111,7 @@ function checkDB(){
 		// if SQL query succesful, check results and compare login name
 		if ($stmt){
 			if (empty($credentials)){ // is returned array empty? ie, query has a match?
-				$errors = "name not in DB"; // if empty, then show error
+				$errors[] = "name not in DB"; // if empty, then show error
 				// echo $errors;	
 				show_errors($errors);
 				// return $errors;
@@ -142,7 +145,7 @@ function checkDB(){
 					process_form();  // if matched, load to new page
 
 				} else { // if not, throw error
-					$errors = "Password does not match";
+					$errors[] = "Password does not match";
 					show_errors($errors);
 					// return $errors;
 				}

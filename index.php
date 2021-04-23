@@ -1,5 +1,4 @@
 <?php include("header.php"); ?>
-<?php include("indexTools.php"); ?>
 
 
 
@@ -13,7 +12,7 @@
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="well" id="loginBox">
-                    <!-- <form method="POST" action=""> -->
+                    <div id="loginErrorMsg">
                     <form method="POST" action="">
                         <div class="enterBox">User: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="user_name" placeholder="uh... who?" >
                         </div>
@@ -33,8 +32,7 @@
         </div>
     </div>
 
+    <?php include("indexTools.php"); ?> 
    
-    <script type="text/javascript" src="js/footerJS.js"></script>
-
     </body>
 </html> 
