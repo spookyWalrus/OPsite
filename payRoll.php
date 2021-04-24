@@ -1,7 +1,6 @@
 
-
 <?php include("header.php"); ?>
-<?php include("menu-bar.php"); ?> 
+<?php include("menu-Bar.php"); ?> 
 <?php include("payRollTools.php"); ?> 
 <!--
 -->
@@ -65,3 +64,4 @@
 <!-- <script type="text/javascript" src="js/payRollJSTools.js"></script> -->
 <!-- <script type="text/javascript" src="js/payRollAddColsJS.js"></script> -->
 
+<?php include("footer.php") ?>

@@ -1,6 +1,6 @@
-<?php session_start() ?>
+<!-- <?php session_start() ?> -->
 <?php include("header.php"); ?>
-<?php include("menu-bar.php"); ?>
+<?php include("menu-Bar.php"); ?>
 <?php include("createUserTools.php"); ?>
 
 

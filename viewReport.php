@@ -1,6 +1,6 @@
  
 <?php include("header.php"); ?>
-<?php include("menu-bar.php"); ?> 
+<?php include("menu-Bar.php"); ?> 
 <?php include("showReportTools.php"); ?> 
 		</div>
 	</div>

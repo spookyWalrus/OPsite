@@ -31,7 +31,8 @@ $GLOBALS['dateToday'] = $whatIsToday;
 if (isset($_POST['action'])) { // names
 	try {
 		// Connect to our MySQL database using the PDO extension.
-		$pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		// $pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		$pdo = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
@@ -73,7 +74,8 @@ if (isset($_POST['dateRange'])){ // from ajax call
 
 $currentName; // used in function to save payroll data below....
 if (isset($_POST['findPayPeriod'])){ // get date range
-		$pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		// $pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		$pdo = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 	$findIt = $_POST['findPayPeriod'];
@@ -163,7 +165,8 @@ if (isset($_POST['checkRecords'])){
 	 $name;	
 	$payRollData = $_POST['checkRecords']; // array 'checkThis', made in payRollJSTools.js,  is received as POST data
 	try {
-		$db = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		// $db = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		$db = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
@@ -225,7 +228,8 @@ if (isset($_POST['saveDataDB'])){
 	// $timeStamp = $theDate;
 
 	try {
-	$db = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+	// $db = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+	$db = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 

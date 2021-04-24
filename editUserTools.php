@@ -9,7 +9,8 @@ if (isset($_POST['action'])) {
 // function populateMenu(){
 	try {
 		// Connect to our MySQL database using the PDO extension.
-		$pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		// $pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		$pdo = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
@@ -41,7 +42,8 @@ if (isset($_POST['action'])) {
 	 	$findHimHer = $_POST['doIt'];
 
 	 	// Connect to our MySQL database using the PDO extension.
-		$pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		// $pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		$pdo = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
@@ -96,7 +98,8 @@ if (isset($_POST['upDateIt'] )){
  	// $matchName = $nuValues[0];
 	try {
 	 	// Connect to our MySQL database using the PDO extension.
-		$pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		// $pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		$pdo = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
@@ -148,7 +151,8 @@ if (isset($_POST['upDatePW'] )){
 
 	try {
 	 	// Connect to our MySQL database using the PDO extension.
-		$pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		// $pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		$pdo = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
@@ -180,7 +184,8 @@ if (isset($_POST['upDatePW'] )){
 	 	$findHimHer = $_POST['deleteIt'];
 
 	 	// Connect to our MySQL database using the PDO extension.
-		$pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		// $pdo = new PDO('mysql:host=localhost;dbname=conUdb', 'root', '');
+		$pdo = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 

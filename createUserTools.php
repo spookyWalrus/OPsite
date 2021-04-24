@@ -35,7 +35,8 @@ if (isset($_POST['createNu'])){
 	global $db;
 // Table to connect to: show_reports
 	try {
-		$db = new PDO("mysql:host=localhost;dbname=conUdb", 'root','');
+		// $db = new PDO("mysql:host=localhost;dbname=conUdb", 'root','');
+		$db = new PDO('mysql:host=sql203.epizy.com;dbname=epiz_28394007_conUdb', 'epiz_28394007', 'gGvzSUWdFQMVez');
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 

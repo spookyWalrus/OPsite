@@ -1,11 +1,5 @@
-<?php 
-if(!isset($_SESSION)) 
-	{ 
-		session_start(); 
-	};
-?>
 <?php include("header.php"); ?>
-<?php include("menu-bar.php"); ?>
+<?php include("menu-Bar.php"); ?>
 
   </div>
 </div>
