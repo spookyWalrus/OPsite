@@ -1,5 +1,4 @@
-<!-- <!DOCTYPE HTML>
-<html>
+<!-- <html>
     <head>
         <title>T-Rex Game.</title> -->
         <link rel="icon" type="image/png" href="http://www.skipser.com/test/trex-game/game-logo.png">
