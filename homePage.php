@@ -1,4 +1,5 @@
 <?php include("header.php"); ?>
+<?php include("menu-bar.php"); ?>
 
 
 
@@ -11,10 +12,8 @@
 	 <div class="container " id="procrastinate">
 	    <p> Stop procrastinating and get back to work</p><br>
 	</div>
-
-	<div class="col-xs-12 col-xs-offset-1">
-		<embed id="trexGame" >
-		<embed id="trexGame" src="https://apps.thecodepost.org/trex/trex.html">
+	<div class="container tRexContain">
+		<?php include("tRex/tRex-3.php"); ?>
 	</div>
 
 

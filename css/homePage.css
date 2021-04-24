@@ -1,27 +1,36 @@
  /*homePage.css*/
-
+body, html {
+  /*width: 100%;*/
+  height: 100%;
+  /*background: url("/OPsite/img/landscape2.jpg") no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 @media (min-width: 312px) and (max-width: 767px) {
 
 	  #homePage{
       /*margin-top: 70px;*/
-        background-image: url("img/landscape2.jpg");
+        /*background-image: url("img/landscape2.jpg");*/
           /*
     Image by <a href="https://pixabay.com/users/torstensimon-5039407/
     ?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;
     utm_content=2211587">torstensimon</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;
     utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2211587">Pixabay</a> */      
-      background-position: center;
+     /* background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 100%;
+      height: 100%;*/
       color: #fff;
 
     }
 
     #procrastinate{
+      visibility: hidden;
     	font-size: 26px;
-	 	margin-top:70px;
+  	 	margin-top:70px;
 
         animation: blinkingText 1s infinite;
         font-family: futura;
@@ -64,22 +73,23 @@
 
 	
 	  #homePage{
-        background-image: url("/OPsite/img/landscape2.jpg");
+        /*background-image: url("/OPsite/img/landscape2.jpg");*/
           /*
     Image by <a href="https://pixabay.com/users/torstensimon-5039407/
     ?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;
     utm_content=2211587">torstensimon</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;
     utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2211587">Pixabay</a> */      
-      background-position: center;
+     /* background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
-      height: 100%;
+      background-size: cover;*/
+      /*height: 100%;*/
       /*width: 100%;*/
       color: #fff;
 
     }
 
     #procrastinate{
+        visibility: hidden;
     		font-size: 36px;
         margin-top:170px;
         width: 90%;

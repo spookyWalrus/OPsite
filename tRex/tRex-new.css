@@ -1,0 +1,18 @@
+/*tRex-new.css*/
+
+.tRexContain{
+	margin-bottom: 50px;
+}
+
+.hideThis{
+	display: none;
+}
+
+#description{
+	display: none;
+	visibility: hidden;
+}
+
+.howtoplay{
+	font-size: 1.5em;
+}
