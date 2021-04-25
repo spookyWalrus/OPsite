@@ -35,7 +35,6 @@
         <li><a href="https://mojopizza.in/">Order another pizza</a></li>
         <li role="separator" id="divider">         </li>
         <li><a onclick="javascript: killSession();" >Log Out</a></li>
-    
       </ul>
     </div>
   </div>

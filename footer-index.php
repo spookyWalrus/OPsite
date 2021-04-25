@@ -13,7 +13,7 @@
 
 <!-- === log out behavoiur ============== -->
 
-<?php
+<!-- <?php
 if (isset($_POST['killSess'])){
 
     unset($_SESSION['logged_user']);
@@ -25,7 +25,7 @@ if (isset($_POST['killSess'])){
     }
     exit();
 }
-?>
+?> -->
 
 
 	</body>

@@ -10,7 +10,7 @@
 	    <meta name="author" content="">
 	    <link rel="icon" href="../../favicon.ico">
 
-	    <title>conU: The robots take over</title>
+	    <title>The global pandemic take over</title>
 	     
 
 <!-- ================ local bootstrap, css and js ================ -->
@@ -63,7 +63,7 @@
 	    <div class="container col-xs-12" id="OPheader">
 	        <div id="logoText">
 	            <p>
-	                OP-DB-FC: Concordia performance spaces
+	                Performance spaces
 	            </p>
 	        </div>
 
