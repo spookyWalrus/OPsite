@@ -12,7 +12,6 @@
 
 	    <title>The global pandemic take over</title>
 	     
-
 <!-- ================ local bootstrap, css and js ================ -->
 	      <!--  Bootstrap core CSS -->
 	    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">

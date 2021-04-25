@@ -1,7 +1,5 @@
 <?php include("checkSession.php"); ?>
 
-
-
     <script type='text/javascript'> 
       function errorMsg(){
         var theDiv = document.getElementById('loginErrorMsg');

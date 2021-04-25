@@ -6,8 +6,6 @@
 if(!isset($_SESSION)){
 		session_start(); 
 }; 
-
-
 //  ========= AJAX call to set name from HomePage  ===============
 if (isset($_POST['sessName'])){
 	// $sessName = $_POST['sessName'];
