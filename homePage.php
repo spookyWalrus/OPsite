@@ -14,8 +14,6 @@
 	<div class="container tRexContain">
 		<?php include("tRex/tRex-3.php"); ?>
 	</div>
-
-
 </div>
 
 
