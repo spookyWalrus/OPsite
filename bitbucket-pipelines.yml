@@ -23,7 +23,7 @@ pipelines:
           - git reset --hard
           - git ftp push -u "$FTP_USERNAME" -p "$FTP_PASSWORD" ftp://$FTP_HOST --all
   branches:
-    master:
+    main:
     - step:
         name: Deploy production
         deployment: production
