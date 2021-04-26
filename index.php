@@ -6,7 +6,7 @@
     </div>
 
 <!-- 
-======================    Login  Fields: github actions worked!! ==========================
+======================    Login  Fields: gitHub actions worked!! ==========================
 -->
     <div class="container">
         <div class="row">
