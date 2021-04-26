@@ -10,7 +10,7 @@
 	    <meta name="author" content="">
 	    <link rel="icon" href="../../favicon.ico">
 
-	    <title>The global pandemic take over</title>
+	    <title>Pandemic Spamdemic</title>
 	     
 <!-- ================ local bootstrap, css and js ================ -->
 	      <!--  Bootstrap core CSS -->
