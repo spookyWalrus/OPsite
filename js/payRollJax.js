@@ -91,8 +91,8 @@ function searchPayPeriod(){
 		    	thisDude.innerHTML = 'Payroll for:&nbsp;&nbsp;' + userName // set name and pay period
 		    	 +'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pay period: ' +dateSearch +'  -->  ' +endDate; 
 		    	 // + '<br>Pay period: ' +dateSearch +'  -->  ' +endDate; 
-				
 		    	var payrollData = foundIt;
+		    	console.log(foundIt);
 		    		// console.log(payrollData);
  		    	   sessionStorage.setItem("payrollData", JSON.stringify(payrollData)); // HTML session storage to pass date  back to showReportJax.js
  		    	   sortPayroll(); // this parses and sets all values into HTML page

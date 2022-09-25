@@ -93,12 +93,18 @@ if (isset($_POST['findPayPeriod'])){ // get date range
 		// 				event_date BETWEEN  ? AND  ? ORDER BY event_date ASC,
 		// 				event_location ASC, event_name ASC");
 
-		$stmt = $pdo->prepare("SELECT staff_name,event_date,event_name,event_location,
-							event_code,position,start1,end1,start2,end2,start3,end3 FROM staff_hours WHERE staff_name=? AND
-						event_date BETWEEN  ? AND  ? ORDER BY event_date ASC,
-						event_location ASC, event_name ASC");
+		// vvvv  below to set variables/statement for MySql vvvvv
+		$stmt = "SET @name = $name;
+				 SET @dateStart = $dateStart;
+				 SET @dateEnd = $dateEnd;";
+		$stmt = $pdo->prepare("SELECT staff_name,event_date,event_name,event_location,event_code,position,start1,end1,start2,end2,start3,end3 FROM staff_hours WHERE staff_name = @name AND event_date BETWEEN  @dateStart AND @dateEnd ORDER BY event_date ASC,event_location ASC, event_name ASC");
+
+		// vvvv Below is to set variables/statement for mariaDB vvvvv
+		// $stmt = $pdo->prepare("SELECT staff_name,event_date,event_name,event_location,event_code,position,start1,end1,start2,end2,start3,end3 FROM staff_hours WHERE staff_name = ? AND event_date BETWEEN  ? AND  ? ORDER BY event_date ASC,event_location ASC, event_name ASC");
 		
-		$stmt->execute([$name,$dateStart,$dateEnd]);
+		// $stmt->execute([$name,$dateStart,$dateEnd]); 
+
+
 		$dates = $stmt->fetchAll(PDO::FETCH_ASSOC);  
 
 		// include "payRollpg1.php";
