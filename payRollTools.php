@@ -89,7 +89,7 @@ if (isset($_POST['findPayPeriod'])){ // get date range
 		// $stmt = $pdo->prepare("SELECT * FROM staff_hours WHERE staff_name=? AND
 		// 				event_date BETWEEN  ? AND  ? ORDER BY event_date ASC");
 
-		// $stmt = $pdo->prepare("SELECT * FROM staff_hours WHERE staff_name=? AND
+		// $stmt = $pdo->prepare("SELECT * FROM  staff_hours WHERE staff_name=? AND
 		// 				event_date BETWEEN  ? AND  ? ORDER BY event_date ASC,
 		// 				event_location ASC, event_name ASC");
 
