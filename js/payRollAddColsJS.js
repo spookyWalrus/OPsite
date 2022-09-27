@@ -279,11 +279,12 @@ function findDoubles(date, index){
 	v14 = v14 + doublesNo; // set new value for all columns to loop through - used in payRollJSTools.js
 
 	// check doubles count and set dates accordingly
-	if (doublesNo > 0){
-	
+	if (doublesNo != 0){
 		setDoubleDates(); 
+		console.log('doubledates are found');
 	} else if (doublesNo == 0){
 		setDates();
+		console.log('only single dates');
 	}
 
 }
