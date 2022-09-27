@@ -279,10 +279,10 @@ function findDoubles(date, index){
 	v14 = v14 + doublesNo; // set new value for all columns to loop through - used in payRollJSTools.js
 
 	// check doubles count and set dates accordingly
-	if (doublesNo != 0){
+	if (doublesNo > 0){
 		setDoubleDates(); 
 		console.log('doubledates are found');
-	} else if (doublesNo == 0){
+	} else {
 		setDates();
 		console.log('only single dates');
 	}
@@ -567,7 +567,7 @@ function setDates(){
 		z++;
 	}
 	totalDays = dubWeek1 + dubWeek2 + v14; 
-}
+} // close setDates()
 
 
 // below is new block to sort doubles to set dates and make markerObject array
@@ -582,35 +582,36 @@ function setDoubleDates(){
 	var a = 0; // counter for marker object indices
 	var z = 0;// index for loop, increments each time function is called
 
-	markers.forEach(checkDubs,z); 
-		var count;// counter to increment if a double is found in array
-		function checkDubs(date,index){ //go through markers array for each day of pay period, find doubles
-			count = 0;
-			for(var x = z;x<markers.length;x++){
-				if(date == markers[x]){ 
-					++count;
-				}
-			// }
-				if (count >= 2){ // a double work date
-					// console.log('this is a double of: '+date);
-					
-					let obj = window['mkobj'+[a]];
-				 	obj = {};
-					obj.date = date;
-					obj.isDbl = 'y';
-					obj.indx = x; // index of double in marker
-					obj.dblCount = count;
-					dubObj[a]=obj;
-					++a;
-					break;
-				}
+	markers.forEach(checkDubs,z); // fill markers array
+
+	var count;// counter to increment if a double is found in array
+	function checkDubs(date,index){ //go through markers array for each day of pay period, find doubles
+		count = 0;
+		for(var x = z;x<markers.length;x++){
+			if(date == markers[x]){ 
+				++count;
 			}
-			++z;
-		}	
+		// }
+			if (count >= 2){ // a double work date
+				// console.log('this is a double of: '+date);
+				
+				let obj = window['mkobj'+[a]];
+			 	obj = {};
+				obj.date = date;
+				obj.isDbl = 'y';
+				obj.indx = x; // index of double in marker
+				obj.dblCount = count;
+				dubObj[a]=obj;
+				++a;
+				break;
+			}
+		}
+		++z;
+	}	// close checkDubs()
 	// console.log('dubObj: ',dubObj);
 
-// create/ fill markerObj with all work dates
-	var markerObj = [];  // as markerObj, don't need for JS page
+	// create/ fill markerObj with all work dates
+	var markerObj = [];  // markerObj only for local function NOT global , don't need for JS page
 	var b = 0; // indices for markerObj, gets bumped
 	var y = 0; // indices for dubObj
 	var w = 0;  // indices for col, gets bumped every time a double exists.
@@ -718,7 +719,7 @@ function setDoubleDates(){
 			
 	}
 			
-}
+} //close setDoubleDates()
 
 // var totalDays = dubWeek1 + dubWeek2 + v14; // variable to calculate index for week totals, used on other page.
 function modIndex(){ // function to modify the index # for buttons
