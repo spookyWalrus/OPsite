@@ -175,7 +175,7 @@ function zeroFields(){ // zero all fields before setting data
 var weekHoursTots; // array used to collect total hours for week calculation
 // ..............  main function to sort data retrieved by Jax page, outputs to display  ...............
 var payData; // variable to set retrieved data from SQL query
-var markerObj;
+// var markerObj;
 function sortPayroll(){
 	// zeroFields();
 	weekIncomeTots = [];
