@@ -518,7 +518,7 @@ function makeColumns(weekNo,dayIndex, dayDay){
 }
 
 var totalDays;// variable to calculate index for week totals, used on other page.
-var markerObj =[]; // array w/objects to use as markers for other JS page
+var markerObj =[]; // global array w/objects to use as markers for other JS page
 var dateCol = document.getElementsByClassName('dateColumn');
 sessionStorage.clear();
 function setDates(){
@@ -562,6 +562,7 @@ function setDates(){
 				// console.log('set as week2');
 			}
 			markerObj[y]=obj;
+			console.log('markerObj from setDates(): ',markerObj);
 			y++;
 		}
 		z++;
@@ -612,6 +613,7 @@ function setDoubleDates(){
 
 	// create/ fill markerObj with all work dates
 	var markerObj = [];  // markerObj only for local function NOT global , don't need for JS page
+	console.log('markerObj  used only for local??? in setDoubleDates(): ', markerObj);
 	var b = 0; // indices for markerObj, gets bumped
 	var y = 0; // indices for dubObj
 	var w = 0;  // indices for col, gets bumped every time a double exists.
@@ -658,10 +660,12 @@ function setDoubleDates(){
 		}
 		// console.log('y is now: ',y);
 		markerObj[b]=obj;
+		console.log('markerObj in makeMarkerObj() which is in setDoubleDates(): ',markerObj);
 		b++;
 	}
-	// console.log(markerObj);
+	console.log('markerObj once makeMarkerObj() is complete: ',markerObj);
 	sessionStorage.theMarkerObj = JSON.stringify(markerObj);
+
 	modIndex();
 
 // set dates for calendar...
