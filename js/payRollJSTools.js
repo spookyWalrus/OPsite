@@ -1143,6 +1143,7 @@ function hideTables(){
 	  	// setTimeout(hideTables(),100); 
 		if (document.readyState === 'complete'){
 			hideTables();
+		}
 	}
 	// }
 }
