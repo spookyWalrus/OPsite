@@ -1140,10 +1140,10 @@ function hideTables(){
 		hideHours(33,1);
 	} else {
 		console.log('startcol not set, trying again');
-	  	// setTimeout(hideTables(),100); 
-		if (document.readyState === 'complete'){
-			hideTables();
-		}
+	  	setTimeout(hideTables(),100); 
+		// if (document.readyState === 'complete'){
+		// 	hideTables();
+		// }
 	}
 	// }
 }
