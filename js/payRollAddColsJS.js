@@ -563,12 +563,14 @@ function setDates(){
 				// console.log('set as week2');
 			}
 			markerObj[y]=obj;
-			console.log('markerObj from setDates(): ',markerObj);
 			y++;
 		}
 		z++;
 	}
 	totalDays = dubWeek1 + dubWeek2 + v14; 
+	sessionStorage.theMarkerObj = JSON.stringify(markerObj);
+	console.log('markerObj from setDates(): ',markerObj);
+
 } // close setDates()
 
 
@@ -661,10 +663,9 @@ function setDoubleDates(){
 		}
 		// console.log('y is now: ',y);
 		markerObj[b]=obj;
-		console.log('markerObj in makeMarkerObj() which is in setDoubleDates(): ',markerObj);
 		b++;
 	}
-	console.log('markerObj once makeMarkerObj() is complete: ',markerObj);
+	console.log('markerObj from doubledates(): ',markerObj);
 	sessionStorage.theMarkerObj = JSON.stringify(markerObj);
 
 	modIndex();
