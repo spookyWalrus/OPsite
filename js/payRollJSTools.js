@@ -1151,7 +1151,7 @@ function hideTables(){
 	}
 	// }
 }
-window.onload = hideTables();
+// window.onload = hideTables();
 // document.addEventListener("DOMContentLoaded", hideTables());
 
 // window.onload = alert("unicornkittycupcakefacepandabuttttmoonsparkpro ofroblox mhahahaha i'msooooo smart! i loveicecream! ihavelongggggggggggggggggg h");

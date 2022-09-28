@@ -281,10 +281,10 @@ function findDoubles(date, index){
 	// check doubles count and set dates accordingly
 	if (doublesNo > 0){
 		setDoubleDates(); 
-		console.log('doubledates are found');
+		// console.log('doubledates are found');
 	} else {
 		setDates();
-		console.log('only single dates');
+		// console.log('only single dates');
 	}
 
 } // end of findDoubles()
@@ -569,7 +569,7 @@ function setDates(){
 	}
 	totalDays = dubWeek1 + dubWeek2 + v14; 
 	sessionStorage.theMarkerObj = JSON.stringify(markerObj);
-	console.log('markerObj from setDates(): ',markerObj);
+	console.log('markerObj data set from setDates()');
 
 } // close setDates()
 

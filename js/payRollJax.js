@@ -75,6 +75,8 @@ var thisDude = document.getElementById('viewingThisUser');
 var userName;
 function searchPayPeriod(){
 	loadPage(); // this will re-load and clear your table and all values
+	sessionStorage.clear(); // make sure session storage is cleared
+
 	userName = document.getElementById('searchUserMenu').value;
 	var dateSearch  =  dateStart.options[dateStart.selectedIndex].value;
 	var endDate = add14days(); // this is in payRollJSTools.js
@@ -93,8 +95,7 @@ function searchPayPeriod(){
 		    	 // + '<br>Pay period: ' +dateSearch +'  -->  ' +endDate; 
 		    	var payrollData = foundIt;
 		    	// console.log(foundIt);
-		    		console.log(payrollData);
-	    		sessionStorage.clear();
+		    	// console.log(payrollData);
 
 	    	    sessionStorage.setItem("payrollData", JSON.stringify(payrollData)); // HTML session storage to pass date  back to showReportJax.js
 	    	    sortPayroll(); // this parses and sets all values into HTML page
