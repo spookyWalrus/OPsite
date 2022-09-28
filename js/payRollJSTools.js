@@ -1140,7 +1140,11 @@ function hideTables(){
 		hideHours(33,1);
 	} else {
 		console.log('startcol not set, trying again');
-	  	setTimeout(hideTables(),100); 
+		if(startcol){
+			hideHours(33,0);
+			hideHours(33,1);
+		}
+	  	// setTimeout(hideTables(),100); 
 		// if (document.readyState === 'complete'){
 		// 	hideTables();
 		// }
