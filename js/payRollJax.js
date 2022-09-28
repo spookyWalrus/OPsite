@@ -115,6 +115,8 @@ function loadPage(){ // resets page, flushes arrays/objects to zero by re-loadin
 	$.getScript("js/payRollJSTools.js");
    	$.getScript("js/payRollAddColsJS.js");
    	$.getScript("js/payRollIncomeAdjust.js");
+   	sessionStorage.clear();
+
 }
 
 // window.onload = alert("unicornkittycupcakefacepandabuttttmoonsparkpro ofroblox mhahahaha i'msooooo smart! i loveicecarem! ");

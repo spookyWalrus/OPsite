@@ -287,7 +287,7 @@ function findDoubles(date, index){
 		console.log('only single dates');
 	}
 
-}
+} // end of findDoubles()
 
 
 var countMakeRow = 0;
@@ -518,9 +518,10 @@ function makeColumns(weekNo,dayIndex, dayDay){
 }
 
 var totalDays;// variable to calculate index for week totals, used on other page.
-var markerObj =[]; // global array w/objects to use as markers for other JS page
+var markerObj =[]; // global array w/objects to use as markers in payRollJSTools.js
 var dateCol = document.getElementsByClassName('dateColumn');
-sessionStorage.clear();
+//sessionStorage.clear(); //  ----> moved to payRollJax.js to avoid confusion...
+
 function setDates(){
 	// console.log("setting regular dates");
 	// console.log(markers +" is markers");
@@ -612,8 +613,8 @@ function setDoubleDates(){
 	// console.log('dubObj: ',dubObj);
 
 	// create/ fill markerObj with all work dates
-	var markerObj = [];  // markerObj only for local function NOT global , don't need for JS page
-	console.log('markerObj  used only for local??? in setDoubleDates(): ', markerObj);
+	// var markerObj = [];  // already declared in higher scope, redundant. This array gets cleared when script re-loads on new search
+	
 	var b = 0; // indices for markerObj, gets bumped
 	var y = 0; // indices for dubObj
 	var w = 0;  // indices for col, gets bumped every time a double exists.
