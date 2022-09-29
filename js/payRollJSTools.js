@@ -144,6 +144,7 @@ var field22 = document.getElementsByClassName('OT2rateCol');
 var field23 = document.getElementsByClassName('adjHrCol');
 var field24 = document.getElementsByClassName('wageAdjCol');
 function zeroFields(){ // zero all fields before setting data 
+	console.log('v14 = ',v14);
 	for (var x=1;x<25; x++){
 	 	var row = window['field'+[x]];
 	 	if (x == 1){
@@ -171,6 +172,7 @@ function zeroFields(){ // zero all fields before setting data
  		} 
 	}
 	console.log('fields zeroed');
+	sortPayroll();
 }
 
 var weekHoursTots; // array used to collect total hours for week calculation
@@ -178,7 +180,7 @@ var weekHoursTots; // array used to collect total hours for week calculation
 var payData; // variable to set retrieved data from SQL query
 // var markerObj;
 function sortPayroll(){
-	zeroFields();
+	// zeroFields();
 	weekIncomeTots = [];
 	weekHoursTots = [];
 	findDoubles(); // parse data for doubles, add columns if needed, set dates with columns
