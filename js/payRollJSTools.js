@@ -170,6 +170,7 @@ function zeroFields(){ // zero all fields before setting data
  		
  		} 
 	}
+	console.log('fields zeroed');
 }
 
 var weekHoursTots; // array used to collect total hours for week calculation

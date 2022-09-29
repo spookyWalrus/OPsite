@@ -95,7 +95,9 @@ function searchPayPeriod(){
 		    	// console.log(payrollData);
 
 	    	    sessionStorage.setItem("payrollData", JSON.stringify(payrollData)); // HTML session storage to pass date  back to showReportJax.js
-	    	    sortPayroll(); // this parses and sets all values into HTML page
+				zeroFields(); // zeroes columns, then executes sortPayroll()
+
+	    	    // sortPayroll(); // this parses and sets all values into HTML page
        			// hideTables();
 	       			// console.log(foundIt);
 	       			// var leya ='i love animals i also love to dance i love pizza cooooooooooooool awsome ';
