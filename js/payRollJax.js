@@ -60,9 +60,6 @@ function getDateRange(){ // fill up search menu with all pay period for the year
       	});
 
 }
-$(document).ready(fillMenu(), 
-	loadPage()
-); // load menu items on page, then load table and JS scripts
 
 
 // var userName = document.getElementById('user_name');
@@ -99,7 +96,7 @@ function searchPayPeriod(){
 
 	    	    sessionStorage.setItem("payrollData", JSON.stringify(payrollData)); // HTML session storage to pass date  back to showReportJax.js
 	    	    sortPayroll(); // this parses and sets all values into HTML page
-       			hideTables();
+       			// hideTables();
 	       			// console.log(foundIt);
 	       			// var leya ='i love animals i also love to dance i love pizza cooooooooooooool awsome ';
 	       			// alert(leya);
@@ -180,3 +177,6 @@ function saveData2DB(){ // function called from above
 	});
 }
 
+$(document).ready(fillMenu(), 
+	loadPage()
+); // load menu items on page, then load table and JS scripts
