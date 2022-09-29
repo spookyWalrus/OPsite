@@ -71,7 +71,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 var thisDude = document.getElementById('viewingThisUser');
 var userName;
 function searchPayPeriod(){
-	loadPage(); // this will re-load and clear your table and all values
+	// loadPage(); // this will re-load and clear your table and all values
 	sessionStorage.clear(); // make sure session storage is cleared
 
 	userName = document.getElementById('searchUserMenu').value;
@@ -111,7 +111,7 @@ function searchPayPeriod(){
 };
 
 function loadPage(){ // resets page, flushes arrays/objects to zero by re-loading scripts
-    $("#prPage").load("payRollpg1.php");
+    // $("#prPage").load("payRollpg1.php");
 	$.getScript("js/payRollJSTools.js");
    	$.getScript("js/payRollAddColsJS.js");
    	$.getScript("js/payRollIncomeAdjust.js");

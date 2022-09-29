@@ -177,7 +177,7 @@ var weekHoursTots; // array used to collect total hours for week calculation
 var payData; // variable to set retrieved data from SQL query
 // var markerObj;
 function sortPayroll(){
-	// zeroFields();
+	zeroFields();
 	weekIncomeTots = [];
 	weekHoursTots = [];
 	findDoubles(); // parse data for doubles, add columns if needed, set dates with columns
