@@ -119,34 +119,38 @@ function add14days(){  // set up dates for searching start date
 // var dateCol = document.getElementsByClassName('dateColumn');
 
 // set variables for zeroing fields
-var field1 = document.getElementsByClassName('eventCol');
-var field2 = document.getElementsByClassName('eventIn');
-var field3 = document.getElementsByClassName('codeColumn');
-var field4 = document.getElementsByClassName('accntCol');
-var field5 = document.getElementsByClassName('role');
-var field6 = document.getElementsByClassName('start1Col');
-var field7 = document.getElementsByClassName('en1Col');
-var field8 = document.getElementsByClassName('totCol1');
-var field9 = document.getElementsByClassName('start2Col');
-var field10 = document.getElementsByClassName('en2Col');
-var field11 = document.getElementsByClassName('totCol2');
-var field12 = document.getElementsByClassName('start3Col');
-var field13 = document.getElementsByClassName('en3Col');
-var field14 = document.getElementsByClassName('totCol3');
-var field15 = document.getElementsByClassName('subTotHr');
-var field16 = document.getElementsByClassName('otHr');
-var field17 = document.getElementsByClassName('ot2Hr');
-var field18 = document.getElementsByClassName('grTotCol');
-var field19 = document.getElementsByClassName('rateCol');
-var field20 = document.getElementsByClassName('inCol');
-var field21 = document.getElementsByClassName('OTrateCol');
-var field22 = document.getElementsByClassName('OT2rateCol');
-var field23 = document.getElementsByClassName('adjHrCol');
-var field24 = document.getElementsByClassName('wageAdjCol');
+// var field1 = document.getElementsByClassName('eventCol');
+// var field2 = document.getElementsByClassName('eventIn');
+// var field3 = document.getElementsByClassName('codeColumn');
+// var field4 = document.getElementsByClassName('accntCol');
+// var field5 = document.getElementsByClassName('role');
+// var field6 = document.getElementsByClassName('start1Col');
+// var field7 = document.getElementsByClassName('en1Col');
+// var field8 = document.getElementsByClassName('totCol1');
+// var field9 = document.getElementsByClassName('start2Col');
+// var field10 = document.getElementsByClassName('en2Col');
+// var field11 = document.getElementsByClassName('totCol2');
+// var field12 = document.getElementsByClassName('start3Col');
+// var field13 = document.getElementsByClassName('en3Col');
+// var field14 = document.getElementsByClassName('totCol3');
+// var field15 = document.getElementsByClassName('subTotHr');
+// var field16 = document.getElementsByClassName('otHr');
+// var field17 = document.getElementsByClassName('ot2Hr');
+// var field18 = document.getElementsByClassName('grTotCol');
+// var field19 = document.getElementsByClassName('rateCol');
+// var field20 = document.getElementsByClassName('inCol');
+// var field21 = document.getElementsByClassName('OTrateCol');
+// var field22 = document.getElementsByClassName('OT2rateCol');
+// var field23 = document.getElementsByClassName('adjHrCol');
+// var field24 = document.getElementsByClassName('wageAdjCol');
+
+let field = ['eventCol','eventIn','codeColumn','codeColumn','accntCol','role','start1Col','en1Col','totCol1','start2Col','en2Col','totCol2','start3Col','en3Col','totCol3','subTotHr','otHr','ot2Hr','grTotCol','rateCol','inCol','OTrateCol','OT2rateCol','adjHrCol','wageAdjCol'];
+
 function zeroFields(){ // zero all fields before setting data 
 	console.log('v14 = ',v14);
-	for (var x=1;x<25; x++){
-	 	var row = window['field'+[x]];
+	for (var x=1;x<field.length; x++){
+	 	// var row = window['field'+[x]];
+	 	let row = document.getElementsByClassName(x);
 	 	console.log('row is: ',row);
 	 	if (x == 1){
 	 		for (var y=0;y<v14;y++){
