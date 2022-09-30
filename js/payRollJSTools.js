@@ -151,7 +151,7 @@ function zeroFields(){ // zero all fields before setting data
 	for (var x=1;x<field.length; x++){
 	 	// var row = window['field'+[x]];
 	 	console.log('x is: ',field[x]);
-	 	let row = document.getElementsByClassName(x);
+	 	let row = document.getElementsByClassName(`'${x}'`);
 	 	console.log('row is: ',row);
 	 	if (x == 1){
 	 		for (var y=0;y<v14;y++){
