@@ -150,6 +150,7 @@ function zeroFields(){ // zero all fields before setting data
 	console.log('v14 = ',v14);
 	for (var x=1;x<field.length; x++){
 	 	// var row = window['field'+[x]];
+	 	console.log('x is: ',field[x]);
 	 	let row = document.getElementsByClassName(x);
 	 	console.log('row is: ',row);
 	 	if (x == 1){
@@ -165,7 +166,7 @@ function zeroFields(){ // zero all fields before setting data
  		
  		} else if (x == 5){
 	 			for (var y=0;y<v14;y++){
-	 			field5[y].value = "--";
+	 			row[y].value = "--";
 	 			}
  		} else if (x > 5 && x < 23) {
  			for (var y=0;y<v14;y++){
