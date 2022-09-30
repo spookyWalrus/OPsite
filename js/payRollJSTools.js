@@ -158,7 +158,7 @@ function zeroFields(){ // zero all fields before setting data
 	 			console.log('x=1,row y at: ',row[y]);
 	 			row[y].innerHTML = '';		
 	 		} 
-		} else if (x > 1 && x < 4){
+		} else if (x > 1 && x < 5){
 	 		for (var y=0;y<v14;y++){
 	 			console.log('1>x<4,row y at: ',row[y]);
 	 			row[y].value = '';		
