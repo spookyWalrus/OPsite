@@ -144,7 +144,7 @@ function add14days(){  // set up dates for searching start date
 // var field23 = document.getElementsByClassName('adjHrCol');
 // var field24 = document.getElementsByClassName('wageAdjCol');
 
-let field = ['eventCol','eventIn','codeColumn','accntCol','role','start1Col','en1Col','totCol1','start2Col','en2Col','totCol2','start3Col','en3Col','totCol3','subTotHr','otHr','ot2Hr','grTotCol','rateCol','inCol','OTrateCol','OT2rateCol','adjHrCol','wageAdjCol'];
+let field = ['blah','eventCol','eventIn','codeColumn','accntCol','role','start1Col','en1Col','totCol1','start2Col','en2Col','totCol2','start3Col','en3Col','totCol3','subTotHr','otHr','ot2Hr','grTotCol','rateCol','inCol','OTrateCol','OT2rateCol','adjHrCol','wageAdjCol'];
 
 function zeroFields(){ // zero all fields before setting data 
 	console.log('v14 = ',v14);
