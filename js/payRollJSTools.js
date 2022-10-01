@@ -158,8 +158,8 @@ function zeroFields(){ // zero all fields before setting data
 		} else if (x == 3 || x == 4){
 	 		for (var y=0;y<v14;y++){
 	 			// console.log('where x is: ',x,' row y at: ',row[y]);
-	 			row[y].value = "dude";	
-	 			console.log('value set as: ',row[y].value);
+	 			row[y].value = "";	
+	 			// console.log('value set as: ',row[y].value);
 	 		} 
  		
  		} else if (x == 5){
@@ -265,6 +265,7 @@ function setEventCode(data,index){
 	var i = index;
 	var column = document.getElementsByClassName('codeInput');
 	column[markerObj[i].col].value = eventData; 
+	console.log('event code at: ',eventData)
 }
 
 var position; // variable to access position or role. Used to calculate wages down below
