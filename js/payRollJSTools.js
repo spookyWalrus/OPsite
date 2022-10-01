@@ -150,18 +150,15 @@ function zeroFields(){ // zero all fields before setting data
 	console.log('v14 = ',v14);
 	for (var x=1;x<field.length; x++){
 	 	// var row = window['field'+[x]];
-	 	console.log('x is: ',field[x]);
 	 	let row = document.getElementsByClassName(field[x]);
-	 	// console.log('row is: ',row);	
 	 	if (x < 3){
 	 		for (var y=0;y<v14;y++){
-	 			// console.log('x=1,row y at: ',row[y]);
 	 			row[y].innerHTML = '';		
 	 		} 
 		} else if (x == 3 || x == 4){
 	 		for (var y=0;y<v14;y++){
 	 			console.log('1>x<4,row y at: ',row[y]);
-	 			row[y].value = '';	
+	 			row[y].value = "";	
 	 			console.log('col at: ',)	
 	 		} 
  		
