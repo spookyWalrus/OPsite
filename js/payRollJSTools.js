@@ -152,16 +152,17 @@ function zeroFields(){ // zero all fields before setting data
 	 	// var row = window['field'+[x]];
 	 	console.log('x is: ',field[x]);
 	 	let row = document.getElementsByClassName(field[x]);
-	 	console.log('row is: ',row);
-	 	if (x == 1){
+	 	// console.log('row is: ',row);	
+	 	if (x < 3){
 	 		for (var y=0;y<v14;y++){
-	 			console.log('x=1,row y at: ',row[y]);
+	 			// console.log('x=1,row y at: ',row[y]);
 	 			row[y].innerHTML = '';		
 	 		} 
-		} else if (x > 1 && x < 5){
+		} else if (x == 3 || x == 4){
 	 		for (var y=0;y<v14;y++){
 	 			console.log('1>x<4,row y at: ',row[y]);
-	 			row[y].value = '';		
+	 			row[y].value = '';	
+	 			console.log('col at: ',)	
 	 		} 
  		
  		} else if (x == 5){
@@ -259,6 +260,7 @@ function seteventLoc(eventVenue,index){
 	var i = index;
 	var eventIn = document.getElementsByClassName('eventLoc');
 	eventIn[markerObj[i].col].innerHTML = eventLoc; 
+	console.log('eventLoc: ,',eventLoc)
 }
 
 function setEventCode(data,index){
