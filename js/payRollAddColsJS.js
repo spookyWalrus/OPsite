@@ -280,10 +280,10 @@ function findDoubles(date, index){
 
 	// check doubles count and set dates accordingly
 	if (doublesNo > 0){
-		setDoubleDates(sortPayRoll); 
+		setDoubleDates(sortPayroll); 
 		// console.log('doubledates are found');
 	} else {
-		setDates(sortPayRoll);
+		setDates(sortPayroll);
 		// console.log('only single dates');
 	}
 
