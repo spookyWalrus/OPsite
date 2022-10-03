@@ -60,8 +60,8 @@
 
 <?php include("payRollpg1.php") ?>
 <script type="text/javascript" src="js/payRollJax.js"></script>
-<script type="text/javascript" src="js/payRollJSTools.js"></script>
+<!-- <script type="text/javascript" src="js/payRollJSTools.js"></script>
 <script type="text/javascript" src="js/payRollAddColsJS.js"></script>
-<script type="text/javascript" src="js/payRollIncomeAdjust.js"></script>
+<script type="text/javascript" src="js/payRollIncomeAdjust.js"></script> -->
 
 <?php include("footer.php") ?>
