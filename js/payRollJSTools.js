@@ -157,8 +157,8 @@ function zeroFields(){ // zero all fields before setting data
 	 		} 
 		} else if (x == 3 || x == 4){
 	 		for (var y=0;y<v14;y++){
-	 			row[y].value = "";	
-	 			console.log('value set as: ',row[y].value);
+	 			row[y].value = "dude";	
+	 			// console.log('value set as: ',row[y].value);
 	 		} 
  		
  		} else if (x == 5){
@@ -257,7 +257,7 @@ function seteventLoc(eventVenue,index){
 	var i = index;
 	var eventIn = document.getElementsByClassName('eventLoc');
 	eventIn[markerObj[i].col].innerHTML = eventLoc; 
-	console.log('eventLoc: ,',eventLoc)
+	// console.log('eventLoc: ,',eventLoc)
 }
 
 function setEventCode(data,index){
@@ -266,6 +266,7 @@ function setEventCode(data,index){
 	var column = document.getElementsByClassName('codeInput');
 	console.log('before setting data, event code at: ',column[markerObj[i].col].value);
 	column[markerObj[i].col].value = eventData; 
+	console.log('code now set as: ',eventData);
 }
 
 var position; // variable to access position or role. Used to calculate wages down below
