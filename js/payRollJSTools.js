@@ -147,7 +147,6 @@ function add14days(){  // set up dates for searching start date
 let field = ['blah','eventCol','eventLoc','codeInput','accntCol','role','start1Col','en1Col','totCol1','start2Col','en2Col','totCol2','start3Col','en3Col','totCol3','subTotHr','otHr','ot2Hr','grTotCol','rateCol','inCol','OTrateCol','OT2rateCol','adjHrCol','wageAdjCol'];
 
 function zeroFields(){ // zero all fields before setting data 
-	console.log('v14 = ',v14);
 	for (var x=1;x<field.length; x++){
 	 	// var row = window['field'+[x]];
 	 	let row = document.getElementsByClassName(field[x]);
@@ -577,13 +576,14 @@ function incomeCalc(index)	{
 }
 
 // ....................  weekIncome calculation  (called when all data sets are parsed)  .....................
-var weekTotalIncome;  // array for week income total
-var	week1Inc;
-var	week2Inc;
+// var weekTotalIncome;  // array for week income total
+// var	week1Inc;
+// var	week2Inc;
 function weekIncome(nuWeekValue,weekNo){
-	
-	week1Inc = 0;
-	week2Inc = 0;
+	var weekTotalIncome;  // array for week income total
+
+	var week1Inc = 0;
+	var week2Inc = 0;
 	var nuWkIn;
 
 	if ((nuWeekValue !== 0) && (nuWeekValue)){ 
@@ -636,15 +636,19 @@ function weekIncome(nuWeekValue,weekNo){
 		column[1].innerHTML = '$' + parseFloat(week2Inc);
 		nuTotIn.innerHTML = '$'+weekTotalIncome;		
 	}
+	console.log('total week income is: ',weekTotalIncome);
 
 }
 // ....................   week hour count (called when all data sets are parsed)  ....................
-var weekTotalHours; // variable to set total week hours
-var week1hrs=0;
-var week2hrs=0;
+// var weekTotalHours; // variable to set total week hours
+// var week1hrs=0;
+// var week2hrs=0;
 function weekHourCount(nuWeekHours,weekNo){
-	
+	var weekTotalHours; // variable to set total week hours
+	var week1hrs=0;
+	var week2hrs=0;
 	var nuWkHr; 
+	
 	if ((nuWeekHours) && (nuWeekHours !== 0)) { //week total hour adjust 
 		nuWkHr = parseFloat(nuWeekHours); // variable to check if week Total values are adjusted
 	} else if ((!nuWeekHours)||(nuWeekValue == 0)){ // reg day adjust

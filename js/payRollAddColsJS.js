@@ -569,7 +569,6 @@ function setDates(callBackSortPayRoll){
 	}
 	totalDays = dubWeek1 + dubWeek2 + v14; 
 	sessionStorage.theMarkerObj = JSON.stringify(markerObj);
-	console.log('markerObj data set from setDates()');
 	callBackSortPayRoll();
 } // close setDates()
 
