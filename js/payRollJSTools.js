@@ -636,7 +636,7 @@ function weekIncome(nuWeekValue,weekNo){
 		column[1].innerHTML = '$' + parseFloat(week2Inc);
 		nuTotIn.innerHTML = '$'+weekTotalIncome;		
 	}
-	console.log('parse week1Inc, week2Inc: ',parseFloat(week1Inc), parseFloat(week2Inc);
+	console.log('parse week1Inc, week2Inc: ',parseFloat(week1Inc), parseFloat(week2Inc));
 	console.log('total income of both weeks: ',weekTotalIncome);
 
 }
