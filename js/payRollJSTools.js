@@ -577,14 +577,13 @@ function incomeCalc(index)	{
 }
 
 // ....................  weekIncome calculation  (called when all data sets are parsed)  .....................
-// var weekTotalIncome;  // array for week income total
-// var	week1Inc;
-// var	week2Inc;
+var weekTotalIncome;  // array for week income total
+var	week1Inc;
+var	week2Inc;
 function weekIncome(nuWeekValue,weekNo){
-	var weekTotalIncome;  // array for week income total
 
-	var week1Inc = 0;
-	var week2Inc = 0;
+	 week1Inc = 0;
+	 week2Inc = 0;
 	var nuWkIn;
 
 	if ((nuWeekValue !== 0) && (nuWeekValue)){ 
@@ -637,17 +636,18 @@ function weekIncome(nuWeekValue,weekNo){
 		column[1].innerHTML = '$' + parseFloat(week2Inc);
 		nuTotIn.innerHTML = '$'+weekTotalIncome;		
 	}
+	console.log('parse week1Inc, week2Inc: ',parseFloat(week1Inc), parseFloat(week2Inc);
 	console.log('total income of both weeks: ',weekTotalIncome);
 
 }
 // ....................   week hour count (called when all data sets are parsed)  ....................
-// var weekTotalHours; // variable to set total week hours
-// var week1hrs=0;
-// var week2hrs=0;
+var weekTotalHours; // variable to set total week hours
+var week1hrs=0;
+var week2hrs=0;
 function weekHourCount(nuWeekHours,weekNo){
-	var weekTotalHours; // variable to set total week hours
-	var week1hrs=0;
-	var week2hrs=0;
+	// var weekTotalHours; // variable to set total week hours
+	// var week1hrs=0;
+	// var week2hrs=0;
 	var nuWkHr; 
 
 	if ((nuWeekHours) && (nuWeekHours !== 0)) { //week total hour adjust 
