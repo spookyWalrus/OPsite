@@ -114,9 +114,9 @@ function searchPayPeriod(){
 
 function loadPage(){ // resets page, flushes arrays/objects to zero by re-loading scripts
     // $("#prPage").load("payRollpg1.php");
-	$.getScript("js/payRollJSTools.js");
-   	$.getScript("js/payRollAddColsJS.js");
-   	$.getScript("js/payRollIncomeAdjust.js");
+	// $.getScript("js/payRollJSTools.js");
+ //   	$.getScript("js/payRollAddColsJS.js");
+ //   	$.getScript("js/payRollIncomeAdjust.js");
 
 }
 
