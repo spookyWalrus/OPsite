@@ -11,7 +11,7 @@ var w2InT;
 var clicked = [];  // object to check add/revert clicks
 
 function makeIncomeObject(index){// use index for modifying/updating, otherwise make new
-
+console.log('this should be new');
 
 	if(!(index)){ // make new 
 		// console.log('making new hrInTotsObj');

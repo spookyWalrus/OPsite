@@ -183,8 +183,8 @@ var payData; // variable to set retrieved data from SQL query
 // var markerObj;
 function sortPayroll(){
 	// zeroFields();
-	weekIncomeTots = [];
-	weekHoursTots = [];
+	// weekIncomeTots = [];
+	// weekHoursTots = [];
 	// findDoubles(); // parse data for doubles, add columns if needed, set dates with columns
 	// setDates();
 // }
@@ -231,7 +231,7 @@ function sortPayroll(){
 	// hideHours(33,1);
 	// makeHrInTotsObject();
 
-}
+} //end of sortPayroll()
 
 // ........................... header functions ...............
 
@@ -573,6 +573,7 @@ function incomeCalc(index)	{
 	weekIncomeTots[i] = incomeTotal; // set values for week income array, each index is day's income
 	dayHoursIncome[[day]]['income'] = incomeTotal; // set day income into object, for adj.hours/rates 
 	oldIncome[i] = dayHoursIncome[[day]]['income'];
+	console.log('week income tots: ',weekIncomeTots);
 }
 
 // ....................  weekIncome calculation  (called when all data sets are parsed)  .....................
@@ -636,7 +637,7 @@ function weekIncome(nuWeekValue,weekNo){
 		column[1].innerHTML = '$' + parseFloat(week2Inc);
 		nuTotIn.innerHTML = '$'+weekTotalIncome;		
 	}
-	console.log('total week income is: ',weekTotalIncome);
+	console.log('total income of both weeks: ',weekTotalIncome);
 
 }
 // ....................   week hour count (called when all data sets are parsed)  ....................
@@ -648,7 +649,7 @@ function weekHourCount(nuWeekHours,weekNo){
 	var week1hrs=0;
 	var week2hrs=0;
 	var nuWkHr; 
-	
+
 	if ((nuWeekHours) && (nuWeekHours !== 0)) { //week total hour adjust 
 		nuWkHr = parseFloat(nuWeekHours); // variable to check if week Total values are adjusted
 	} else if ((!nuWeekHours)||(nuWeekValue == 0)){ // reg day adjust
