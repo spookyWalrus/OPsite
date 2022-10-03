@@ -73,7 +73,7 @@ var userName;
 function searchPayPeriod(){
 	// loadPage(); // this will re-load and clear your table and all values
 	sessionStorage.clear(); // make sure session storage is cleared
-
+	zeroFields(); // clear all fields on page;
 	userName = document.getElementById('searchUserMenu').value;
 	var dateSearch  =  dateStart.options[dateStart.selectedIndex].value;
 	var endDate = add14days(); // this is in payRollJSTools.js
@@ -95,8 +95,8 @@ function searchPayPeriod(){
 		    	// console.log(payrollData);
 
 	    	    sessionStorage.setItem("payrollData", JSON.stringify(payrollData)); // HTML session storage to pass date  back to showReportJax.js
-				zeroFields(); // zeroes columns, then executes sortPayroll()
-
+	    	    findDoubles(); // checks for double dates, call backs sortPayRoll() on completion;
+	    	    
 	    	    // sortPayroll(); // this parses and sets all values into HTML page
        			// hideTables();
 	       			// console.log(foundIt);

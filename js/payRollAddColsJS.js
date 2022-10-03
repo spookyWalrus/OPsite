@@ -280,10 +280,10 @@ function findDoubles(date, index){
 
 	// check doubles count and set dates accordingly
 	if (doublesNo > 0){
-		setDoubleDates(); 
+		setDoubleDates(sortPayRoll); 
 		// console.log('doubledates are found');
 	} else {
-		setDates();
+		setDates(sortPayRoll);
 		// console.log('only single dates');
 	}
 
@@ -522,7 +522,7 @@ var markerObj =[]; // global array w/objects to use as markers in payRollJSTools
 var dateCol = document.getElementsByClassName('dateColumn');
 //sessionStorage.clear(); //  ----> moved to payRollJax.js to avoid confusion...
 
-function setDates(){
+function setDates(callBackSortPayRoll){
 	// console.log("setting regular dates");
 	// console.log(markers +" is markers");
 	var dateSearch  =  dateStart.options[dateStart.selectedIndex].value;
@@ -570,12 +570,12 @@ function setDates(){
 	totalDays = dubWeek1 + dubWeek2 + v14; 
 	sessionStorage.theMarkerObj = JSON.stringify(markerObj);
 	console.log('markerObj data set from setDates()');
-
+	callBackSortPayRoll();
 } // close setDates()
 
 
 // below is new block to sort doubles to set dates and make markerObject array
-function setDoubleDates(){
+function setDoubleDates(callBackSortPayRoll){
 
 	var dateSearch  =  dateStart.options[dateStart.selectedIndex].value;
 	var dateCol = document.getElementsByClassName('dateColumn');
@@ -724,7 +724,8 @@ function setDoubleDates(){
 		// }
 			
 	}
-			
+
+	callBackSortPayRoll();		
 } //close setDoubleDates()
 
 // var totalDays = dubWeek1 + dubWeek2 + v14; // variable to calculate index for week totals, used on other page.

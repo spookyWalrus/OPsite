@@ -157,8 +157,7 @@ function zeroFields(){ // zero all fields before setting data
 	 		} 
 		} else if (x == 3 || x == 4){
 	 		for (var y=0;y<v14;y++){
-	 			row[y].value = "dude";	
-	 			console.log('value set as: ',row[y].value);
+	 			row[y].value = "";	
 	 		} 
  		
  		} else if (x == 5){
@@ -176,9 +175,7 @@ function zeroFields(){ // zero all fields before setting data
  		
  		} 
 	}
-	console.log('fields zeroed');
 
-	sortPayroll();
 }
 
 var weekHoursTots; // array used to collect total hours for week calculation
@@ -189,7 +186,7 @@ function sortPayroll(){
 	// zeroFields();
 	weekIncomeTots = [];
 	weekHoursTots = [];
-	findDoubles(); // parse data for doubles, add columns if needed, set dates with columns
+	// findDoubles(); // parse data for doubles, add columns if needed, set dates with columns
 	// setDates();
 // }
 // function otherPayroll(){
@@ -264,9 +261,7 @@ function setEventCode(data,index){
 	var eventData = data;
 	var i = index;
 	var column = document.getElementsByClassName('codeInput');
-	console.log('before setting data, event code at: ',column[markerObj[i].col].value);
 	column[markerObj[i].col].value = eventData; 
-	console.log('code now set as: ',eventData);
 }
 
 var position; // variable to access position or role. Used to calculate wages down below
