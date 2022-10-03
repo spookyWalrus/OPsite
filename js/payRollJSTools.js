@@ -177,6 +177,7 @@ function zeroFields(){ // zero all fields before setting data
  		} 
 	}
 	console.log('fields zeroed');
+
 	sortPayroll();
 }
 
@@ -263,9 +264,8 @@ function setEventCode(data,index){
 	var eventData = data;
 	var i = index;
 	var column = document.getElementsByClassName('codeInput');
+	console.log('before setting data, event code at: ',column[markerObj[i].col].value);
 	column[markerObj[i].col].value = eventData; 
-	console.log('col is: ',column[markerObj[i].col]);
-	console.log('event code at: ',eventData)
 }
 
 var position; // variable to access position or role. Used to calculate wages down below
