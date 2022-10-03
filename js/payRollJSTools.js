@@ -183,8 +183,8 @@ var payData; // variable to set retrieved data from SQL query
 // var markerObj;
 function sortPayroll(){
 	// zeroFields();
-	// weekIncomeTots = [];
-	// weekHoursTots = [];
+	weekIncomeTots = [];
+	weekHoursTots = [];
 	// findDoubles(); // parse data for doubles, add columns if needed, set dates with columns
 	// setDates();
 // }
