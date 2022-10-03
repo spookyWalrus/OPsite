@@ -158,7 +158,7 @@ function zeroFields(){ // zero all fields before setting data
 		} else if (x == 3 || x == 4){
 	 		for (var y=0;y<v14;y++){
 	 			row[y].value = "dude";	
-	 			// console.log('value set as: ',row[y].value);
+	 			console.log('value set as: ',row[y].value);
 	 		} 
  		
  		} else if (x == 5){
@@ -178,7 +178,7 @@ function zeroFields(){ // zero all fields before setting data
 	}
 	console.log('fields zeroed');
 
-	sortPayroll();
+	// sortPayroll();
 }
 
 var weekHoursTots; // array used to collect total hours for week calculation
