@@ -180,7 +180,7 @@ function zeroFields(){ // zero all fields before setting data
 var weekHoursTots; // array used to collect total hours for week calculation
 // ..............  main function to sort data retrieved by Jax page, outputs to display  ...............
 var payData; // variable to set retrieved data from SQL query
-// var markerObj;
+
 function sortPayroll(){
 	// zeroFields();
 	weekIncomeTots = [];
@@ -190,6 +190,7 @@ function sortPayroll(){
 // }
 // function otherPayroll(){
 	payData = JSON.parse(sessionStorage.getItem("payrollData"));
+	console.log('markerObj is at: ',markerObj);
 	markerObj = JSON.parse(sessionStorage.getItem('theMarkerObj'));
 	// console.log('in payRollJSTools, markerObj: ',markerObj);
 
