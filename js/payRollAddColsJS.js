@@ -541,12 +541,13 @@ function setDates(callBackSortPayRoll){
 	// console.log('markers for doubles: ', markers);
 	for (var x = 0;x<v14;x++){
 		z = checkEndOfMonth(z,'blah');
-		
+		console.log('z value is: ',z);
+
 		dateCol[x].innerHTML = z; // create dates of the week, straight up;
 		// z = checkOfMonth(z);
 		a = z + x; // I don't think this does anything...
 		// console.log('x = '+x,', z = '+z,', a = ' +a);
-		
+		console.log('setting date, dateCol: ',z);
 		if (z == markers[y]){ // if start day matches marker days, set index and date into object
 			// console.log('markers is at ' + markers[y]);
 			obj = window['mkobj'+[y]];
@@ -564,6 +565,8 @@ function setDates(callBackSortPayRoll){
 			}
 			markerObj[y]=obj;
 			y++;
+		}else{
+			console.log('z date doesnt match with markers[y]: ',z, markers[y]);
 		}
 		z++;
 	}
