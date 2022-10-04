@@ -190,9 +190,9 @@ function sortPayroll(){
 // }
 // function otherPayroll(){
 	payData = JSON.parse(sessionStorage.getItem("payrollData"));
-	console.log('markerObj is at: ',markerObj);
+	console.log('before retrieving session storage in payRollJSTools.js, markerObj is at: ',markerObj);
 	markerObj = JSON.parse(sessionStorage.getItem('theMarkerObj'));
-	// console.log('in payRollJSTools, markerObj: ',markerObj);
+	console.log('in payRollJSTools, markerObj now at: ',markerObj);
 
 	for (var x=0;x<payData.length; x++){
 
