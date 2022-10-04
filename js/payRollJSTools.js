@@ -573,7 +573,6 @@ function incomeCalc(index)	{
 	weekIncomeTots[i] = incomeTotal; // set values for week income array, each index is day's income
 	dayHoursIncome[[day]]['income'] = incomeTotal; // set day income into object, for adj.hours/rates 
 	oldIncome[i] = dayHoursIncome[[day]]['income'];
-	console.log('week income tots: ',weekIncomeTots);
 }
 
 // ....................  weekIncome calculation  (called when all data sets are parsed)  .....................
@@ -603,7 +602,8 @@ function weekIncome(nuWeekValue,weekNo){
 	var week1End = startDay + 6;
 	var week2Start = startDay + 7;
 	var week2End = startDay + 13;
-	if(markerObj !== null){
+
+	if(markerObj != null){
 		for (var z=0;z<markerObj.length;z++){ // refer to work days in markers
 				if (markerObj[z].date <= week1End){
 					week1Inc = weekIncomeTots[z] + week1Inc;
@@ -611,6 +611,9 @@ function weekIncome(nuWeekValue,weekNo){
 					week2Inc = weekIncomeTots[z] + week2Inc;
 				}
 		}
+		console.log('wk1Inc, wk2Inc : ',week1Inc,week2Inc);
+	}else{
+		console.log('markerObj is null: ',markerObj);
 	}
 
 
