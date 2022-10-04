@@ -610,6 +610,8 @@ function weekIncome(nuWeekValue,weekNo){
 				} else if (markerObj[z].date > week1End){
 					week2Inc = weekIncomeTots[z] + week2Inc;
 				}
+				console.log('markerObj is at: ',markerObj[z].date);
+				console.log('weekIncomeTots at: ',weekIncomeTots[z]);
 		}
 		console.log('wk1Inc, wk2Inc : ',week1Inc,week2Inc);
 	}else{
