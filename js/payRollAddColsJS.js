@@ -251,7 +251,8 @@ function findDoubles(date, index){
 		var dayDay = dayLookUp[1]; //actual day ie: 'Thu'
 
 	 	if (splitDate[2] !== isSameDay){ // check if double dates exist. If NOT:
-	 		markers[x] = parseInt(splitDate[2]);  // set marker index bc data exist for theDatet date
+	 		markers[x] = parseInt(splitDate[2]);  // set marker index bc data exist for the date
+	 		console.log('no double dates,markers set at: ',markers[x],parseInt(splitDate[2]));
 	 		isSameDay = splitDate[2]; // set variable to check against next data set 
 	 		// console.log('reg work day is: ' + markers[x]);
 	 		// console.log('reg day, button index change is: ' + (doublesNo);
