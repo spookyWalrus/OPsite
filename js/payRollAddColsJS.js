@@ -550,7 +550,7 @@ function setDates(callBackSortPayRoll){
 		// console.log('x = '+x,', z = '+z,', a = ' +a);
 		if (z == markers[y]){ // if start day matches marker days, set index and date into object
 			// console.log('markers is at ' + markers[y]);
-			console.log('this start day matches marker day, set array date: ', z)
+			console.log('this start day matches marker day, set markerObj with date: ', z)
 			obj = window['mkobj'+[y]];
 		 	obj = {};
 			obj.col = x; // this is the column number
