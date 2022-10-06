@@ -242,7 +242,9 @@ function findDoubles(date, index){
 	doublesNo = 0; // initialize value for count no of doubles
 
 	markers = []; // initialize markers
+	markerObj = []; //initialize markerObj;
 	console.log('markers initialized as: ',markers);
+	console.log('initialize markerObj: ', markerObj);
 	// dubWeek1 = 0;
 	// dubWeek2 = 0;
 
