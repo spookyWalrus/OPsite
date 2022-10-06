@@ -240,6 +240,9 @@ function findDoubles(date, index){
 	// check for doubles
 	var isSameDay = 0; // variable to check double day
 	doublesNo = 0; // initialize value for count no of doubles
+
+	markers = []; // initialize markers
+
 	// dubWeek1 = 0;
 	// dubWeek2 = 0;
 
