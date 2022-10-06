@@ -242,7 +242,7 @@ function findDoubles(date, index){
 	doublesNo = 0; // initialize value for count no of doubles
 
 	markers = []; // initialize markers
-
+	console.log('markers initialized as: ',markers);
 	// dubWeek1 = 0;
 	// dubWeek2 = 0;
 
@@ -554,7 +554,7 @@ function setDates(callBackSortPayRoll){
 		// console.log('x = '+x,', z = '+z,', a = ' +a);
 		if (z == markers[y]){ // if start day matches marker days, set index and date into object
 			// console.log('markers is at ' + markers[y]);
-			console.log('this start day matches marker day, set markerObj with date: ', z)
+		
 			obj = window['mkobj'+[y]];
 		 	obj = {};
 			obj.col = x; // this is the column number
