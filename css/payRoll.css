@@ -539,7 +539,9 @@ td.revCol{
     background-color: #15731c;
     border-color: #88e853;
 }
-
+#submitPayRollButton:hover{
+    background-color: #000;
+}
 
 
 
