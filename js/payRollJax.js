@@ -27,13 +27,21 @@ function fillMenu(){ // fill menu with staff to search
 }; 
 
 var dateStart = document.getElementById('fromHere');
-let yearSelect = document.getElementById('theYears');
+// let yearSelect = document.getElementById('theYears');
 function getDateRange(){ // fill up search menu with all pay period for the year
+	let currentYear =  new Date().getFullYear();// curretn year
+	let year;
+	let yearSelect = document.getElementById('theYears').value;
+	if (yearSelect != currentYear){
+		year = yearSelect;
+	}else{
+		year = currentYear;
+	}
 	$.ajax({
             type: 'post',	
             url: 'payRollTools.php',
             // data:'dateRange', 
-            data: {'dateRange': yearSelect.value},
+            data: {'dateRange': year},
             dataType: 'json',
             success: function (data) {  
 	        	console.log(data);
