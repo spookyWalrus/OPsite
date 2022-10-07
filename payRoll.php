@@ -20,7 +20,7 @@
 				</div>
 				<!-- select year, current year by default -->
 				<div  class="row" class="findPayPeriod"> 
-					<div class="container col-xs-12">
+					<div class="container col-xs-12 findPayPeriod">
 						<!-- <div class="searchBox">
 							<p class="searchTitle">Select name</p>
 							<select class="searchUmenu" id="searchUserMenu" name="searcUserMenuPhp" value="">
