@@ -30,6 +30,10 @@
 							<p class="searchTitle">Select Year</p>
 							<select class="searchUmenu" id="theYears" name="yearsSelect" value="">
 								<option value="2021-01-01">2021-01-01</option>
+								<option value="2020-01-01">2020-01-01</option>
+								<option value="2019-01-01">2019-01-01</option>
+								<option value="2005-01-01">2005-01-01</option>
+
 							</select>
 						</div>
 					
