@@ -53,7 +53,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 		        	var item = dates[i];
 		        	var month = item.split('-'); // set up another variable for testing
 		        	if (month[1] == monthor){ // if month repeats, set value in menu
-		        		
+
 			        	console.log(item);
 		        		dateStart.innerHTML = dateStart.innerHTML +
 			                '<option value="' + item + '">' + item + '</option>';
@@ -64,7 +64,8 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 			        	dateStart.innerHTML = dateStart.innerHTML +
 				                '<option value="' + item + '">' + item + '</option>';
 		        	}
-		        	monthor = month[1];
+		        	monthor = month[1]; //month to be tested changes on each iteration
+		        	
 		        	// console.log('current year: ',data[0].substring(0,4));
 		        	// let currentYear = data[0].substring(0,4);
 		        	// yearSelect.innerHTML = '<option value="' + currentYear + '">' + currentYear + '</option>';
