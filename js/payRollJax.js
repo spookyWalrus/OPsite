@@ -89,7 +89,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 		        	// console.log('current year: ',data[0].substring(0,4));
 		        	// let currentYear = data[0].substring(0,4);
 		        	// yearSelect.innerHTML = '<option value="' + currentYear + '">' + currentYear + '</option>';
-		        }
+		        // }
             }, 
             error: function(data){
             	alert("your date defaults gone wrong");
