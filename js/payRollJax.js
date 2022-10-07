@@ -33,7 +33,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
             type: 'post',	
             url: 'payRollTools.php',
             // data:'dateRange', 
-            data: {'dateRange': yearSelect.value}
+            data: {'dateRange': yearSelect.value},
             dataType: 'json',
             success: function (data) {  
 	        	// console.log(data);
