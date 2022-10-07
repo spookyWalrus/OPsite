@@ -67,8 +67,7 @@ if (isset($_POST['dateRange'])){ // from ajax call
 		$biWeek[$x] = $twoWeeks;
 	}
 
-	// echo json_encode($biWeek);
-	echo json_encode($theDate);
+	echo json_encode($biWeek);
 }
 
 

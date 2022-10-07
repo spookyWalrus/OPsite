@@ -27,6 +27,7 @@ function fillMenu(){ // fill menu with staff to search
 }; 
 
 var dateStart = document.getElementById('fromHere');
+let yearSelect = document.getElementById('theYears');
 function getDateRange(){ // fill up search menu with all pay period for the year
 	$.ajax({
             type: 'post',	
@@ -36,7 +37,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
             success: function (data) {  
 	        	console.log(data);
 	        	var dates = data;
-	        	
+
     	    	// fill menu with pay periods received from PHP page
 				var monthor='01'; // variable to test against
 		        for (var i = 0; i < dates.length; i++) {  
@@ -52,6 +53,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 				                '<option value="' + item + '">' + item + '</option>';
 		        	}
 		        	monthor = month[1];
+		        	console.log('current year: ',dates.year);
 		        }
             }, 
             error: function(data){

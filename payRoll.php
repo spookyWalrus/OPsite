@@ -18,11 +18,28 @@
 				<div id="payRollTitle" >
 					<h2>Payroll </h2>
 				</div>
-				<!-- <div class="container col-xs-12"> -->
-				<div  class="row" id="findPayPeriod"> 
+				<!-- select year, current year by default -->
+				<div  class="row" class="findPayPeriod"> 
 					<div class="container col-xs-12">
-
-					<!-- <form method="post" action="" class="well " id="findUser"> -->
+						<!-- <div class="searchBox">
+							<p class="searchTitle">Select name</p>
+							<select class="searchUmenu" id="searchUserMenu" name="searcUserMenuPhp" value="">
+							</select>
+						</div> -->
+						<div class="searchBox custom-select">
+							<p class="searchTitle">Select Year</p>
+							<!-- <select class="searchUmenu" id="theYears" name="yearsSelect" value="">
+							</select> -->
+							<p id="theYears"></p>
+						</div>
+					
+						<button class="btn btn-primary" id="searchUserButton" type="button" onclick="searchPayPeriod();"  
+							value=""> Calculate now </button>
+					</div>
+				</div>
+				<!-- look up payperiod -->
+				<div  class="row" class="findPayPeriod"> 
+					<div class="container col-xs-12">
 						<div class="searchBox">
 							<p class="searchTitle">Select name</p>
 							<select class="searchUmenu" id="searchUserMenu" name="searcUserMenuPhp" value="">
