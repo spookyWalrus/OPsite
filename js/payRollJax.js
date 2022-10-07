@@ -36,8 +36,10 @@ function getDateRange(){ // fill up search menu with all pay period for the year
             success: function (data) {  
 	        	console.log(data);
 	        	var dates = data;
-
-    	// fill menu with pay periods received from PHP page
+	        	
+    	    	// fill menu with pay periods received from PHP page
+				var monthor='01'; // variable to test against
+		        for (var i = 0; i < dates.length; i++) {  
 		        	var item = dates[i];
 		        	var month = item.split('-'); // set up another variable for testing
 		        	if (month[1] == monthor){ // if month repeats, set value in menu
