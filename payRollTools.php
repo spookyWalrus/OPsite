@@ -58,8 +58,8 @@ if (isset($_POST['action'])) { // names
 // set date range on load...
 if (isset($_POST['dateRange'])){ // from ajax call
 	$changeToYear = $_POST['dateRange'];
-	if($changeToYear){
-		$firstSun = date('Y-m-d', strtotime('first sunday of january '. $changeToYear));
+	if($changeToYear > 2000){
+		$firstSun = date('Y-m-d', strtotime('first sunday of january '. $changeToYear[0]));
 	}else{
 		$firstSun = date('Y-m-d', strtotime("first sunday of january this year")); // need to check every year what day pay period starts
 	}

@@ -28,9 +28,9 @@
 						</div> -->
 						<div class="searchBox custom-select">
 							<p class="searchTitle">Select Year</p>
-							<!-- <select class="searchUmenu" id="theYears" name="yearsSelect" value="">
-							</select> -->
-							<p id="theYears"></p>
+							<select class="searchUmenu" id="theYears" name="yearsSelect" value="">
+								<option value="2021-01-01">2021-01-01</option>
+							</select>
 						</div>
 					
 						<button class="btn btn-primary" id="searchUserButton" type="button" onclick="getDateRange();"  
