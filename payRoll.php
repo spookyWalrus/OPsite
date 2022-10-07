@@ -19,7 +19,7 @@
 					<h2>Payroll </h2>
 				</div>
 				<!-- select year, current year by default -->
-				<div  class="row" class="findPayPeriod"> 
+				<div  class="row"> 
 					<div class="container col-xs-12 findPayPeriod">
 						<!-- <div class="searchBox">
 							<p class="searchTitle">Select name</p>
@@ -38,8 +38,8 @@
 					</div>
 				</div>
 				<!-- look up payperiod -->
-				<div  class="row" class="findPayPeriod"> 
-					<div class="container col-xs-12">
+				<div  class="row" > 
+					<div class="container col-xs-12 findPayPeriod">
 						<div class="searchBox">
 							<p class="searchTitle">Select name</p>
 							<select class="searchUmenu" id="searchUserMenu" name="searcUserMenuPhp" value="">

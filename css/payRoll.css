@@ -13,6 +13,8 @@
 .findPayPeriod{
    background-color: #d7d7d7;
    padding: 10px;
+   margin: 5px;
+   border-radius: 5px;
 }
 
 .searchBox{
