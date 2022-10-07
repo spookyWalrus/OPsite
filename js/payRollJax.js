@@ -27,7 +27,6 @@ function fillMenu(){ // fill menu with staff to search
 }; 
 
 var dateStart = document.getElementById('fromHere');
-// let yearSelect = document.getElementById('theYears');
 function getDateRange(){ // fill up search menu with all pay period for the year
 	let currentYear =  new Date().getFullYear();// curretn year
 	let year;
@@ -52,12 +51,13 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 				var monthor='01'; // variable to test against
 		        for (var i = 0; i < dates.length; i++) {  
 		        	var item = dates[i];
-		        	console.log(item);
 		        	var month = item.split('-'); // set up another variable for testing
 		        	if (month[1] == monthor){ // if month repeats, set value in menu
+			        	console.log(item);
 		        		dateStart.innerHTML = dateStart.innerHTML +
 			                '<option value="' + item + '">' + item + '</option>';
-		        	} else if (!(month[1] == monthor)){ // if month changes, set divider, set value in menu
+		        	} else if (month[1] != monthor){ // if month changes, set divider, set value in menu
+			        	console.log(item);
 		        		dateStart.innerHTML = dateStart.innerHTML +
 			                    '<option disabled="disabled">----</option>';
 			        	dateStart.innerHTML = dateStart.innerHTML +
