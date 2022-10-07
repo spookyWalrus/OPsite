@@ -28,7 +28,12 @@ function fillMenu(){ // fill menu with staff to search
 
 var dateStart = document.getElementById('fromHere');
 function emptyMenu(){
-	dateStart.options.length = 0;
+	let options = dateStart.getElementsByTagName('option');
+	for (var i=options.length; i--;) {
+	    dateStart.removeChild(options[i]);
+	}
+
+	console.log('menu cleared');
 }
 function setDateMenu(dates){
 	emptyMenu();
