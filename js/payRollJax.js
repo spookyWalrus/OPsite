@@ -27,7 +27,11 @@ function fillMenu(){ // fill menu with staff to search
 }; 
 
 var dateStart = document.getElementById('fromHere');
+function emptyMenu(){
+	dateStart.options.length = 0;
+}
 function setDateMenu(dates){
+	emptyMenu();
 	var monthor = '01';
 	for (var i = 0; i < dates.length; i++) {  
 		var item = dates[i];
@@ -47,6 +51,7 @@ function setDateMenu(dates){
 	monthor = month[1]; //month to be tested changes on each iteration
 	}
 }
+
 function getDateRange(){ // fill up search menu with all pay period for the year
 	let currentYear =  new Date().getFullYear();// curretn year
 	let year;
