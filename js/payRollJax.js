@@ -53,6 +53,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 		        	var item = dates[i];
 		        	var month = item.split('-'); // set up another variable for testing
 		        	if (month[1] == monthor){ // if month repeats, set value in menu
+		        		
 			        	console.log(item);
 		        		dateStart.innerHTML = dateStart.innerHTML +
 			                '<option value="' + item + '">' + item + '</option>';
