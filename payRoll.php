@@ -34,7 +34,7 @@
 						</div>
 					
 						<button class="btn btn-primary" id="searchUserButton" type="button" onclick="getDateRange();"  
-							value="">Change year to search </button>
+							value="">Change pay period year</button>
 					</div>
 				</div>
 				<!-- look up payperiod -->

@@ -57,7 +57,15 @@ if (isset($_POST['action'])) { // names
 }
 // set date range on load...
 if (isset($_POST['dateRange'])){ // from ajax call
-	$firstSun = date('Y-m-d', strtotime('first sunday of january this year')); // need to check every year what day pay period starts
+	$changeToYear = $_POST['dateRange'];
+	if($changeToYear){
+		$firstSun = date('Y-m-d', strtotime('first sunday of january '. $changeToYear));
+	}else{
+		$firstSun = date('Y-m-d', strtotime("first sunday of january this year")); // need to check every year what day pay period starts
+	}
+
+	// $firstSun = date('Y-m-d', strtotime('first sunday of january this year')); // need to check every year what day pay period starts
+
 	$biWeek = [];
 	$biWeek[0] = $firstSun;
 	// parse through all dates, every 14 days

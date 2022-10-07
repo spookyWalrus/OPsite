@@ -32,10 +32,11 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 	$.ajax({
             type: 'post',	
             url: 'payRollTools.php',
-            data:'dateRange', 
+            // data:'dateRange', 
+            data: {'dateRange': yearSelect.value}
             dataType: 'json',
             success: function (data) {  
-	        	console.log(data);
+	        	// console.log(data);
 	        	var dates = data;
 
     	    	// fill menu with pay periods received from PHP page
@@ -53,9 +54,9 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 				                '<option value="' + item + '">' + item + '</option>';
 		        	}
 		        	monthor = month[1];
-		        	console.log('current year: ',data[0].substring(0,4));
-		        	let currentYear = data[0].substring(0,4);
-		        	yearSelect.innerHTML = currentYear;
+		        	// console.log('current year: ',data[0].substring(0,4));
+		        	// let currentYear = data[0].substring(0,4);
+		        	// yearSelect.innerHTML = '<option value="' + currentYear + '">' + currentYear + '</option>';
 		        }
             }, 
             error: function(data){
