@@ -59,7 +59,7 @@ if (isset($_POST['action'])) { // names
 if (isset($_POST['dateRange'])){ // from ajax call
 	$changeToYear = $_POST['dateRange'];
 	if($changeToYear > 2000){
-		$firstSun = date('Y-m-d', strtotime('first sunday of january '. $changeToYear[0]));
+		$firstSun = date('Y-m-d', strtotime('first sunday of january '. $changeToYear));
 	}else{
 		$firstSun = date('Y-m-d', strtotime("first sunday of january this year")); // need to check every year what day pay period starts
 	}
@@ -74,7 +74,6 @@ if (isset($_POST['dateRange'])){ // from ajax call
 		$twoWeeks = date('Y-m-d', strtotime($firstSun. ' + ' .$fourTeen .' days'));
 		$biWeek[$x] = $twoWeeks;
 	}
-
 	echo json_encode($biWeek);
 }
 
