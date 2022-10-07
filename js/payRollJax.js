@@ -45,6 +45,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
             dataType: 'json',
             success: function (data) {  
 	        	console.log(data);
+	        	console.log('year selected is: ',year);
 	        	var dates = data;
 
     	    	// fill menu with pay periods received from PHP page
