@@ -27,6 +27,26 @@ function fillMenu(){ // fill menu with staff to search
 }; 
 
 var dateStart = document.getElementById('fromHere');
+function setDateMenu(dates){
+	var monthor = '01';
+	for (var i = 0; i < dates.length; i++) {  
+		var item = dates[i];
+		var month = item.split('-'); // set up another variable for testing
+		if (month[1] == monthor){ // if month repeats, set value in menu
+
+			console.log(item);
+			dateStart.innerHTML = dateStart.innerHTML +
+		        '<option value="' + item + '">' + item + '</option>';
+		} else if (month[1] != monthor){ // if month changes, set divider, set value in menu
+			console.log(item);
+			dateStart.innerHTML = dateStart.innerHTML +
+		            '<option disabled="disabled">----</option>';
+			dateStart.innerHTML = dateStart.innerHTML +
+		            '<option value="' + item + '">' + item + '</option>';
+		}
+	monthor = month[1]; //month to be tested changes on each iteration
+	}
+}
 function getDateRange(){ // fill up search menu with all pay period for the year
 	let currentYear =  new Date().getFullYear();// curretn year
 	let year;
@@ -46,26 +66,26 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 	        	// console.log(data);
 	        	console.log('year selected is: ',year);
 	        	var dates = data;
-
+	        	setDateMenu(dates);
     	    	// fill menu with pay periods received from PHP page
-				var monthor='01'; // variable to test against
-		        for (var i = 0; i < dates.length; i++) {  
-		        	var item = dates[i];
-		        	var month = item.split('-'); // set up another variable for testing
-		        	if (month[1] == monthor){ // if month repeats, set value in menu
+				// var monthor='01'; // variable to test against
+		  //       for (var i = 0; i < dates.length; i++) {  
+		  //       	var item = dates[i];
+		  //       	var month = item.split('-'); // set up another variable for testing
+		  //       	if (month[1] == monthor){ // if month repeats, set value in menu
 
-			        	console.log(item);
-		        		dateStart.innerHTML = dateStart.innerHTML +
-			                '<option value="' + item + '">' + item + '</option>';
-		        	} else if (month[1] != monthor){ // if month changes, set divider, set value in menu
-			        	console.log(item);
-		        		dateStart.innerHTML = dateStart.innerHTML +
-			                    '<option disabled="disabled">----</option>';
-			        	dateStart.innerHTML = dateStart.innerHTML +
-				                '<option value="' + item + '">' + item + '</option>';
-		        	}
-		        	monthor = month[1]; //month to be tested changes on each iteration
-		        	
+			 //        	console.log(item);
+		  //       		dateStart.innerHTML = dateStart.innerHTML +
+			 //                '<option value="' + item + '">' + item + '</option>';
+		  //       	} else if (month[1] != monthor){ // if month changes, set divider, set value in menu
+			 //        	console.log(item);
+		  //       		dateStart.innerHTML = dateStart.innerHTML +
+			 //                    '<option disabled="disabled">----</option>';
+			 //        	dateStart.innerHTML = dateStart.innerHTML +
+				//                 '<option value="' + item + '">' + item + '</option>';
+		  //       	}
+		  //       	monthor = month[1]; //month to be tested changes on each iteration
+
 		        	// console.log('current year: ',data[0].substring(0,4));
 		        	// let currentYear = data[0].substring(0,4);
 		        	// yearSelect.innerHTML = '<option value="' + currentYear + '">' + currentYear + '</option>';
