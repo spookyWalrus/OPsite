@@ -17,7 +17,6 @@ $theDate = getdate();
 
 $whatIsToday = $theDate['year'].'-'.$theMonth.'-'.$today;
 $GLOBALS['dateToday'] = $whatIsToday;
-echo $theDate;
 
 
 
@@ -67,7 +66,9 @@ if (isset($_POST['dateRange'])){ // from ajax call
 		$twoWeeks = date('Y-m-d', strtotime($firstSun. ' + ' .$fourTeen .' days'));
 		$biWeek[$x] = $twoWeeks;
 	}
-	echo json_encode($biWeek);
+
+	// echo json_encode($biWeek);
+	echo json_encode($theDate);
 }
 
 
