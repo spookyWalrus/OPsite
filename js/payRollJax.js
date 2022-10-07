@@ -32,7 +32,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 	let currentYear =  new Date().getFullYear();// curretn year
 	let year;
 	let yearSelect = document.getElementById('theYears').value;
-	if (yearSelect != currentYear){
+	if (yearSelect != currentYear){ // check if year selectio changed
 		year = yearSelect;
 	}else{
 		year = currentYear;
@@ -44,7 +44,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
             data: {'dateRange': year},
             dataType: 'json',
             success: function (data) {  
-	        	console.log(data);
+	        	// console.log(data);
 	        	console.log('year selected is: ',year);
 	        	var dates = data;
 
@@ -52,6 +52,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 				var monthor='01'; // variable to test against
 		        for (var i = 0; i < dates.length; i++) {  
 		        	var item = dates[i];
+		        	console.log(item);
 		        	var month = item.split('-'); // set up another variable for testing
 		        	if (month[1] == monthor){ // if month repeats, set value in menu
 		        		dateStart.innerHTML = dateStart.innerHTML +
