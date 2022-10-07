@@ -33,8 +33,8 @@
 							<p id="theYears"></p>
 						</div>
 					
-						<button class="btn btn-primary" id="searchUserButton" type="button" onclick="searchPayPeriod();"  
-							value=""> Calculate now </button>
+						<button class="btn btn-primary" id="searchUserButton" type="button" onclick="getDateRange();"  
+							value="">Change year to search </button>
 					</div>
 				</div>
 				<!-- look up payperiod -->
