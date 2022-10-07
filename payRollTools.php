@@ -17,7 +17,7 @@ $theDate = getdate();
 
 $whatIsToday = $theDate['year'].'-'.$theMonth.'-'.$today;
 $GLOBALS['dateToday'] = $whatIsToday;
-
+echo $theDate;
 
 
 
@@ -82,19 +82,10 @@ if (isset($_POST['findPayPeriod'])){ // get date range
 	$name = $findIt[0]; // name to match
 	$dateStart = $findIt[1]; // start date5
 	$dateEnd =  date('Y-m-d', strtotime($dateStart. ' + 13 days'));
-	global $currentName;
-	$currentName = $name;
+	// global $currentName;
+	// $currentName = $name;
 
 	try { // retrieve initial date range from staff_hours DB
-		// $stmt = $pdo->prepare("SELECT * FROM staff_hours WHERE staff_name=? AND
-		// 				event_date BETWEEN  ? AND  ? ORDER BY event_date ASC");
-
-		// $stmt = $pdo->prepare("SELECT * FROM  staff_hours WHERE staff_name=? AND
-		// 				event_date BETWEEN  ? AND  ? ORDER BY event_date ASC,
-		// 				event_location ASC, event_name ASC");
-
-		
-
 		$stmt = $pdo->prepare("SELECT staff_name,event_date,event_name,event_location,event_code,position,start1,end1,start2,end2,start3,end3 FROM staff_hours WHERE staff_name = ? AND event_date BETWEEN  ? AND  ? ORDER BY event_date ASC,event_location ASC, event_name ASC");
 		
 		$stmt->execute([$name,$dateStart,$dateEnd]); 
