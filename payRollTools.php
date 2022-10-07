@@ -46,7 +46,7 @@ if (isset($_POST['action'])) { // names
 		 //Retrieve the rows using fetchAll.
 		$staff = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		// // echo back data to AJAX call
-		// print_r($staff);			
+		array_push($stmt,$whatIsToday);			
 		echo json_encode($staff);
 		// exit();
 	} 
