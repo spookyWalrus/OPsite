@@ -547,8 +547,8 @@ function setDates(callBackSortPayRoll){
 	// console.log('markers for doubles: ', markers);
 	for (var x = 0;x<v14;x++){
 		z = checkEndOfMonth(z,'blah');
-		console.log('z value is: ',z);
-		console.log('markerObj is at: ',markerObj);
+		// console.log('z value is: ',z);
+		// console.log('markerObj is at: ',markerObj);
 
 		dateCol[x].innerHTML = z; // create dates of the week, straight up;
 		// z = checkOfMonth(z);
@@ -571,11 +571,11 @@ function setDates(callBackSortPayRoll){
 				// console.log('set as week2');
 			}
 			markerObj[y]=obj;
-			console.log('markerObj is NOW at: ',markerObj);
+			// console.log('markerObj is NOW at: ',markerObj);
 			y++;
-			console.log('markers now at: ',markers[y]);
+			// console.log('markers now at: ',markers[y]);
 		}else{
-			console.log('z date doesnt match with markers[y]: ',z, markers[y]);
+			// console.log('z date doesnt match with markers[y]: ',z, markers[y]);
 		}
 		z++;
 	}

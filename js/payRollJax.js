@@ -116,10 +116,13 @@ function searchPayPeriod(){
 		    	var payrollData = foundIt;
 		    	// console.log(foundIt);
 		    	// console.log(payrollData);
-		    	console.log('payrolldata: ',payrollData);
-	    	    sessionStorage.setItem("payrollData", JSON.stringify(payrollData)); // HTML session storage to pass date  back to showReportJax.js
-	    	    findDoubles(); // checks for double dates, call backs sortPayRoll() and fills fields on completion;
-
+		    	// console.log('payrolldata: ',payrollData);
+		    	if(payrollData.length > 0){
+		    	    sessionStorage.setItem("payrollData", JSON.stringify(payrollData)); // HTML session storage to pass date  back to showReportJax.js
+		    	    findDoubles(); // checks for double dates, call backs sortPayRoll() and fills fields on completion;
+		    	}else{
+		    		alert("There are no records that match that date range");
+		    	}
 	    	    // sortPayroll(); // this parses and sets all values into HTML page
        			// hideTables();
 	       			// console.log(foundIt);
@@ -127,7 +130,7 @@ function searchPayPeriod(){
 	       			// alert(leya);
 	        },
 	        error: function(foundIt){
-	        	alert("finding that DATA has gone wrong");
+	        	alert("Error: searching for DATA has gone wrong");
 		    	console.log(foundIt);
 
 	        }
@@ -135,13 +138,13 @@ function searchPayPeriod(){
 	// });
 };
 
-function loadPage(){ // resets page, flushes arrays/objects to zero by re-loading scripts
+// function loadPage(){ // resets page, flushes arrays/objects to zero by re-loading scripts
     // $("#prPage").load("payRollpg1.php");
 	// $.getScript("js/payRollJSTools.js");
  //   	$.getScript("js/payRollAddColsJS.js");
  //   	$.getScript("js/payRollIncomeAdjust.js");
 
-}
+// }
 
 // window.onload = alert("unicornkittycupcakefacepandabuttttmoonsparkpro ofroblox mhahahaha i'msooooo smart! i loveicecarem! ");
 
