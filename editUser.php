@@ -119,7 +119,7 @@
 						<div id="adminErrorMsg" class="errorMessages">
 								<p >Please select admin access rights</p>
 						</div>						
-
+						<div class="container 
 						<button class="btn btn-primary submitText" id="saveChangesButton" type="button" onclick="checkInput();" name="" 
 						> SAVE CHANGES </button>
 					</form>
@@ -135,7 +135,7 @@
 						<div id="pwErrorMsg" class="errorMessages">
 							<p >Please enter valid password (8 char. minimum)</p>
 						</div>
-						<button class="btn btn-primary submitText" id="reset_Password" type="button" onclick="checkPW();" name="submitPw" 
+						<button class="btn btn-primary submitText" id="reset_PasswordButton" type="button" onclick="checkPW();" name="submitPw" 
 						value=""> SAVE NEW PASSWORD </button>
 					</form>
 					<div  >
