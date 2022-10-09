@@ -190,9 +190,9 @@ function sortPayroll(){
 // }
 // function otherPayroll(){
 	payData = JSON.parse(sessionStorage.getItem("payrollData"));
-	console.log('before retrieving session storage in payRollJSTools.js, markerObj is at: ',markerObj);
+	// console.log('before retrieving session storage in payRollJSTools.js, markerObj is at: ',markerObj);
 	markerObj = JSON.parse(sessionStorage.getItem('theMarkerObj'));
-	console.log('in payRollJSTools, markerObj now at: ',markerObj);
+	// console.log('in payRollJSTools, markerObj now at: ',markerObj);
 
 	for (var x=0;x<payData.length; x++){
 
@@ -642,8 +642,8 @@ function weekIncome(nuWeekValue,weekNo){
 		column[1].innerHTML = '$' + parseFloat(week2Inc);
 		nuTotIn.innerHTML = '$'+weekTotalIncome;		
 	}
-	console.log('parse week1Inc, week2Inc: ',parseFloat(week1Inc), parseFloat(week2Inc));
-	console.log('total income of both weeks: ',weekTotalIncome);
+	// console.log('parse week1Inc, week2Inc: ',parseFloat(week1Inc), parseFloat(week2Inc));
+	// console.log('total income of both weeks: ',weekTotalIncome);
 
 }
 // ....................   week hour count (called when all data sets are parsed)  ....................

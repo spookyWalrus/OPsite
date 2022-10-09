@@ -243,8 +243,8 @@ function findDoubles(date, index){
 
 	markers = []; // initialize markers
 	markerObj = []; //initialize markerObj;
-	console.log('markers initialized as: ',markers);
-	console.log('initialize markerObj: ', markerObj);
+	// console.log('markers initialized as: ',markers);
+	// console.log('initialize markerObj: ', markerObj);
 	// dubWeek1 = 0;
 	// dubWeek2 = 0;
 
@@ -257,7 +257,7 @@ function findDoubles(date, index){
 
 	 	if (splitDate[2] !== isSameDay){ // check if double dates exist. If NOT:
 	 		markers[x] = parseInt(splitDate[2]);  // set marker index bc data exist for the date
-	 		console.log('no double dates,markers set at: ',markers[x],parseInt(splitDate[2]));
+	 		// console.log('no double dates,markers set at: ',markers[x],parseInt(splitDate[2]));
 	 		isSameDay = splitDate[2]; // set variable to check against next data set 
 	 		// console.log('reg work day is: ' + markers[x]);
 	 		// console.log('reg day, button index change is: ' + (doublesNo);

@@ -27,16 +27,17 @@ function fillMenu(){ // fill menu with staff to search
 }; 
 
 var dateStart = document.getElementById('fromHere');
-function emptyMenu(){ // clear out date menu
+function emptyMenu(dates){ // clear out date menu
 	var options = dateStart.getElementsByTagName('option');
 	for (var i=options.length; i--;) {
 	    dateStart.removeChild(options[i]);
 	}
+	setDateMenu(dates);
 }
 function setDateMenu(dates){
-	emptyMenu();
+	emptyMenu(); // empty date menu first
 	var monthor = '01';
-	for (var i = 0; i < dates.length; i++) {  
+	for (var i = 0; i < dates.length; i++) {  // fill date menu with new dates
 		var item = dates[i];
 		var month = item.split('-'); // set up another variable for testing
 		if (month[1] == monthor){ // if month repeats, set value in menu
@@ -48,7 +49,7 @@ function setDateMenu(dates){
 			dateStart.innerHTML = dateStart.innerHTML +
 		            '<option value="' + item + '">' + item + '</option>';
 		}
-	monthor = month[1]; //month to be tested, changes on each iteration
+	monthor = month[1]; // month to be tested, changes on each iteration
 	}
 }
 
@@ -56,10 +57,10 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 	let currentYear =  new Date().getFullYear();// curretn year
 	let year;
 	let yearSelect = document.getElementById('theYears').value;
-	if (yearSelect != currentYear){ // check if year selectio changed
-		year = yearSelect;
+	if (yearSelect != currentYear){ // check if year selection changed
+		year = yearSelect; // set year to selected year
 	}else{
-		year = currentYear;
+		year = currentYear; // otherwise use current year
 	}
 	$.ajax({
             type: 'post',	
@@ -71,7 +72,8 @@ function getDateRange(){ // fill up search menu with all pay period for the year
 	        	// console.log(data);
 	        	console.log('year selected is: ',year);
 	        	var dates = data;
-	        	setDateMenu(dates);
+	        	emptyMenu(dates); 
+	        	// setDateMenu(dates); // populate dropdown menu with new payroll year
             }, 
             error: function(data){
             	alert("your date defaults gone wrong");
@@ -114,9 +116,9 @@ function searchPayPeriod(){
 		    	var payrollData = foundIt;
 		    	// console.log(foundIt);
 		    	// console.log(payrollData);
-
+		    	console.log('payrolldata: ',payrollData);
 	    	    sessionStorage.setItem("payrollData", JSON.stringify(payrollData)); // HTML session storage to pass date  back to showReportJax.js
-	    	    findDoubles(); // checks for double dates, call backs sortPayRoll() on completion;
+	    	    findDoubles(); // checks for double dates, call backs sortPayRoll() and fills fields on completion;
 
 	    	    // sortPayroll(); // this parses and sets all values into HTML page
        			// hideTables();
