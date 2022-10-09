@@ -32,6 +32,9 @@
 
 #resetPasswordField{
     padding-top: 40px;
+}
+
+#reset_PasswordButton{
     width: 200px;
     background-color: #3733b7;
 }
@@ -49,6 +52,6 @@
     /*visibility: hidden;*/
 }
 
-.saveChangesButton{
+#saveChangesButton{
     width: 500px;
 }
