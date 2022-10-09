@@ -111,7 +111,7 @@ function searchPayPeriod(){
             	// loadPage();
 		    	// console.log(foundIt);
 		    	thisDude.innerHTML = 'Payroll for:&nbsp;&nbsp;' + userName // set name and pay period
-		    	 +'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pay period: ' +dateSearch +'  -->  ' +endDate; 
+		    	 +'<br> Pay period: ' +dateSearch +'  -->  ' +endDate; 
 		    	 // + '<br>Pay period: ' +dateSearch +'  -->  ' +endDate; 
 		    	var payrollData = foundIt;
 		    	// console.log(foundIt);
