@@ -10,7 +10,7 @@
 	    <meta name="author" content="">
 	    <link rel="icon" href="../../favicon.ico">
 
-	    <title>Pandemic Spamdemic</title>
+	    <title>Venue Workpages</title>
 	     
 <!-- ================ local bootstrap, css and js ================ -->
 	      <!--  Bootstrap core CSS -->

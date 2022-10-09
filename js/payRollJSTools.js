@@ -765,8 +765,8 @@ function adjRate(index, week){
 	if (addedAlreadyYN =='no'){
 	// console.log('week1tots hr,inc: ',w1HT,w1InT);
 	// console.log('week2tots hr,inc: ',w2HT,w2InT);
-	console.log('index is: ',i);
-	console.log('index of w1tots and w2tots: ',w1, w2);
+	// console.log('index is: ',i);
+	// console.log('index of w1tots and w2tots: ',w1, w2);
 
 		if (wk == 0){ // week 1
 			if (i == w1 ){ // week1 total only
@@ -806,7 +806,7 @@ function adjRate(index, week){
 				// console.log('adjusting week2 tots only');
 			} else if (i !== w2){ // work day and week2 total
 				i = i - 1;
-				console.log('i is: ',i);
+				// console.log('i is: ',i);
 				column3[i].innerHTML = adjustedValues[0]; // day hours total
 				column3[i].style.color = '#00fff9';
 				column4[i].innerHTML = '$' + adjustedValues[1]; // day income total
@@ -819,7 +819,7 @@ function adjRate(index, week){
 				column7.innerHTML = '$' + grandIncomeTotal;
 				column7.style.color = '#2b42f2';	
 				// console.log('adjusting reg work day and week2 tots');
-				console.log('week2tots hr,inc: ',w2HT,w2InT);
+				// console.log('week2tots hr,inc: ',w2HT,w2InT);
 
 			}
 		}	

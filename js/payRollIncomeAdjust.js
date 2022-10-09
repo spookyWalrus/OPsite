@@ -258,10 +258,10 @@ function incomeMaths(index,week,nuHours,nuIncome){
 }
 
 function incomeMathWeekTots(index,week,nuHours,nuIncome){
-	console.log('income week tots - nuHours: ',nuHours, 'nuIncome: ',nuIncome);
-	console.log('w1HT is: ',w1HT, 'w1InT is: ',w1InT);
-	console.log('w2HT is: ',w2HT, 'w1InT is: ',w2InT);
-	console.log('week totals math, index is: ',index);
+	// console.log('income week tots - nuHours: ',nuHours, 'nuIncome: ',nuIncome);
+	// console.log('w1HT is: ',w1HT, 'w1InT is: ',w1InT);
+	// console.log('w2HT is: ',w2HT, 'w1InT is: ',w2InT);
+	// console.log('week totals math, index is: ',index);
 
 	// calculate totals when week totals was NOT clicked
 	if ((index !== wk1x)&&(index !== wk2x)){ 
@@ -330,7 +330,7 @@ function revertMaths(index,week){
 
 				adjustedValues = [oldH, oldIn];
 				revertMathWeekTots(index,week); // calculate week totals
-				console.log('reverted values are: ',oldH,oldIn);	
+				// console.log('reverted values are: ',oldH,oldIn);	
 				break;
 			}
 		}
@@ -368,9 +368,9 @@ function revertMathWeekTots(index,week){
 				
 					w2HT = w2HT - hrInTotsObj[x].addHrs; // subtract added hours to current week total
 					w2InT = w2InT  - hrInTotsObj[x].addInc; // subtract added income to current week total
-					console.log('adjusted hour, income: ',hrInTotsObj[x].nuHrs, hrInTotsObj[x].nuInc);
-					console.log('new week2 hours is: ',w2HT);
-					console.log('new week2 income is: ',w2InT);
+					// console.log('adjusted hour, income: ',hrInTotsObj[x].nuHrs, hrInTotsObj[x].nuInc);
+					// console.log('new week2 hours is: ',w2HT);
+					// console.log('new week2 income is: ',w2InT);
 					break;
 				}
 			}
@@ -399,7 +399,7 @@ function revertMathWeekTots(index,week){
 			}
 		}	
 	} 
-	console.log('wk1 and wk2 tots: ',w1InT,w2InT);
+	// console.log('wk1 and wk2 tots: ',w1InT,w2InT);
 	grandIncomeTotal = w1InT + w2InT;	
 	checkColour();
 	revertResult(index,week);
@@ -420,7 +420,7 @@ function checkClick(index,week,nuHours,nuIncome,addOrRev){
 
 	if (addOrRev == 'add'){
 		for (var x = 0;x<hrInTotsObj.length;x++){
-			console.log('index: ',index,' x: ',clicked[x].ndx);
+			// console.log('index: ',index,' x: ',clicked[x].ndx);
 			if (index == clicked[x].ndx){ // make sure button matches object content
 				if (clicked[x].click == 0){
 					clicked[x].click = 1;

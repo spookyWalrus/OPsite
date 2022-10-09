@@ -32,14 +32,23 @@
 
 #resetPasswordField{
     padding-top: 40px;
+    width: 200px;
+    background-color: #3733b7;
 }
 
 .errorMessages {
-color: #B43232;
-visibility: hidden;
+    color: #B43232;
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 14%;
 }
 
 .phoneBox, .emailBox, .idBox, .sinBox, .pwBox{
     border: 1px solid #cec7c7;
     /*visibility: hidden;*/
+}
+
+.saveChangesButton{
+    width: 500px;
 }
