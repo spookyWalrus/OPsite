@@ -206,4 +206,4 @@ function saveData2DB(){ // function called from above
 }
 
 // load menu items on page, then load table and JS scripts
-$(document).ready(fillMenu() );
+$(document).ready(fillMenu; hideTables; );
