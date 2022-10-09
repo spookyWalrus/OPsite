@@ -611,12 +611,12 @@ function weekIncome(nuWeekValue,weekNo){
 				} else if (markerObj[z].date > week1End){
 					week2Inc = weekIncomeTots[z] + week2Inc;
 				}
-				console.log('markerObj is at: ',markerObj[z].date);
-				console.log('weekIncomeTots at: ',weekIncomeTots[z]);
+				// console.log('markerObj is at: ',markerObj[z].date);
+				// console.log('weekIncomeTots at: ',weekIncomeTots[z]);
 		}
-		console.log('wk1Inc, wk2Inc : ',week1Inc,week2Inc);
+		// console.log('wk1Inc, wk2Inc : ',week1Inc,week2Inc);
 	}else{
-		console.log('markerObj is null: ',markerObj);
+		// console.log('markerObj is null: ',markerObj);
 	}
 
 
@@ -1148,6 +1148,15 @@ var target,target2,target3,target4,target5;
 			}
 	  	}
 	}
+
+// more blinky functions, when you change year to search records
+function yearBlinkOff(){
+		let menu = document.getElementById('fromHere').remove('blink');
+}
+function yearBlinkOn(){
+	let menu = document.getElementById('fromHere').add('blink');
+	setTimeout(yearBlinkOff,700);
+}
 
 // when script finishes loading, execute hide sections of the table
 function hideTables(){
