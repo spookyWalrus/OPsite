@@ -35,7 +35,7 @@ function emptyMenu(dates){ // clear out date menu
 	setDateMenu(dates);
 }
 function setDateMenu(dates){
-	emptyMenu(); // empty date menu first
+	// emptyMenu(); // empty date menu first
 	var monthor = '01';
 	for (var i = 0; i < dates.length; i++) {  // fill date menu with new dates
 		var item = dates[i];
@@ -70,7 +70,7 @@ function getDateRange(){ // fill up search menu with all pay period for the year
             dataType: 'json',
             success: function (data) {  
 	        	// console.log(data);
-	        	console.log('year selected is: ',year);
+	        	// console.log('year selected is: ',year);
 	        	var dates = data;
 	        	emptyMenu(dates); 
 	        	// setDateMenu(dates); // populate dropdown menu with new payroll year
