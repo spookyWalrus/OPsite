@@ -21,11 +21,6 @@
 				<!-- select year, current year by default -->
 				<div  class="row"> 
 					<div class="container col-xs-12 findPayPeriod">
-						<!-- <div class="searchBox">
-							<p class="searchTitle">Select name</p>
-							<select class="searchUmenu" id="searchUserMenu" name="searcUserMenuPhp" value="">
-							</select>
-						</div> -->
 						<div class="searchBox custom-select">
 							<p class="searchTitle">Select Year</p>
 							<select class="searchUmenu" id="theYears" name="yearsSelect" value="">
@@ -35,6 +30,11 @@
 								<option value="2019">2019</option>
 								<option value="2018">2018</option>
 								<option value="2017">2017</option>
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+								<option value="2014">2014</option>
+								<option value="2013">2013</option>
+								<option value="2012">2012</option>
 							</select>
 						</div>
 					
@@ -66,7 +66,7 @@
 	<!-- .......................    pay table  ........................ -->
 	<!-- <div class="container"> -->
 	<!-- <div class="row"> -->
-	<div class="container">
+	<div class="container payTableHeader">
 		<div class="col-xs-8 col-xs-offset-3 row">
 			<h4 id="viewingThisUser" name="viewingThisUserPhp">Pay Period:</h4>
 			<!-- <h4 id="dateRange">Pay period: </h4> -->

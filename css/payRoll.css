@@ -15,6 +15,9 @@
    padding: 10px;
    margin: 5px;
    border-radius: 5px;
+   display: flex;
+    flex-wrap: wrap;
+    padding: 2% 14%;
 }
 
 #theYears{
@@ -44,6 +47,14 @@
     display: inline-block;
     margin: 5px 5px 10px 25px;
     /*width: 100%;*/
+}
+
+.payTableHeader{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 3%;
 }
 
 /*--------------- table stylings ----*/

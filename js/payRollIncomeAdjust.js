@@ -411,9 +411,9 @@ var addedAlreadyYN; // variables to check if button clicked already, used in: pa
 var revertAlreadyYN;
 var notAWorkDay;
 function checkClick(index,week,nuHours,nuIncome,addOrRev){
-	console.log(index,week,nuHours,nuIncome,addOrRev);
-	console.log('clicked: ',clicked);
-	console.log('hrInTotsObj: ',hrInTotsObj);
+	// console.log(index,week,nuHours,nuIncome,addOrRev);
+	// console.log('clicked: ',clicked);
+	// console.log('hrInTotsObj: ',hrInTotsObj);
 	addedAlreadyYN = ''; // variables to check if button clicked already, used in: payRollJSTools.js
 	revertAlreadyYN = '';
 	notAWorkDay = 'what'; // blank out input fields if clicked index is not a work day, used in payRollJSTools.js

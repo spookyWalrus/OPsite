@@ -1043,7 +1043,7 @@ function roleChange(index) {
 	// console.log('index is: ',index);
 	// console.log(markerObj);
      // console.log(hrInTotsObj);
-     console.log('markerObj: ',markerObj,' index: ',index);
+     // console.log('markerObj: ',markerObj,' index: ',index);
 	var z = index;
     var nuRole = document.getElementsByClassName("role")[index];
     var selectedValue = nuRole.options[nuRole.selectedIndex].value;

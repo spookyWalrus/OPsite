@@ -580,7 +580,7 @@ function setDates(callBackSortPayRoll){
 		z++;
 	}
 	totalDays = dubWeek1 + dubWeek2 + v14; 
-	console.log('markerObj in payRollAddCols.js: ',markerObj);
+	// console.log('markerObj in payRollAddCols.js: ',markerObj);
 	sessionStorage.theMarkerObj = JSON.stringify(markerObj);
 	callBackSortPayRoll();
 } // close setDates()
