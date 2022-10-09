@@ -38,7 +38,7 @@
 							</select>
 						</div>
 					
-						<button class="btn btn-primary" id="searchUserButton" type="button" onclick="getDateRange();"  
+						<button class="btn btn-primary" id="searchUserButton" type="button" onclick="getDateRange(); yearBlinkOn()"  
 							value="">Change pay period year</button>
 					</div>
 				</div>
