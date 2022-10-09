@@ -9,15 +9,17 @@
 	text-align: center;
 }
 
+.changePeriodYear{
+     display: flex;
+    flex-wrap: wrap;
+    padding: 2% 14%;
+}
 
 .findPayPeriod{
    background-color: #d7d7d7;
    padding: 10px;
    margin: 5px;
    border-radius: 5px;
-   display: flex;
-    flex-wrap: wrap;
-    padding: 2% 14%;
 }
 
 #theYears{

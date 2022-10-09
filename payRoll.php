@@ -20,7 +20,7 @@
 				</div>
 				<!-- select year, current year by default -->
 				<div  class="row"> 
-					<div class="container col-xs-12 findPayPeriod">
+					<div class="container col-xs-12 findPayPeriod changePeriodYear">
 						<div class="searchBox custom-select">
 							<p class="searchTitle">Select Year</p>
 							<select class="searchUmenu" id="theYears" name="yearsSelect" value="">
@@ -67,7 +67,7 @@
 	<!-- <div class="container"> -->
 	<!-- <div class="row"> -->
 	<div class="container payTableHeader">
-		<div class="col-xs-8 col-xs-offset-3 row">
+		<div class="col-xs-8 row">
 			<h4 id="viewingThisUser" name="viewingThisUserPhp">Pay Period:</h4>
 			<!-- <h4 id="dateRange">Pay period: </h4> -->
 			<!-- </h4> -->
