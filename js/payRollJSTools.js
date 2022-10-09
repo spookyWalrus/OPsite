@@ -1151,10 +1151,10 @@ var target,target2,target3,target4,target5;
 
 // more blinky functions, when you change year to search records
 function yearBlinkOff(){
-		let menu = document.getElementById('fromHere').remove('blink');
+	let menu document.getElementById('fromHere').classList.remove('blink');
 }
 function yearBlinkOn(){
-	let menu = document.getElementById('fromHere').add('blink');
+	let menu = document.getElementById('fromHere').classList.add('blink');
 	setTimeout(yearBlinkOff,700);
 }
 
