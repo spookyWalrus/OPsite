@@ -38,13 +38,18 @@
     width: 200px;
     background-color: #3733b7;
 }
+.savePwContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 40%;
+}
 
 .errorMessages {
     color: #B43232;
     visibility: hidden;
     display: flex;
     flex-wrap: wrap;
-    padding: 2% 14%;
+    padding: 0% 14%;
 }
 
 .phoneBox, .emailBox, .idBox, .sinBox, .pwBox{
