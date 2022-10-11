@@ -1,18 +1,19 @@
 <div class="btn-group menuButton ">
   	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	    So what you wanna do?&nbsp; &nbsp;  <span class="caret"></span>
+	    Select your task&nbsp; &nbsp;  <span class="caret"></span>
 	</button>
 	<ul class="dropdown-menu" id="daMenu">
-	    <li><a href="homePage.php">Continue procrastination</a></li>
 	    <li><a href="showReport.php">Create Show report</a></li>
       <li><a href="viewReport.php">View Show report</a></li>
+      <li role="separator" id="divider">         </li>
+      <li><a href="payRoll.php">Do Payroll</a></li>
       <li role="separator" id="divider">         </li>
 	    <li><a href="createUser.php">Create Account</a></li>
 	    <li><a href="editUser.php">View/ Edit Account</a></li>
       <li role="separator" id="divider">         </li>
-	    <li><a href="https://mojopizza.in/">Order pizza</a></li>
+	    <li><a href="https://www.ubereats.com/near-me/pizza">Order pizza</a></li>
       <li role="separator" id="divider">         </li>
-	    <li><a href="payRoll.php">Do Payroll</a></li>
+      <li><a href="homePage.php">Procrastinate</a></li>
 	</ul>
 </div>
 
