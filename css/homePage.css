@@ -89,7 +89,7 @@ body, html {
     }
 
     #procrastinate{
-        visibility: hidden;
+        /*visibility: hidden;*/
     		font-size: 36px;
         margin-top: 20px;
         width: 90%;
