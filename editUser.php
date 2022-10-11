@@ -137,7 +137,7 @@
 						<div id="pwErrorMsg" class="errorMessages">
 							<p >Please enter valid password (8 char. minimum)</p>
 						</div>
-						<div>
+						<div class="container">
 							<button class="btn btn-primary submitText" id="reset_PasswordButton" type="button" onclick="checkPW();" name="submitPw" 
 						value=""> SAVE NEW PASSWORD </button>
 						</div>
