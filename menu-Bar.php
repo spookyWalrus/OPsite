@@ -13,7 +13,7 @@
       <li role="separator" id="divider">         </li>
 	    <li><a href="https://www.ubereats.com/near-me/pizza">Order pizza</a></li>
       <li role="separator" id="divider">         </li>
-      <li><a href="homePage.php">Procrastinate</a></li>
+      <li><a href="procrasPage.php">Procrastinate</a></li>
 	</ul>
 </div>
 
