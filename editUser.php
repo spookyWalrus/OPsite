@@ -142,7 +142,7 @@
 						value=""> SAVE NEW PASSWORD </button>
 						</div>
 					</form>
-					<div >
+					<div class="container">
 						<button class="btn btn-danger submitText" id="deleteAccount" type="button" onclick="deleteIt();" name="submitPw" 
 						value=""> DELETE ACCOUNT </button>
 					</div>
