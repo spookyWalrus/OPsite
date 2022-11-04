@@ -4,7 +4,7 @@ A Payroll web app.
 
 ## Built with HTML, CSS, Javascript, PHP and MySQL.
 
-### Automatically uploaded to [op-prototype.infinityfreeapp.com] via deployhq webook.
+### Automatically uploaded to [op-prototype.infinityfreeapp.com](op-prototype.infinityfreeapp.com) via deployhq webook.
 
 To do a test run of the app use the following credentials:
 User: Worker
