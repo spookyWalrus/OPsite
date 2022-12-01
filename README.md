@@ -7,6 +7,6 @@ A Payroll web app.
 To do a test run of the app use the following credentials:<br>
 
 User: Worker<br>
-Password: Worker1
+Password: Worker123
 
 Aside from example data, all database entries are wiped daily.
