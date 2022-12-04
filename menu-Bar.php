@@ -11,7 +11,7 @@
 	    <li><a href="createUser.php">Create Account</a></li>
 	    <li><a href="editUser.php">View/ Edit Account</a></li>
       <li role="separator" id="divider">         </li>
-	    <li><a href="https://www.ubereats.com/near-me/pizza">Order pizza</a></li>
+	    <li><a href="https://restaurantguru.com/Chicago-Pizza-Montreal-2">Order pizza</a></li>
       <li role="separator" id="divider">         </li>
       <li><a href="procrasPage.php">Procrastinate</a></li>
 	</ul>
@@ -33,7 +33,7 @@
       <ul class="nav navbar-nav" id="userNavMenuList">
         <label id="user-name-icon" >Your name</label>
         <li><a href="editOwnAccount.php">Account settings</a></li>
-        <li><a href="https://mojopizza.in/">Order another pizza</a></li>
+        <li><a href="tel:+15144814444">Order another pizza</a></li>
         <li role="separator" id="divider">         </li>
         <li><a onclick="javascript: killSession();" >Log Out</a></li>
       </ul>
