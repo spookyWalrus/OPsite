@@ -11,7 +11,7 @@
 	    <li><a href="createUser.php">Create Account</a></li>
 	    <li><a href="editUser.php">View/ Edit Account</a></li>
       <li role="separator" id="divider">         </li>
-	    <li><a href="https://restaurantguru.com/Chicago-Pizza-Montreal-2">Order pizza</a></li>
+	    <li><a href="https://restaurantguru.com/Chicago-Pizza-Montreal-2" target="_blank">Order pizza</a></li>
       <li role="separator" id="divider">         </li>
       <li><a href="procrasPage.php">Procrastinate</a></li>
 	</ul>
