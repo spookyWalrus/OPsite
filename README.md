@@ -1,10 +1,13 @@
-A Payroll web app.
-=======
-# Records employee work hours, view time sheets and file payroll. Designed for performance spaces.
+# A Payroll web app.
+
+## This web-based app creates time sheets (saves employee work hours), and files timesheets to be process for payroll. Designed for performance spaces.
 
 ## Built with HTML, CSS, Javascript, PHP and MySQL.
 
-To do a test run of the app use the following credentials:<br>
+### *This was the first project I've embarked on. It's been a long while so there's a lot of improvement and clean up that can be done. But for now, it works!*
+
+#### [See the site live here.](https://op-prototype.infinityfreeapp.com/)
+#### To do a test run of the app use the following credentials:<br>
 
 User: Worker<br>
 Password: Worker123
